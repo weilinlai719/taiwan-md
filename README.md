@@ -3,7 +3,7 @@
 > **The world's first AI-native open knowledge base about Taiwan.**
 > 全世界第一個 AI-native 的台灣開源知識庫。
 
-[🌐 Live Site](https://taiwan.md) · [📖 English](https://taiwan.md/en) · [🕸️ Knowledge Graph](https://taiwan.md/graph) · [🤝 Contribute](https://taiwan.md/contribute)
+[🌐 Live Site](https://taiwan.md) · [📖 English](https://taiwan.md/en) · [🕸️ Knowledge Graph](https://taiwan.md/graph) · [📚 Resources](https://taiwan.md/resources) · [🤝 Contribute](https://taiwan.md/contribute)
 
 [![GitHub stars](https://img.shields.io/github/stars/frank890417/taiwan-md?style=social)](https://github.com/frank890417/taiwan-md)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -23,16 +23,17 @@ Taiwan.md is an open-source, curated, AI-friendly knowledge base that helps the 
 
 ## ✨ Features
 
-- 📖 **68+ curated articles** across 13 categories  
-- 🌐 **Bilingual** — 繁體中文 (SSOT) + English (26+ articles)
-- 🤖 **AI-native** — [`llms.txt`](https://taiwan.md/llms.txt), [`robots.txt`](https://taiwan.md/robots.txt), structured Markdown
-- 🕸️ **Interactive knowledge graph** with 72+ nodes and D3.js visualization
+- 📖 **96+ curated articles** across 12 categories (47 zh-TW + 49 en)
+- 🌐 **Bilingual** — 繁體中文 (SSOT) + English (100% i18n coverage)
+- 🤖 **AI-native** — [`llms.txt`](https://taiwan.md/llms.txt), [`robots.txt`](https://taiwan.md/robots.txt), structured Markdown SSOT
+- 🕸️ **Interactive knowledge graph** — D3.js force simulation with zoom, drag, cross-category bridges
+- 🌳 **Resource mindmap** — D3.js bidirectional tidy tree with 146+ official Taiwan websites
 - 🎭 **Curated, not encyclopedic** — every page answers "why this matters"
 - 📐 **Three-layer depth** — 30-sec overview → 5-min read → full article  
-- 🎨 **Literary curatorial style** — essays, not bullet points
-- 🔍 **SEO optimized** — JSON-LD structured data, Open Graph, RSS feeds
-- 💾 **Image caching system** — optimized Wikimedia Commons integration
-- 📝 **Contribution forms** — zero-code ways to contribute knowledge
+- 🎨 **Literary curatorial style** — Noto Serif TC, essay-driven, inspired by 報導者
+- 🔍 **SEO optimized** — JSON-LD structured data, Open Graph, Twitter Cards, RSS feeds
+- 💾 **Wikimedia Commons** — CC-licensed images with local caching
+- 📝 **Zero-code contribution** — forms, AI prompts, or email
 - 🔓 **CC BY-SA 4.0** — free to cite, remix, share
 
 ---
@@ -41,33 +42,33 @@ Taiwan.md is an open-source, curated, AI-friendly knowledge base that helps the 
 
 | Metric | Count |
 |--------|-------|
-| 🇹🇼 Chinese articles | 68+ |
-| 🇺🇸 English articles | 26+ |
-| 📂 Categories | 13 |
-| 🏛️ Hub pages | 13 |
-| 🕸️ Knowledge graph nodes | 72+ |
-| 🖼️ Wikimedia images | 20+ |
-| 🟢 Good First Issues | 10+ |
+| 📄 Total pages built | 126 |
+| 🇹🇼 Chinese articles | 47 |
+| 🇺🇸 English articles | 49 |
+| 📂 Categories | 12 |
+| 🏛️ Hub pages | 12 |
+| 🕸️ Knowledge graph nodes | 100+ |
+| 🔗 Resource websites | 146+ |
+| 🌐 i18n coverage | 100% |
 
 ---
 
-## 🗂️ 13 Categories
+## 🗂️ 12 Categories
 
 | | Category | Articles | Highlights |
 |---|---------|----------|------------|
-| 📜 | [歷史 History](https://taiwan.md/history) | 8+ | 史前→荷西→清治→日治→戒嚴→民主化 |
-| 🗺️ | [地理 Geography](https://taiwan.md/geography) | 3+ | 五大山脈、板塊運動、溫泉、颱風 |
-| 🎭 | [文化 Culture](https://taiwan.md/culture) | 4+ | 閩南客家原住民外省新住民多元融合 |
-| 🧋 | [美食 Food](https://taiwan.md/food) | 6+ | 珍珠奶茶、牛肉麵、夜市、茶文化 |
-| 🎨 | [藝術 Art](https://taiwan.md/art) | 3+ | 當代藝術、新媒體藝術、C-LAB |
-| 🎵 | [音樂 Music](https://taiwan.md/music) | 3+ | 金曲獎、獨立音樂、大港開唱 |
-| 💻 | [科技 Technology](https://taiwan.md/technology) | 4+ | 台積電矽盾、g0v 公民科技、數位民主 |
-| 🌿 | [自然 Nature](https://taiwan.md/nature) | 4+ | 特有種、9 座國家公園、生物多樣性 |
-| 👤 | [人物 People](https://taiwan.md/people) | 8+ | 李安、張忠謀、鄧麗君、唐鳳... |
-| 🏛️ | [社會 Society](https://taiwan.md/society) | 5+ | 民主制度、人權與性別平等 |
-| 💰 | [經濟 Economy](https://taiwan.md/economy) | 4+ | 經濟奇蹟、夜市經濟學、半導體產業 |
-| 🏙️ | [生活 Lifestyle](https://taiwan.md/lifestyle) | 3+ | 便利商店、健保制度、捷運文化 |
-| 🎯 | [政治 Politics](https://taiwan.md/politics) | 2+ | 總統制、立法院、地方自治 |
+| 📜 | [歷史 History](https://taiwan.md/history) | 8 | 史前→荷西→清治→日治→戒嚴→民主化 |
+| 🗺️ | [地理 Geography](https://taiwan.md/geography) | 2 | 五大山脈、板塊運動、氣候帶 |
+| 🎭 | [文化 Culture](https://taiwan.md/culture) | 1 | 閩南客家原住民外省新住民多元融合 |
+| 🧋 | [美食 Food](https://taiwan.md/food) | 5 | 珍珠奶茶、牛肉麵、夜市、茶文化 |
+| 🎨 | [藝術 Art](https://taiwan.md/art) | 2 | 當代藝術、新媒體藝術 |
+| 🎵 | [音樂 Music](https://taiwan.md/music) | 3 | 金曲獎、獨立音樂、聲音地景 |
+| 💻 | [科技 Technology](https://taiwan.md/technology) | 2 | 台積電矽盾、g0v 公民科技 |
+| 🌿 | [自然 Nature](https://taiwan.md/nature) | 2 | 特有種、9 座國家公園 |
+| 👤 | [人物 People](https://taiwan.md/people) | 10 | 李安、張忠謀、鄧麗君、唐鳳、侯孝賢... |
+| 🏛️ | [社會 Society](https://taiwan.md/society) | 2 | 民主制度、人權與性別平等 |
+| 💰 | [經濟 Economy](https://taiwan.md/economy) | 2 | 經濟奇蹟、夜市經濟學 |
+| 🏙️ | [生活 Lifestyle](https://taiwan.md/lifestyle) | 8 | 便利商店、健保、交通、溫泉、KTV、咖啡文化 |
 
 ---
 
@@ -91,27 +92,31 @@ Four ways, from zero-code to full PR:
 ```
 knowledge/           ← SSOT (Single Source of Truth)
 ├── History/         ← 中文文章 + _Hub.md (literary curatorial essays)
-├── en/History/      ← English translations
+├── en/History/      ← English translations  
+├── About/           ← Meta content (origin story, quotes, resources)
 ├── ...
 scripts/sync.sh      ← One-command sync to src/content/
 src/
-├── pages/           ← Astro v5 pages with SEO
-├── layouts/         ← Glassmorphism nav, responsive design
+├── pages/           ← Astro v5 pages with full SEO
+├── layouts/         ← Glassmorphism nav, Noto Serif TC typography
 └── content/         ← Build-time projection from knowledge/
 public/
-├── images/          ← Optimized Wikimedia Commons cache
+├── images/wiki/     ← Cached Wikimedia Commons images (MD5 hashed)
+└── ...
+docs/
+├── d3-visualization-plan.md  ← D3.js upgrade roadmap
+├── research-e-estonia-analysis.md  ← International benchmark study
 └── ...
 ```
 
-**Tech:** Astro v5 + GitHub Pages + marked.js + D3.js knowledge graph  
+**Tech:** Astro v5 · GitHub Pages · marked.js · D3.js · Google Fonts (Noto Serif TC)  
 **SSOT:** All content lives in `knowledge/`. Website is a projection.  
-**SEO:** JSON-LD structured data, Open Graph tags, RSS feeds  
+**SEO:** JSON-LD · Open Graph · Twitter Cards · RSS · Canonical URLs · `<meta ai-summary>`  
+**i18n:** zh-TW (default SSOT) + en (100% coverage)  
 
 ---
 
 ## 🌏 International Benchmarks
-
-Taiwan.md draws inspiration from:
 
 | Project | Country | Focus |
 |---------|---------|-------|
@@ -120,7 +125,26 @@ Taiwan.md draws inspiration from:
 | [About Singapore](https://www.sg101.gov.sg/) | 🇸🇬 Singapore | National education portal |
 | [SwissInfo](https://www.swissinfo.ch/) | 🇨🇭 Switzerland | Multilingual public media |
 
-**What makes us different:** Open source + AI-native + community-driven + literary curation (not encyclopedic)
+**What makes us different:** Open source + AI-native + community-driven + literary curation
+
+---
+
+## 🗺️ Roadmap
+
+- [x] 🚀 Launch with 12 categories + bilingual content
+- [x] 🕸️ Interactive knowledge graph (D3.js)
+- [x] 🌳 Resource mindmap (146+ websites, bidirectional tidy tree)
+- [x] 🔍 Full SEO (JSON-LD, OG, RSS, sitemap)
+- [x] 🌐 100% i18n coverage (zh-TW + en)
+- [x] 📊 GA4 analytics integration
+- [ ] 🗺️ Interactive Taiwan map (TopoJSON, multi-layer)
+- [ ] 📅 Taiwan 400-year history timeline
+- [ ] 🏭 Semiconductor supply chain Sankey diagram
+- [ ] 🎯 Show HN launch
+- [ ] 📰 Newsletter subscription
+- [ ] 🤝 g0v collaboration
+
+See [D3 Visualization Plan](docs/d3-visualization-plan.md) for the full roadmap.
 
 ---
 
@@ -133,7 +157,7 @@ Taiwan.md draws inspiration from:
 
 ## 🖼️ Image Policy
 
-All images sourced from [Wikimedia Commons](https://commons.wikimedia.org/) with verified CC licenses. Each image includes attribution, license type, and source link. Images are cached and optimized for performance.
+All images sourced from [Wikimedia Commons](https://commons.wikimedia.org/) with verified CC licenses. Each image includes attribution, license type, and source link. Images are cached locally and optimized for performance.
 
 ---
 
