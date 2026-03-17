@@ -1,0 +1,305 @@
+---
+export async function getStaticPaths() {
+  const categories = [
+    'history', 'geography', 'culture', 'food', 'art', 'music',
+    'technology', 'nature', 'people', 'society', 'economy', 'lifestyle'
+  ];
+
+  const categoryInfo = {
+    'history': { 
+      name: '歷史',
+      name_en: 'History',
+      description: '從史前時代到現代，台灣歷史的完整脈絡',
+      icon: '📜'
+    },
+    'geography': { 
+      name: '地理',
+      name_en: 'Geography',
+      description: '台灣的自然環境、地形特色與區域發展',
+      icon: '🗺️'
+    },
+    'culture': { 
+      name: '文化',
+      name_en: 'Culture',
+      description: '多元族群文化的融合與在地特色',
+      icon: '🎭'
+    },
+    'food': { 
+      name: '美食',
+      name_en: 'Food',
+      description: '從夜市小吃到精緻料理的美食文化',
+      icon: '🍜'
+    },
+    'art': { 
+      name: '藝術',
+      name_en: 'Art',
+      description: '傳統工藝到當代藝術的創作能量',
+      icon: '🎨'
+    },
+    'music': { 
+      name: '音樂',
+      name_en: 'Music',
+      description: '從原住民音樂到流行音樂的聲音風景',
+      icon: '🎵'
+    },
+    'technology': { 
+      name: '科技',
+      name_en: 'Technology',
+      description: '科技島的創新發展與數位轉型',
+      icon: '💻'
+    },
+    'nature': { 
+      name: '自然',
+      name_en: 'Nature',
+      description: '豐富的生態環境與環保議題',
+      icon: '🌿'
+    },
+    'people': { 
+      name: '人物',
+      name_en: 'People',
+      description: '影響台灣發展的重要人物與故事',
+      icon: '👥'
+    },
+    'society': { 
+      name: '社會',
+      name_en: 'Society',
+      description: '社會變遷與當代議題的深度探討',
+      icon: '🏛️'
+    },
+    'economy': { 
+      name: '經濟',
+      name_en: 'Economy',
+      description: '經濟奇蹟的成因與轉型挑戰',
+      icon: '📊'
+    },
+    'lifestyle': { 
+      name: '生活',
+      name_en: 'Lifestyle',
+      description: '台灣人的生活方式與價值觀',
+      icon: '🏠'
+    }
+  };
+
+  // 先用靜態路由，不依賴 content collections
+  const paths = categories.map(category => ({
+    params: { category },
+    props: { 
+      categoryInfo: categoryInfo[category as keyof typeof categoryInfo],
+      category 
+    }
+  }));
+
+  return paths;
+}
+
+import Layout from '../../layouts/Layout.astro';
+
+const { categoryInfo, category } = Astro.props;
+---
+
+<Layout 
+  title={`${categoryInfo.name} - Taiwan.md`}
+  description={`${categoryInfo.description} - 台灣知識庫`}
+>
+  <main class="category-page">
+    <div class="container">
+      <!-- Category Header -->
+      <header class="category-header">
+        <div class="category-icon">{categoryInfo.icon}</div>
+        <div class="category-info">
+          <h1 class="category-title">{categoryInfo.name}</h1>
+          <p class="category-description">{categoryInfo.description}</p>
+        </div>
+      </header>
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="/">首頁</a>
+        <span class="separator">›</span>
+        <span class="current">{categoryInfo.name}</span>
+      </nav>
+
+      <!-- Content Coming Soon -->
+      <section class="coming-soon">
+        <div class="coming-soon-content">
+          <div class="coming-soon-icon">📝</div>
+          <h2>內容準備中</h2>
+          <p>這個分類的文章正在努力製作中，敬請期待！</p>
+          <p class="category-desc">未來這裡將會有：{categoryInfo.description}</p>
+          
+          <div class="action-buttons">
+            <a href="/" class="btn-primary">返回首頁</a>
+            <a href="https://github.com/frank890417/taiwan-md" target="_blank" class="btn-secondary">
+              參與貢獻
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .category-page {
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .category-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+  }
+
+  .category-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+  }
+
+  .category-info {
+    flex: 1;
+  }
+
+  .category-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .category-description {
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .breadcrumb a {
+    color: #1e40af;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .separator {
+    color: #9ca3af;
+  }
+
+  .current {
+    color: #6b7280;
+  }
+
+  .coming-soon {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .coming-soon-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .coming-soon-icon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .coming-soon-content h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .coming-soon-content p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  .category-desc {
+    font-style: italic;
+    margin-bottom: 3rem !important;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background: #1e40af;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #1e3a8a;
+  }
+
+  .btn-secondary {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+
+  .btn-secondary:hover {
+    background: #e5e7eb;
+  }
+
+  @media (max-width: 768px) {
+    .category-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .category-title {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
