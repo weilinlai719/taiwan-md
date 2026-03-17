@@ -250,7 +250,7 @@ import Layout from '../layouts/Layout.astro';
         <h2>📝 分享你的台灣知識</h2>
         <p class="form-desc">填多少都可以。一句話也好，一整篇也好。我們會負責把它變成漂亮的文章。</p>
 
-        <form id="contribute-form" action="https://docs.google.com/forms/d/e/FORM_ID/formResponse" method="POST" target="hidden_iframe">
+        <form id="contribute-form">
           
           <div class="form-group">
             <label for="content">你想分享什麼？ <span class="required">*</span></label>
@@ -320,7 +320,50 @@ import Layout from '../layouts/Layout.astro';
           <a href="/" class="back-link">← 回首頁繼續探索</a>
         </div>
 
-        <iframe name="hidden_iframe" style="display:none;"></iframe>
+        <script is:inline>
+          document.getElementById('contribute-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            btn.disabled = true;
+            btn.textContent = '送出中...';
+            
+            const data = {
+              timestamp: new Date().toISOString(),
+              content: document.getElementById('content').value,
+              category: document.getElementById('category').value,
+              sourceType: document.getElementById('source-type').value,
+              sourceRef: document.getElementById('source-ref').value,
+              name: document.getElementById('name').value || '匿名貢獻者',
+              email: document.getElementById('email').value
+            };
+            
+            try {
+              const SCRIPT_URL = 'APPS_SCRIPT_URL';
+              if (SCRIPT_URL === 'APPS_SCRIPT_URL') {
+                // Fallback: mailto
+                const body = encodeURIComponent(
+                  `分類: ${data.category}\n來源: ${data.sourceType}\n參考: ${data.sourceRef}\n\n${data.content}\n\n— ${data.name} (${data.email})`
+                );
+                window.open(`mailto:cheyu.wu@monoame.com?subject=${encodeURIComponent('Taiwan.md 貢獻：' + (data.category || '未分類'))}&body=${body}`);
+                document.getElementById('contribute-form').style.display = 'none';
+                document.getElementById('success-msg').style.display = 'block';
+              } else {
+                await fetch(SCRIPT_URL, {
+                  method: 'POST',
+                  mode: 'no-cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data)
+                });
+                document.getElementById('contribute-form').style.display = 'none';
+                document.getElementById('success-msg').style.display = 'block';
+              }
+            } catch (err) {
+              alert('送出失敗，請直接寄 email 到 cheyu.wu@monoame.com');
+              btn.disabled = false;
+              btn.textContent = '送出貢獻 🚀';
+            }
+          });
+        </script>
       </div>
     </section>
 
