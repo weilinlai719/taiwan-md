@@ -24,9 +24,16 @@ const categoryNames: Record<string, string> = {
 // Build nodes and edges
 const nodes: any[] = [];
 const edges: any[] = [];
+const tagMap: Record<string, string[]> = {}; // tag → article ids
 
 // Center node
 nodes.push({ id: 'taiwan', label: '🇹🇼 Taiwan.md', group: 'center', size: 30 });
+
+// Special nodes
+nodes.push({ id: 'about', label: '📖 關於', group: 'special', color: '#6366f1', size: 14, url: '/about' });
+nodes.push({ id: 'contribute', label: '✋ 貢獻', group: 'special', color: '#22c55e', size: 14, url: '/contribute' });
+edges.push({ source: 'taiwan', target: 'about' });
+edges.push({ source: 'taiwan', target: 'contribute' });
 
 for (const cat of categories) {
   // Category node
@@ -40,23 +47,67 @@ for (const cat of categories) {
   });
   edges.push({ source: 'taiwan', target: cat });
 
-  // Article nodes
+  // Chinese article nodes
   try {
     const articles = await getCollection(`zh-tw-${cat}` as any);
     for (const article of articles) {
       if (!article.id.startsWith('_')) {
+        const nodeId = `${cat}/${article.id}`;
         nodes.push({
-          id: `${cat}/${article.id}`,
+          id: nodeId,
           label: article.data.title,
           group: cat,
           color: categoryColors[cat],
           size: 10,
           url: `/${cat}/${article.id}`
         });
-        edges.push({ source: cat, target: `${cat}/${article.id}` });
+        edges.push({ source: cat, target: nodeId });
+        
+        // Build tag connections
+        if (article.data.tags) {
+          for (const tag of article.data.tags) {
+            if (!tagMap[tag]) tagMap[tag] = [];
+            tagMap[tag].push(nodeId);
+          }
+        }
       }
     }
   } catch {}
+  
+  // English article nodes
+  try {
+    const enArticles = await getCollection(`en-${cat}` as any);
+    for (const article of enArticles) {
+      if (!article.id.startsWith('_')) {
+        const nodeId = `en/${cat}/${article.id}`;
+        nodes.push({
+          id: nodeId,
+          label: `🌐 ${article.data.title}`,
+          group: cat,
+          color: categoryColors[cat],
+          size: 8,
+          url: `/en/${cat}/${article.id}`
+        });
+        edges.push({ source: cat, target: nodeId });
+      }
+    }
+  } catch {}
+}
+
+// Cross-category edges via shared tags
+for (const [tag, articleIds] of Object.entries(tagMap)) {
+  if (articleIds.length >= 2) {
+    for (let i = 0; i < articleIds.length - 1; i++) {
+      for (let j = i + 1; j < articleIds.length; j++) {
+        // Only connect across different categories
+        const catA = articleIds[i].split('/')[0];
+        const catB = articleIds[j].split('/')[0];
+        if (catA !== catB) {
+          edges.push({ source: articleIds[i], target: articleIds[j] });
+        }
+      }
+    }
+  }
 }
 
 const graphData = JSON.stringify({ nodes, edges });
