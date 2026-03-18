@@ -224,6 +224,15 @@ National library and document archive, academic resources
 ### [Academia Sinica](https://www.sinica.edu.tw/) 🌐
 Taiwan's highest academic research institution, fundamental research
 
+### [Institute of Taiwan History, Academia Sinica](https://www.ith.sinica.edu.tw/) 🌐
+Leading academic institute for Taiwan historical research, digitized historical archives
+
+### [Academia Sinica Center for Digital Cultures](https://ascdc.sinica.edu.tw/) 🌐
+Digital humanities and data science applications, interdisciplinary research support
+
+### [Academia Sinica Open Museum](https://openmuseum.tw/) 🌐
+Online curation and cultural heritage sharing platform, digital exhibitions
+
 #### 💾 Digital Archives
 ### [Government Open Data Platform](https://data.gov.tw/) 🇹🇼
 Unified government open data platform, data governance
