@@ -479,7 +479,7 @@ const processedContent = marked.parse(resolvedContent, { renderer });
   }
 
   .header-content {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
@@ -527,9 +527,9 @@ const processedContent = marked.parse(resolvedContent, { renderer });
 
   /* Container */
   .container {
-    max-width: 800px;
+    max-width: var(--container-reading);
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem var(--space-page-x);
   }
 
   /* Article Content */
@@ -605,7 +605,7 @@ const processedContent = marked.parse(resolvedContent, { renderer });
     font-size: 1.125rem;
     line-height: 1.8;
     color: #374151;
-    max-width: 740px;
+    max-width: 840px;
     margin: 0 auto;
   }
 
