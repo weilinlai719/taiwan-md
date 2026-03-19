@@ -23,7 +23,7 @@ Taiwan.md is an open-source, curated, AI-friendly knowledge base that helps the 
 
 ## ✨ Features
 
-- 📖 **260+ curated articles** across 12 categories (213 zh-TW + 53 en)
+- 📖 **365+ curated articles** across 12 categories (271 zh-TW + 94 en)
 - 🌐 **Bilingual** — 繁體中文 (SSOT) + English (100% i18n coverage)
 - 🤖 **AI-native** — [`llms.txt`](https://taiwan.md/llms.txt), [`robots.txt`](https://taiwan.md/robots.txt), structured Markdown SSOT
 - 🕸️ **Interactive knowledge graph** — D3.js force simulation with zoom, drag, cross-category bridges
@@ -43,14 +43,14 @@ Taiwan.md is an open-source, curated, AI-friendly knowledge base that helps the 
 
 | Metric | Count |
 |--------|-------|
-| 📄 Total pages built | 269 |
-| 🇹🇼 Chinese articles | 213 |
-| 🇺🇸 English articles | 53 |
+| 📄 Total pages built | 365+ |
+| 🇹🇼 Chinese articles | 271 |
+| 🇺🇸 English articles | 94 |
 | 📂 Categories | 12 |
 | 🏛️ Hub pages | 12 |
-| 🕸️ Knowledge graph nodes | 100+ |
+| 🕸️ Knowledge graph nodes | 220+ |
 | 🔗 Resource websites | 146+ |
-| 👥 Contributors | 13 |
+| 👥 Contributors | 16 |
 
 ---
 
