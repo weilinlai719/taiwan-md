@@ -118,6 +118,24 @@ docs/
 
 ---
 
+## 🔄 Perspectives — 平行宇宙觀點系統
+
+Taiwan.md doesn't arbitrate truth. **We present multiple truths and let readers decide.**
+
+Taiwan's history, identity, and politics are deeply contested. Rather than picking a side, we build a system that lets every well-sourced perspective coexist:
+
+- **📐 Perspective Panels** — Sensitive articles include labeled viewpoint sections (e.g., "Mainstream Academic View", "Taiwan Subjectivity View", "ROC Legal View"), each clearly attributed
+- **🏷️ Frontmatter tags** — Articles with multiple perspectives carry a `perspectives:` field, making it machine-readable which viewpoints are represented
+- **🔓 Open contribution** — Anyone can submit a new perspective via PR, as long as it cites academic, legal, or primary sources. Pure opinion without evidence is not accepted
+- **🌈 Visual design** — Perspective panels use distinct colors and collapsible UI, so readers always know *whose lens* they're reading through
+
+**Why this matters:**  
+When someone says "your content is biased," the answer isn't to swing to the opposite bias. It's to build a system where all well-sourced perspectives can coexist. The architecture itself becomes the editorial policy.
+
+> *"We don't decide what Taiwan is. We show you the many things Taiwan has been, is, and could be — and trust you to think for yourself."*
+
+---
+
 ## 🌏 International Benchmarks
 
 | Project | Country | Focus |
