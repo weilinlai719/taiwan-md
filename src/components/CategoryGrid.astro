@@ -1,7 +1,18 @@
 ---
-import { getCollection } from 'astro:content';
+import {
+  useTranslations,
+  getLangFromUrl,
+  useTranslatedPath,
+} from '../i18n/utils';
+import { getCategoryConfigs } from '../utils/newCategoryConfig';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const categoryConfigs = getCategoryConfigs(t);
 
 // Count articles dynamically from knowledge/ directory
 function countArticles(categorySlug: string): number {
@@ -31,206 +42,154 @@ function countArticles(categorySlug: string): number {
 
 const categories = [
   {
-    name: '歷史',
-    name_en: 'History',
+    name: categoryConfigs['history'].name,
     slug: 'history',
-    description: '從史前時代到現代，台灣歷史的完整脈絡',
+    description: categoryConfigs['history'].description,
     icon: '📜',
     color: 'from-amber-500 to-orange-600',
-    articles: 0, // replaced
     cover: '/images/wiki/b5604a9d7dac.jpg',
   },
   {
-    name: '地理',
-    name_en: 'Geography',
+    name: categoryConfigs['geography'].name,
     slug: 'geography',
-    description: '台灣的自然環境、地形特色與區域發展',
+    description: categoryConfigs['geography'].description,
     icon: '🗺️',
     color: 'from-emerald-500 to-teal-600',
-    articles: 0, // replaced
     cover: '/images/wiki/3a0af3fa1cff.jpg',
   },
   {
-    name: '文化',
-    name_en: 'Culture',
+    name: categoryConfigs['culture'].name,
     slug: 'culture',
-    description: '多元族群文化的融合與在地特色',
+    description: categoryConfigs['culture'].description,
     icon: '🎭',
     color: 'from-purple-500 to-violet-600',
-    articles: 0, // replaced
     cover: '/images/wiki/c3f69037472b.jpg',
   },
   {
-    name: '美食',
-    name_en: 'Food',
+    name: categoryConfigs['food'].name,
     slug: 'food',
-    description: '從夜市小吃到精緻料理的美食文化',
+    description: categoryConfigs['food'].description,
     icon: '🍜',
     color: 'from-rose-500 to-pink-600',
-    articles: 0, // replaced
     cover: '/images/wiki/6a7bed12c2a6.jpg',
   },
   {
-    name: '藝術',
-    name_en: 'Art',
+    name: categoryConfigs['art'].name,
     slug: 'art',
-    description: '傳統工藝到當代藝術的創作能量',
+    description: categoryConfigs['art'].description,
     icon: '🎨',
     color: 'from-cyan-500 to-blue-600',
-    articles: 0, // replaced
     cover: '/images/wiki/b92068ae92fb.jpg',
   },
   {
-    name: '音樂',
-    name_en: 'Music',
+    name: categoryConfigs['music'].name,
     slug: 'music',
-    description: '從原住民音樂到流行音樂的聲音風景',
+    description: categoryConfigs['music'].description,
     icon: '🎵',
     color: 'from-indigo-500 to-purple-600',
-    articles: 0, // replaced
     cover: '/images/wiki/dba145c33d6d.jpg',
   },
   {
-    name: '科技',
-    name_en: 'Technology',
+    name: categoryConfigs['technology'].name,
     slug: 'technology',
-    description: '科技島的創新發展與數位轉型',
+    description: categoryConfigs['technology'].description,
     icon: '💻',
     color: 'from-slate-500 to-gray-600',
-    articles: 0, // replaced
     cover: '/images/wiki/f43072687967.jpg',
   },
   {
-    name: '自然',
-    name_en: 'Nature',
+    name: categoryConfigs['nature'].name,
     slug: 'nature',
-    description: '豐富的生態環境與環保議題',
+    description: categoryConfigs['nature'].description,
     icon: '🌿',
     color: 'from-green-500 to-emerald-600',
-    articles: 0, // replaced
     cover: '/images/wiki/51510a8c6a50.jpg',
   },
   {
-    name: '人物',
-    name_en: 'People',
+    name: categoryConfigs['people'].name,
     slug: 'people',
-    description: '影響台灣發展的重要人物與故事',
+    description: categoryConfigs['people'].description,
     icon: '👥',
     color: 'from-orange-500 to-red-600',
-    articles: 0, // replaced
     cover: '/images/wiki/4eadbb02099d.jpg',
   },
   {
-    name: '社會',
-    name_en: 'Society',
+    name: categoryConfigs['society'].name,
     slug: 'society',
-    description: '社會變遷與當代議題的深度探討',
+    description: categoryConfigs['society'].description,
     icon: '🏛️',
     color: 'from-blue-500 to-indigo-600',
-    articles: 0, // replaced
     cover: '/images/wiki/c18008c3ec52.jpg',
   },
   {
-    name: '經濟',
-    name_en: 'Economy',
+    name: categoryConfigs['economy'].name,
     slug: 'economy',
-    description: '經濟奇蹟的成因與轉型挑戰',
+    description: categoryConfigs['economy'].description,
     icon: '📊',
     color: 'from-yellow-500 to-amber-600',
-    articles: 0, // replaced
     cover: '/images/wiki/53ecc1645c5a.jpg',
   },
   {
-    name: '生活',
-    name_en: 'Lifestyle',
+    name: categoryConfigs['lifestyle'].name,
     slug: 'lifestyle',
-    description: '台灣人的生活方式與價值觀',
+    description: categoryConfigs['lifestyle'].description,
     icon: '🏠',
     color: 'from-teal-500 to-cyan-600',
-    articles: 0, // replaced
     cover: '/images/wiki/c1fb1b3a4b79.jpg',
   },
 ];
-
-interface Props {
-  lang?: 'zh-TW' | 'en';
-}
-
-const { lang = 'zh-TW' } = Astro.props;
-const isEn = lang === 'en';
-const langPrefix = isEn ? '/en' : '';
-
-const descriptionsEn: Record<string, string> = {
-  history: "The full arc of Taiwan's history from prehistory to the modern era",
-  geography: "Taiwan's natural environment, terrain, and regional development",
-  culture: 'The fusion of diverse ethnic cultures and local character',
-  food: "From night market snacks to fine dining — Taiwan's food culture",
-  art: 'Creative energy from traditional crafts to contemporary art',
-  music: 'A soundscape from Indigenous music to pop',
-  technology: 'Innovation and digital transformation on the tech island',
-  nature: 'Rich ecosystems and environmental conservation',
-  people: 'Key figures and stories that shaped Taiwan',
-  society: 'In-depth exploration of social change and contemporary issues',
-  economy: 'The economic miracle, its causes, and transformation challenges',
-  lifestyle: 'How Taiwanese people live and what they value',
-};
 ---
 
-<section
-  class="category-grid"
-  aria-label={isEn ? 'Taiwan knowledge categories' : '台灣知識分類'}
->
+<section class="category-grid" aria-label={t('CategoryGrid.aria-section')}>
   {
-    categories.map((category, index) => (
-      <article>
-        <a
-          href={`${langPrefix}/${category.slug}`}
-          class="category-card"
-          data-color={category.color}
-          aria-label={
-            isEn ? `Explore ${category.name_en}` : `探索${category.name}主題`
-          }
-        >
-          <div class="category-header">
-            {category.cover ? (
-              <img
-                src={category.cover}
-                alt={
-                  isEn
-                    ? `${category.name_en} category image`
-                    : `${category.name}主題相關圖片`
-                }
-                class="category-cover"
-                loading="lazy"
-                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-              />
-            ) : null}
-            <div
-              class="category-icon"
-              style={category.cover ? 'display:none' : ''}
-            >
-              {category.icon}
+    categories.map((category) => {
+      const count = countArticles(category.slug);
+
+      return (
+        <article>
+          <a
+            href={translatePath(`/${category.slug}`)}
+            class="category-card"
+            data-color={category.color}
+            aria-label={`${t('CategoryGrid.aria-explore')} ${category.name}${t('CategoryGrid.aria-explore-suffix')}`}
+          >
+            <div class="category-header">
+              {category.cover ? (
+                <img
+                  src={category.cover}
+                  alt={`${category.name} ${t('CategoryGrid.alt-category-image-suffix')}`}
+                  class="category-cover"
+                  loading="lazy"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                />
+              ) : null}
+              <div
+                class="category-icon"
+                style={category.cover ? 'display:none' : ''}
+              >
+                {category.icon}
+              </div>
+              <div class="category-gradient" />
+              <div class="article-badge">
+                <span class="article-count">{count}</span>
+                <span class="article-label">
+                  {count > 1
+                    ? t('CategoryGrid.articles')
+                    : t('CategoryGrid.article')}
+                </span>
+              </div>
             </div>
-            <div class="category-gradient" />
-            <div class="article-badge">
-              <span class="article-count">{countArticles(category.slug)}</span>
-              <span class="article-label">{isEn ? 'articles' : '篇'}</span>
+            <div class="category-body">
+              <h3 class="category-name">{category.name}</h3>
+              <p class="category-description">{category.description}</p>
+              <div class="category-footer">
+                <span class="explore-link">{`${t('CategoryGrid.explore')}→`}</span>
+              </div>
             </div>
-          </div>
-          <div class="category-body">
-            <h3 class="category-name">
-              {isEn ? category.name_en : category.name}
-            </h3>
-            <p class="category-description">
-              {isEn ? descriptionsEn[category.slug] : category.description}
-            </p>
-            <div class="category-footer">
-              <span class="explore-link">{isEn ? 'Explore →' : '探索 →'}</span>
-            </div>
-          </div>
-        </a>
-      </article>
-    ))
+          </a>
+        </article>
+      );
+    })
   }
 </section>
 
