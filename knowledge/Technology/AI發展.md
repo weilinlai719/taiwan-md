@@ -8,6 +8,7 @@ tags: ['人工智慧', 'AI政策', '半導體', '科技政策', '數位轉型', 
 readingTime: 15
 featured: true
 lastVerified: 2026-03-19
+lastHumanReview: false
 ---
 
 # AI島國的崛起：台灣人工智慧發展與未來策略

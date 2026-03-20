@@ -6,6 +6,7 @@ tags: [生活, 夜生活, KTV, 深夜食堂, 台灣]
 author: 'Taiwan.md Contributors'
 readingTime: 8
 lastVerified: 2026-03-19
+lastHumanReview: false
 ---
 
 # 夜生活與KTV文化

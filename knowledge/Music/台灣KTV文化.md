@@ -9,6 +9,7 @@ readingTime: 12
 featured: true
 category: 'Music'
 lastVerified: 2026-03-19
+lastHumanReview: false
 ---
 
 # 台灣KTV文化：從好樂迪錢櫃到包廂社交的時代變遷

@@ -8,6 +8,7 @@ readingTime: 8
 featured: true
 category: 'Technology'
 lastVerified: 2026-03-19
+lastHumanReview: false
 ---
 
 # Threads 在台灣：從現象級爆紅到日常「脆」文化

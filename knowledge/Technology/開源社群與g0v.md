@@ -8,6 +8,7 @@ author: Taiwan.md
 readingTime: 8
 featured: false
 lastVerified: 2026-03-19
+lastHumanReview: false
 ---
 
 # 開源社群與g0v
