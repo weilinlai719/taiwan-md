@@ -1,6 +1,4 @@
-people/李智凱.md
-people/朱宗慶.md
-people/戴資穎.md
+
 people/唐鳳.md
 people/吳明益.md
 nature/生態多樣性.md
