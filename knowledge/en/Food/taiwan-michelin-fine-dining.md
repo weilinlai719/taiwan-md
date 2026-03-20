@@ -47,19 +47,19 @@ This expansion process wasn't random but followed the natural patterns of Taiwan
 
 In Michelin's evaluation system, three-star restaurants represent "exceptional cuisine worth a special journey." Taiwan's current three three-star restaurants each showcase different fine dining philosophies:
 
-**[[Le Palais]]** (Palais de Chine) represents the ultimate refinement of Cantonese cuisine. This restaurant, located in the Grand Hyatt Taipei, elevates traditional Cantonese culinary techniques to their zenith, with every dish being an artwork. From the crispy skin and tender meat of roast goose to the fresh purity of seafood, Le Palais proves that Chinese cuisine can reach world-class standards.
+**Le Palais** (Palais de Chine) represents the ultimate refinement of Cantonese cuisine. This restaurant, located in the Grand Hyatt Taipei, elevates traditional Cantonese culinary techniques to their zenith, with every dish being an artwork. From the crispy skin and tender meat of roast goose to the fresh purity of seafood, Le Palais proves that Chinese cuisine can reach world-class standards.
 
-**[[Taïrroir]]** is a pioneer of Taiwanese-French fusion. Chef [[Kai Ho]] perfectly combines local Taiwanese ingredients with French culinary techniques, creating unique "Taiwanese-style French cuisine." When you taste his "Taiwan beef with bottarga," you'll marvel at the new life Taiwanese ingredients gain under French techniques.
+**Taïrroir** is a pioneer of Taiwanese-French fusion. Chef [[Kai Ho]] perfectly combines local Taiwanese ingredients with French culinary techniques, creating unique "Taiwanese-style French cuisine." When you taste his "Taiwan beef with bottarga," you'll marvel at the new life Taiwanese ingredients gain under French techniques.
 
-**[[JL Studio]]** in Taichung showcases refined interpretations of Singaporean flavors. Chef [[Jimmy Lim]] combines Southeast Asian spices with modern cooking techniques, creating tropical fine dining on Taiwanese soil.
+**JL Studio** in Taichung showcases refined interpretations of Singaporean flavors. Chef [[Jimmy Lim]] combines Southeast Asian spices with modern cooking techniques, creating tropical fine dining on Taiwanese soil.
 
 ### The Creative Stage of Shining Stars
 
 Taiwan's starred restaurants are not just showcases of technique but laboratories of creativity. Here, tradition and modernity dialogue, East and West merge, and local and international exchange.
 
-Two-star restaurant **[[Eika]]**'s chef [[Chien Tien-Tsai]] brings the spirit of kaiseki cuisine to Taiwan while using Taiwan's local seasonal ingredients. Spring bamboo shoots, summer loofah flowers, autumn persimmons, and winter radishes all become poetic dishes under his skillful hands.
+Two-star restaurant **Eika**'s chef [[Chien Tien-Tsai]] brings the spirit of kaiseki cuisine to Taiwan while using Taiwan's local seasonal ingredients. Spring bamboo shoots, summer loofah flowers, autumn persimmons, and winter radishes all become poetic dishes under his skillful hands.
 
-One-star restaurant **[[aMaze]]** represents the innovative thinking of the younger generation of chefs. They don't confine themselves to traditional culinary boundaries but use modern techniques to reinterpret Taiwan's taste memories. A dish of "hand-pulled pork bun" has both the familiarity of street food and the refinement of starred restaurants.
+One-star restaurant **aMaze** represents the innovative thinking of the younger generation of chefs. They don't confine themselves to traditional culinary boundaries but use modern techniques to reinterpret Taiwan's taste memories. A dish of "hand-pulled pork bun" has both the familiarity of street food and the refinement of starred restaurants.
 
 ## Bib Gourmand: International Recognition of Popular Cuisine
 
@@ -83,15 +83,15 @@ Bib Gourmand establishments often face an interesting challenge: how to maintain
 
 In 2021, Michelin began awarding Green Star recognition to restaurants excelling in sustainable practices. Taiwan's culinary industry showed positive response to this new trend.
 
-**[[EMBERS]]** was Taiwan's first restaurant to receive a Green Star. This restaurant, based on the "farm-to-table" philosophy, directly cooperates with local small farmers, using organic vegetables and environmentally friendly meat products. Chef [[Guo Ting-Wei]] doesn't just cook ingredients but promotes an environmentally friendly food culture.
+**EMBERS** was Taiwan's first restaurant to receive a Green Star. This restaurant, based on the "farm-to-table" philosophy, directly cooperates with local small farmers, using organic vegetables and environmentally friendly meat products. Chef [[Guo Ting-Wei]] doesn't just cook ingredients but promotes an environmentally friendly food culture.
 
-**[[Mountain and Sea House]]** extends sustainability principles to ocean protection. It only uses certified sustainable seafood, refuses endangered fish species, and educates guests about the importance of marine ecosystems.
+**Mountain and Sea House** extends sustainability principles to ocean protection. It only uses certified sustainable seafood, refuses endangered fish species, and educates guests about the importance of marine ecosystems.
 
 ### The Refinement of Taiwan's Agriculture
 
 The rise of Green Star restaurants has driven Taiwan's agricultural transformation. When starred restaurants began demanding organic vegetables, non-toxic fruits, and eco-friendly livestock products, farmers also began considering how to improve product quality.
 
-**[[Tu Pang]]** in Taichung exemplifies this collaboration between agriculture and restaurant industries. This restaurant not only uses organic vegetables from local small farmers but also works with farmers to develop new varieties and cultivation methods. When a restaurant starts discussing carrot sweetness and texture with farmers, we see the future of Taiwan's refined agriculture.
+**Tu Pang** in Taichung exemplifies this collaboration between agriculture and restaurant industries. This restaurant not only uses organic vegetables from local small farmers but also works with farmers to develop new varieties and cultivation methods. When a restaurant starts discussing carrot sweetness and texture with farmers, we see the future of Taiwan's refined agriculture.
 
 ## Cultural Impact and Adaptation: The Deep Effects of the Michelin Effect
 
@@ -105,7 +105,7 @@ But this phenomenon reflects Taiwan's culinary industry's elevated quality consc
 
 Michelin's evaluation standards prompted Taiwan's culinary industry to reconsider the importance of talent development. Many restaurants began investing in staff training, sending chefs abroad for further study, and introducing international management systems.
 
-**[[JL Studio]]**'s chef [[Jimmy Lim]] is a typical example. He worked at Restaurant André in Singapore for many years, accumulating rich international experience. After returning to Taiwan, he combined this experience with local culture to create a unique culinary style.
+**JL Studio**'s chef [[Jimmy Lim]] is a typical example. He worked at Restaurant André in Singapore for many years, accumulating rich international experience. After returning to Taiwan, he combined this experience with local culture to create a unique culinary style.
 
 This talent flow and knowledge transfer elevated the standards of Taiwan's entire culinary industry. Today's young chefs need not only to know how to cook but also understand ingredient sources, master cost control, and possess international perspectives.
 
@@ -137,7 +137,7 @@ Michelin evaluation's commercial influence sometimes creates tension with cultur
 
 As Michelin guides take root in Taiwan, we see more chefs considering an important question: How to express Taiwan's taste culture in an international language?
 
-**[[RAW]]**'s chef [[André Chiang]] provides a direction for thinking. He doesn't deliberately promote "Taiwanese cuisine" but uses modern cooking techniques to interpret Taiwan's ingredients and taste memories. When foreign guests taste his cuisine, they feel Taiwan's terroir rather than specific Taiwanese dish names.
+**RAW**'s chef [[André Chiang]] provides a direction for thinking. He doesn't deliberately promote "Taiwanese cuisine" but uses modern cooking techniques to interpret Taiwan's ingredients and taste memories. When foreign guests taste his cuisine, they feel Taiwan's terroir rather than specific Taiwanese dish names.
 
 This "de-labeling" expression of Taiwan flavors might be a future trend. What matters isn't what the dish is called but whether it can convey Taiwan's unique cultural content.
 
