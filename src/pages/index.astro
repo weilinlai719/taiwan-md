@@ -262,6 +262,41 @@ const feedbacks = [
     name: 'Wang Celia',
     text: '當 AI 時代來臨，擁有自己的知識主權不是選項——是必要。',
   },
+  { name: 'Nike Lee', text: '我同學我驕傲 ❤️' },
+  {
+    name: '侯君昊',
+    text: '果然是我認識的哲宇，創意不斷、行動力超強！這個平台太棒了！期望可以串聯出既在地又國際的知識網路',
+  },
+  {
+    name: '鄭珊珊',
+    text: '我會分享給我在荷蘭的親朋好友們，讓他們更了解台灣，這個小小的「國家」充滿毅力與韌性的人民 ❤️',
+  },
+  { name: '張瑋琦', text: '謝謝你，為台灣做了這麼重要的事！' },
+  { name: '許漪', text: '好認同好認同好認同！！！！' },
+  { name: '李偉強', text: '台灣有你真好' },
+  {
+    name: '李娟娟',
+    text: '真的謝謝您，為這個國家所做的努力。',
+  },
+  { name: 'Eva Kuo', text: '真是非常感謝你對台灣的付出！！' },
+  { name: 'Pin Pin Wang', text: '有夠棒！台灣感謝你 🙏' },
+  {
+    name: 'Sunny Chen',
+    text: '可以有西文版本嗎？這方面的資訊很少，拉美人大部分也不講英文..讓我有點難介紹',
+  },
+  { name: 'Tang Tang Tang', text: '是一個看不完的網站 😭' },
+  {
+    name: '吳雅琪',
+    text: '哲宇老師教程式！也愛台灣！！推爆！！！🥰',
+  },
+  {
+    name: '盧語築',
+    text: '天啊！你好瘋狂，好帥好有愛！好感動～～～',
+  },
+  {
+    name: 'Debra Sun',
+    text: '真是太重要的一個創意與行動，感謝您',
+  },
 ];
 
 const row1 = feedbacks.filter((_: any, i: number) => i % 3 === 0);
@@ -852,8 +887,8 @@ const row3 = feedbacks.filter((_: any, i: number) => i % 3 === 2);
         articles = raw
           .filter(function(a) { return a.category !== 'en' && !a.url.includes('/en/'); })
           .map(function(a) {
-            var u = a.url.replace('https://taiwan.md', '');
-            return { title: a.title, url: u, category: catLabels[a.category] || a.category };
+            var u = a.url.replace('https://taiwan.md', '').replace(/^\/([^\/]+)/, function(m, p) { return '/' + p.toLowerCase(); });
+            return { title: a.title, url: u, category: catLabels[a.category.toLowerCase()] || a.category };
           });
       }
     } catch (e) {
