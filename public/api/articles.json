@@ -2477,19 +2477,19 @@
   },
   {
     "title": "台灣數位影像與動畫產業",
-    "description": "從傳統影視後製到國際動畫代工，台灣數位影像產業的發展軌跡與技術能量",
+    "description": "從全球最大動畫代工王國到原創內容新勢力，台灣數位影像產業半世紀的蛻變之路",
     "category": "Technology",
     "tags": [
       "數位影像",
       "動畫",
-      "後製技術",
+      "視覺特效",
       "文創產業",
       "影視工業"
     ],
     "url": "https://taiwan.md/Technology/%E5%8F%B0%E7%81%A3%E6%95%B8%E4%BD%8D%E5%BD%B1%E5%83%8F%E8%88%87%E5%8B%95%E7%95%AB%E7%94%A2%E6%A5%AD",
-    "readingTime": 11,
+    "readingTime": 14,
     "featured": false,
-    "date": "2026-03-19",
+    "date": "2026-03-20",
     "path": "Technology/台灣數位影像與動畫產業.md"
   },
   {
@@ -8043,6 +8043,40 @@
     "path": "en/Art/contemporary-art.md"
   },
   {
+    "title": "Taiwan Digital Imaging and Animation Industry",
+    "description": "From the world's largest animation outsourcing kingdom to a rising force in original content, Taiwan's half-century journey in digital imaging",
+    "category": "en",
+    "tags": [
+      "digital imaging",
+      "animation",
+      "visual effects",
+      "creative industries",
+      "film industry"
+    ],
+    "url": "https://taiwan.md/en/Technology/taiwan-digital-imaging-and-animation-industry",
+    "readingTime": 22,
+    "featured": false,
+    "date": "2026-03-20",
+    "path": "en/Technology/taiwan-digital-imaging-and-animation-industry.md"
+  },
+  {
+    "title": "Taiwan Digital Imaging and Animation Industry",
+    "description": "From the world's largest animation outsourcing kingdom to a rising force in original content, Taiwan's half-century journey in digital imaging",
+    "category": "en",
+    "tags": [
+      "digital imaging",
+      "animation",
+      "visual effects",
+      "creative industries",
+      "film industry"
+    ],
+    "url": "https://taiwan.md/en/Technology/taiwan-digital-imaging-animation-industry",
+    "readingTime": 22,
+    "featured": false,
+    "date": "2026-03-20",
+    "path": "en/Technology/taiwan-digital-imaging-animation-industry.md"
+  },
+  {
     "title": "Taiwan Electric Vehicle Industry Chain Development",
     "description": "From battery technology to charging infrastructure, exploring Taiwan's complete EV ecosystem and 2030 net-zero transition strategy",
     "category": "en",
@@ -8757,28 +8791,6 @@
     "featured": true,
     "date": "2026-03-19",
     "path": "en/Technology/taiwan-cybersecurity-industry-development.md"
-  },
-  {
-    "title": "Taiwan's Digital Imaging and Animation Industry",
-    "description": "From traditional post-production to international animation outsourcing: Taiwan's digital imaging industry development trajectory and technical capabilities",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Technology/taiwan-digital-imaging-and-animation-industry",
-    "readingTime": 39,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "en/Technology/taiwan-digital-imaging-and-animation-industry.md"
-  },
-  {
-    "title": "Taiwan's Digital Imaging and Animation Industry",
-    "description": "From traditional film post-production to international animation outsourcing, the development trajectory and technical capabilities of Taiwan's digital imaging industry",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Technology/taiwan-digital-imaging-animation-industry",
-    "readingTime": 40,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "en/Technology/taiwan-digital-imaging-animation-industry.md"
   },
   {
     "title": "Taiwan’s Diplomatic Allies and International Relations",

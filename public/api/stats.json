@@ -2,7 +2,7 @@
   "totalArticles": 690,
   "totalCategories": 15,
   "estimatedContributors": 46,
-  "totalTags": 1615,
+  "totalTags": 1619,
   "categories": [
     {
       "name": "en",
@@ -151,5 +151,5 @@
     "zh-TW": 690,
     "en": 0
   },
-  "lastUpdated": "2026-03-20T13:33:32.914Z"
+  "lastUpdated": "2026-03-20T13:38:27.383Z"
 }

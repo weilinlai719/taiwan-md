@@ -1,284 +1,344 @@
 [
   {
-    "title": "Taiwan's Foreign Trade and Global Supply Chain",
-    "description": "From export-oriented to critical supply chain node: How Taiwan maintains trade advantages amid US-China rivalry",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Economy/taiwan-foreign-trade-and-global-supply-chain",
-    "readingTime": 51,
-    "featured": false,
-    "date": "2026-03-18",
-    "path": "en/Economy/taiwan-foreign-trade-and-global-supply-chain.md"
-  },
-  {
-    "title": "Pai Hsien-yung (白先勇)",
-    "description": "Literary master, author of 'Taipei People,' and champion of Kunqu opera revival in modern Chinese literature",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/People/pai-hsien-yung-literary-master",
-    "readingTime": 30,
-    "featured": true,
-    "date": "2026-03-19",
-    "path": "en/People/pai-hsien-yung-literary-master.md"
-  },
-  {
-    "title": "Li Zongsheng (Jonathan Lee)",
-    "description": "Taiwan’s master songwriter and producer whose songs turned life’s joys and losses into a shared language",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/People/li-zongsheng",
-    "readingTime": 22,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "en/People/li-zongsheng.md"
-  },
-  {
-    "title": "Origin Story — The Birth of Taiwan.md",
-    "description": "From a street walk inspiration to curating a complete portal for Taiwan to the world",
-    "category": "en",
-    "tags": [
-      "about",
-      "origin",
-      "taiwan-md"
-    ],
-    "url": "https://taiwan.md/en/About/origin-story",
-    "readingTime": 10,
-    "featured": true,
-    "date": "2026-03-17",
-    "path": "en/About/origin-story.md"
-  },
-  {
-    "title": "Chen Wei-yin: Taiwan's MLB Pioneer",
-    "description": "Taiwan's successful Major League Baseball pitcher who brought pride to Taiwan on international baseball's biggest stage",
-    "category": "en",
-    "tags": [
-      "baseball",
-      "MLB",
-      "sports",
-      "athlete",
-      "pitcher"
-    ],
-    "url": "https://taiwan.md/en/People/chen-wei-yin-mlb-pitcher",
-    "readingTime": 37,
-    "featured": false,
-    "date": "2026-03-20",
-    "path": "en/People/chen-wei-yin-mlb-pitcher.md"
-  },
-  {
-    "title": "FinTech Development in Taiwan",
-    "description": "From regulatory sandboxes to digital banks: The evolution and innovation of Taiwan's FinTech ecosystem.",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Economy/taiwan-fintech-development",
-    "readingTime": 57,
-    "featured": false,
-    "date": "2026-03-20",
-    "path": "en/Economy/taiwan-fintech-development.md"
-  },
-  {
-    "title": "Dutch, Spanish and Koxinga Era",
-    "description": "Taiwan's first systematic colonial rule, from the Dutch establishment of Fort Zeelandia to Koxinga's founding of Taiwan, laying the foundation for Han Chinese settlement and political institutions",
-    "category": "en",
-    "tags": [
-      "History",
-      "Dutch East India Company",
-      "Kingdom of Tungning",
-      "Koxinga"
-    ],
-    "url": "https://taiwan.md/en/History/dutch-spanish-and-koxinga-era",
-    "readingTime": 42,
-    "featured": false,
-    "date": "2026-03-17",
-    "path": "en/History/dutch-spanish-and-koxinga-era.md"
-  },
-  {
-    "title": "Contemporary Literature Development in Taiwan",
-    "description": "Exploring the evolution of Taiwanese literature from post-war to the present, spanning Modernism, Nativist Literature, and multicultural narratives.",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Art/contemporary-taiwanese-literature-development",
-    "readingTime": 34,
-    "featured": true,
-    "date": "2026-03-20",
-    "path": "en/Art/contemporary-taiwanese-literature-development.md"
-  },
-  {
-    "title": "Media and Press Freedom in Taiwan",
-    "description": "From party‑state control to a noisy digital marketplace: how Taiwan’s press freedom emerged, and what it’s now up against",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Society/media-and-press-freedom-in-taiwan",
-    "readingTime": 33,
-    "featured": false,
-    "date": "2026-03-18",
-    "path": "en/Society/media-and-press-freedom-in-taiwan.md"
-  },
-  {
-    "title": "Local Street Food Map of Taiwan",
-    "description": "From Keelung temple mouths ding-bian-hu to Pingtung Wanluan pig knuckles, from Hsinchu meatballs to Taitung custard apples, every city has its unique culinary DNA. Follow the footsteps of locals to explore the most representative local delicacies of Taiwan's 22 counties and cities, savoring the most authentic folk culture of this island.",
-    "category": "en",
-    "tags": [
-      "local delicacies",
-      "indigenous cuisine",
-      "regional specialties",
-      "Taiwan food map",
-      "folk culture"
-    ],
-    "url": "https://taiwan.md/en/Food/local-street-food-map-of-taiwan",
-    "readingTime": 73,
-    "featured": true,
-    "date": "2026-03-20",
-    "path": "en/Food/local-street-food-map-of-taiwan.md"
-  },
-  {
-    "title": "Religion and Folk Beliefs",
-    "description": "",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Lifestyle/religion-and-folk-beliefs",
-    "readingTime": 47,
-    "featured": false,
-    "date": "2026-03-17",
-    "path": "en/Lifestyle/religion-and-folk-beliefs.md"
-  },
-  {
-    "title": "Sylvia Chang (張艾嘉)",
-    "description": "A cross-disciplinary icon of Chinese-language cinema—actor, director, screenwriter, and singer for over five decades",
-    "category": "en",
-    "tags": [
-      "film",
-      "director",
-      "actor",
-      "singer",
-      "screenwriter"
-    ],
-    "url": "https://taiwan.md/en/People/sylvia-chang",
-    "readingTime": 24,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "en/People/sylvia-chang.md"
-  },
-  {
-    "title": "Du Congming: Founder of Modern Medicine in Taiwan",
-    "description": "Taiwan's first medical doctor and father of modern medicine in Taiwan",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/People/du-congming-founder-of-modern-medicine-in-taiwan",
-    "readingTime": 30,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "en/People/du-congming-founder-of-modern-medicine-in-taiwan.md"
-  },
-  {
-    "title": "科技園區發展",
-    "description": "從竹科到南科，探討台灣科學園區的發展歷程與三大園區的獨特定位",
-    "category": "Technology",
-    "tags": [
-      "科學園區",
-      "竹科",
-      "中科",
-      "南科",
-      "高科技產業",
-      "產業聚落"
-    ],
-    "url": "https://taiwan.md/Technology/%E7%A7%91%E6%8A%80%E5%9C%92%E5%8D%80%E7%99%BC%E5%B1%95",
-    "readingTime": 11,
-    "featured": true,
-    "date": "2026-03-18",
-    "path": "Technology/科技園區發展.md"
-  },
-  {
-    "title": "Clash of Civilizations on Keyboards: A Century of East Asian Input Method Evolution",
-    "description": "When keyboards worldwide look identical, how do different civilizations fit their scripts into 26 English letters? From Taiwan's Zhuyin to Korea's Dubeolsik, input methods are a silent cultural preservation battle",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Technology/east-asian-input-methods",
-    "readingTime": 61,
-    "featured": true,
-    "date": "2026-03-19",
-    "path": "en/Technology/east-asian-input-methods.md"
-  },
-  {
-    "title": "Taiwan Bread and Baking",
-    "description": "From Wu Pao-Chun’s world championship to 85°C’s global expansion, Taiwan’s baking scene blends local flavors with international technique.",
-    "category": "en",
-    "tags": [
-      "bread",
-      "baking",
-      "Wu Pao-Chun",
-      "Taiwan-style bread",
-      "85C"
-    ],
-    "url": "https://taiwan.md/en/Food/taiwan-bread-and-baking",
-    "readingTime": 24,
-    "featured": false,
-    "date": "2026-03-19",
-    "path": "en/Food/taiwan-bread-and-baking.md"
-  },
-  {
-    "title": "台灣太空產業發展：從福衛計畫到商業太空時代",
-    "description": "台灣太空產業從早期福衛衛星發展，到近年福衛八號量產化，以及立方衛星計畫推動商業太空供應鏈的發展歷程",
-    "category": "Technology",
-    "tags": [
-      "太空產業",
-      "衛星",
-      "TASA",
-      "福衛",
-      "太空科技",
-      "商業太空"
-    ],
-    "url": "https://taiwan.md/Technology/%E5%8F%B0%E7%81%A3%E5%A4%AA%E7%A9%BA%E7%94%A2%E6%A5%AD%E7%99%BC%E5%B1%95",
-    "readingTime": 20,
-    "featured": true,
-    "date": "2026-03-18",
-    "path": "Technology/台灣太空產業發展.md"
-  },
-  {
-    "title": "Taiwan Marine Ecology and Coral Reef Conservation",
-    "description": "Taiwan, surrounded by ocean waters, possesses rich marine ecosystems. From coral bleaching crises to cetacean conservation, exploring the protection effectiveness and future challenges of marine national parks",
-    "category": "en",
-    "tags": [
-      "marine ecology",
-      "coral reef conservation",
-      "cetacean conservation",
-      "marine national parks",
-      "marine protected areas",
-      "biodiversity"
-    ],
-    "url": "https://taiwan.md/en/Nature/taiwan-marine-ecology-coral-reef-conservation",
-    "readingTime": 72,
-    "featured": false,
-    "date": "2026-03-20",
-    "path": "en/Nature/taiwan-marine-ecology-coral-reef-conservation.md"
-  },
-  {
-    "title": "白先勇",
-    "description": "《台北人》作者，現代文學大師與崑曲復興推手",
+    "title": "幾米",
+    "description": "用繪本溫暖世界的插畫詩人，讓台灣繪本走上國際舞台",
     "category": "People",
     "tags": [
       "人物",
-      "白先勇",
-      "現代文學",
-      "台北人",
-      "孽子",
-      "崑曲",
-      "文學大師"
+      "繪本作家",
+      "插畫",
+      "文學",
+      "血癌",
+      "宜蘭",
+      "電影改編"
     ],
-    "url": "https://taiwan.md/People/%E7%99%BD%E5%85%88%E5%8B%87",
-    "readingTime": 7,
-    "featured": true,
+    "url": "https://taiwan.md/People/%E5%B9%BE%E7%B1%B3",
+    "readingTime": 8,
+    "featured": false,
     "date": "2026-03-19",
-    "path": "People/白先勇.md"
+    "path": "People/幾米.md"
   },
   {
-    "title": "Chuang Chih-yuan",
-    "description": "Table tennis legend, four-time Olympian, the solitary warrior who conquered European professional leagues",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/People/chuang-chih-yuan-table-tennis-legend",
-    "readingTime": 25,
+    "title": "王齊麟與李洋（麟洋配）",
+    "description": "台灣羽球男雙組合，2021 東京奧運金牌，台灣羽球史上首面奧運金牌",
+    "category": "People",
+    "tags": [
+      "人物",
+      "王齊麟",
+      "李洋",
+      "麟洋配",
+      "羽球",
+      "奧運",
+      "金牌",
+      "運動員",
+      "台灣"
+    ],
+    "url": "https://taiwan.md/People/%E9%BA%9F%E6%B4%8B%E9%85%8D",
+    "readingTime": 11,
+    "featured": false,
+    "date": "2026-03-19",
+    "path": "People/麟洋配.md"
+  },
+  {
+    "title": "台灣水庫與水資源管理",
+    "description": "從缺水危機到水庫淤積，台灣水資源的挑戰與南北分配不均的困境",
+    "category": "Geography",
+    "tags": [
+      "水資源",
+      "水庫",
+      "缺水",
+      "水利工程",
+      "氣候變遷"
+    ],
+    "url": "https://taiwan.md/Geography/%E5%8F%B0%E7%81%A3%E6%B0%B4%E5%BA%AB%E8%88%87%E6%B0%B4%E8%B3%87%E6%BA%90%E7%AE%A1%E7%90%86",
+    "readingTime": 23,
     "featured": false,
     "date": "2026-03-20",
-    "path": "en/People/chuang-chih-yuan-table-tennis-legend.md"
+    "path": "Geography/台灣水庫與水資源管理.md"
+  },
+  {
+    "title": "台灣麵食文化",
+    "description": "從擔仔麵到牛肉麵，從陽春麵到乾拌麵，台灣麵食文化融合閩南、外省與創新元素，形成獨特的麵條飲食傳統",
+    "category": "Food",
+    "tags": [
+      "麵食",
+      "飲食文化",
+      "台灣料理",
+      "外省菜",
+      "閩南菜"
+    ],
+    "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E9%BA%B5%E9%A3%9F%E6%96%87%E5%8C%96",
+    "readingTime": 8,
+    "featured": false,
+    "date": "2026-03-20",
+    "path": "Food/台灣麵食文化.md"
+  },
+  {
+    "title": "台灣海洋生態",
+    "description": "黑潮、珊瑚礁與海洋生物多樣性：台灣海域的生態奇蹟與保育挑戰",
+    "category": "Nature",
+    "tags": [],
+    "url": "https://taiwan.md/Nature/%E5%8F%B0%E7%81%A3%E6%B5%B7%E6%B4%8B%E7%94%9F%E6%85%8B",
+    "readingTime": 19,
+    "featured": false,
+    "date": "2026-03-18",
+    "path": "Nature/台灣海洋生態.md"
+  },
+  {
+    "title": "台灣電影",
+    "description": "",
+    "category": "Art",
+    "tags": [
+      "電影",
+      "新浪潮",
+      "藝術"
+    ],
+    "url": "https://taiwan.md/Art/%E5%8F%B0%E7%81%A3%E9%9B%BB%E5%BD%B1",
+    "readingTime": 12,
+    "featured": true,
+    "date": "2026-03-18",
+    "path": "Art/台灣電影.md"
+  },
+  {
+    "title": "台灣遊戲產業與數位娛樂",
+    "description": "從早期代理商到原創開發商，台灣如何在全球遊戲市場中找到自己的聲音",
+    "category": "Technology",
+    "tags": [
+      "遊戲產業",
+      "數位娛樂",
+      "文化創意",
+      "科技業",
+      "獨立遊戲"
+    ],
+    "url": "https://taiwan.md/Technology/%E5%8F%B0%E7%81%A3%E9%81%8A%E6%88%B2%E7%94%A2%E6%A5%AD%E8%88%87%E6%95%B8%E4%BD%8D%E5%A8%9B%E6%A8%82",
+    "readingTime": 12,
+    "featured": true,
+    "date": "2026-03-18",
+    "path": "Technology/台灣遊戲產業與數位娛樂.md"
+  },
+  {
+    "title": "台灣邦交國與國際外交",
+    "description": "從 70 國到 12 國，台灣如何在沒有聯合國席位的情況下維持國際存在感",
+    "category": "Society",
+    "tags": [
+      "外交",
+      "邦交國",
+      "國際關係",
+      "兩岸",
+      "聯合國"
+    ],
+    "url": "https://taiwan.md/Society/%E5%8F%B0%E7%81%A3%E9%82%A6%E4%BA%A4%E5%9C%8B%E8%88%87%E5%9C%8B%E9%9A%9B%E5%A4%96%E4%BA%A4",
+    "readingTime": 18,
+    "featured": true,
+    "date": "2026-03-19",
+    "path": "Society/台灣邦交國與國際外交.md"
+  },
+  {
+    "title": "民主化",
+    "description": "台灣民主化的成功經驗具有重大的歷史與現實意義。它證明了華人社會完全可以建立成熟的民主制度，為全球第三波民主化提供了重要案例。更重要的是，這個轉型過程全程以和平手段進行，沒有經歷大規模暴力衝突，為其他威權國家的民主化提供了珍貴的參考經驗。",
+    "category": "History",
+    "tags": [
+      "歷史",
+      "民主化",
+      "政治"
+    ],
+    "url": "https://taiwan.md/History/%E6%B0%91%E4%B8%BB%E5%8C%96",
+    "readingTime": 10,
+    "featured": true,
+    "date": "2026-03-17",
+    "path": "History/民主化.md"
+  },
+  {
+    "title": "地形與地質",
+    "description": "台灣島複雜多樣的地形地貌，板塊運動造就的五大山脈與豐富地質景觀",
+    "category": "Geography",
+    "tags": [
+      "地理",
+      "地質",
+      "山脈",
+      "板塊運動",
+      "地震",
+      "溫泉"
+    ],
+    "url": "https://taiwan.md/Geography/%E5%9C%B0%E5%BD%A2%E8%88%87%E5%9C%B0%E8%B3%AA",
+    "readingTime": 12,
+    "featured": false,
+    "date": "2026-03-17",
+    "path": "Geography/地形與地質.md"
+  },
+  {
+    "title": "台灣穿山甲",
+    "description": "全世界被走私最多的哺乳動物，在台灣找到了一個安全的家",
+    "category": "Nature",
+    "tags": [
+      "穿山甲",
+      "保育",
+      "瀕危物種",
+      "走私",
+      "台北動物園",
+      "生態"
+    ],
+    "url": "https://taiwan.md/Nature/%E5%8F%B0%E7%81%A3%E7%A9%BF%E5%B1%B1%E7%94%B2",
+    "readingTime": 11,
+    "featured": false,
+    "date": "2026-03-19",
+    "path": "Nature/台灣穿山甲.md"
+  },
+  {
+    "title": "台灣原住民生態智慧與環境保育",
+    "description": "探討台灣原住民族數千年來累積的傳統生態知識，以及在現代環境保育中的重要價值與實踐方式",
+    "category": "Nature",
+    "tags": [
+      "原住民族",
+      "生態智慧",
+      "環境保育",
+      "傳統知識",
+      "里山倡議",
+      "狩獵文化",
+      "永續發展"
+    ],
+    "url": "https://taiwan.md/Nature/%E5%8F%B0%E7%81%A3%E5%8E%9F%E4%BD%8F%E6%B0%91%E7%94%9F%E6%85%8B%E6%99%BA%E6%85%A7%E8%88%87%E7%92%B0%E5%A2%83%E4%BF%9D%E8%82%B2",
+    "readingTime": 21,
+    "featured": false,
+    "date": "2026-03-20",
+    "path": "Nature/台灣原住民生態智慧與環境保育.md"
+  },
+  {
+    "title": "台灣豆漿與早餐店",
+    "description": "從永和豆漿的起源神話到美而美加盟王國，探索台灣早餐店的密度傳奇",
+    "category": "Food",
+    "tags": [
+      "豆漿",
+      "早餐店",
+      "永和豆漿",
+      "燒餅油條",
+      "美而美"
+    ],
+    "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E8%B1%86%E6%BC%BF%E8%88%87%E6%97%A9%E9%A4%90%E5%BA%97",
+    "readingTime": 10,
+    "featured": true,
+    "date": "2026-03-19",
+    "path": "Food/台灣豆漿與早餐店.md"
+  },
+  {
+    "title": "民主制度",
+    "description": "台灣從威權統治走向民主制度的歷程，透過解嚴、總統直選等階段建立完整的民主體制",
+    "category": "Society",
+    "tags": [
+      "Society",
+      "民主化",
+      "解嚴",
+      "總統直選"
+    ],
+    "url": "https://taiwan.md/Society/%E6%B0%91%E4%B8%BB%E5%88%B6%E5%BA%A6",
+    "readingTime": 7,
+    "featured": false,
+    "date": "2026-03-17",
+    "path": "Society/民主制度.md"
+  },
+  {
+    "title": "楊德昌",
+    "description": "台灣新電影運動核心人物，坎城最佳導演，都市疏離的詩人",
+    "category": "People",
+    "tags": [
+      "導演",
+      "台灣新電影",
+      "楊德昌",
+      "坎城影展",
+      "都市電影"
+    ],
+    "url": "https://taiwan.md/People/%E6%A5%8A%E5%BE%B7%E6%98%8C",
+    "readingTime": 9,
+    "featured": true,
+    "date": "2026-03-19",
+    "path": "People/楊德昌.md"
+  },
+  {
+    "title": "人權與性別平等",
+    "description": "台灣在人權保障與性別平等方面的進步歷程，從威權體制下的人權侵害到成為亞洲人權先驅",
+    "category": "Society",
+    "tags": [
+      "Society",
+      "人權",
+      "性別平等",
+      "同性婚姻",
+      "轉型正義"
+    ],
+    "url": "https://taiwan.md/Society/%E4%BA%BA%E6%AC%8A%E8%88%87%E6%80%A7%E5%88%A5%E5%B9%B3%E7%AD%89",
+    "readingTime": 8,
+    "featured": false,
+    "date": "2026-03-17",
+    "path": "Society/人權與性別平等.md"
+  },
+  {
+    "title": "戰後台灣文學",
+    "description": "",
+    "category": "Art",
+    "tags": [
+      "文學",
+      "戰後",
+      "鄉土文學"
+    ],
+    "url": "https://taiwan.md/Art/%E6%88%B0%E5%BE%8C%E5%8F%B0%E7%81%A3%E6%96%87%E5%AD%B8",
+    "readingTime": 21,
+    "featured": false,
+    "date": "2026-03-18",
+    "path": "Art/戰後台灣文學.md"
+  },
+  {
+    "title": "台灣辦桌文化",
+    "description": "從農村慶典到都市宴會，總鋪師的拿手絕活與社區黏著劑的辦桌精神",
+    "category": "Food",
+    "tags": [
+      "辦桌",
+      "總鋪師",
+      "流水席",
+      "台式宴席",
+      "社區文化",
+      "傳統技藝"
+    ],
+    "url": "https://taiwan.md/Food/%E5%8F%B0%E7%81%A3%E8%BE%A6%E6%A1%8C%E6%96%87%E5%8C%96",
+    "readingTime": 13,
+    "featured": false,
+    "date": "2026-03-18",
+    "path": "Food/台灣辦桌文化.md"
+  },
+  {
+    "title": "林書豪",
+    "description": "從哈佛學霸到NBA總冠軍，引爆全球林來瘋的台裔美國球員",
+    "category": "People",
+    "tags": [
+      "人物",
+      "籃球",
+      "台裔美國人",
+      "NBA",
+      "林來瘋",
+      "哈佛大學"
+    ],
+    "url": "https://taiwan.md/People/%E6%9E%97%E6%9B%B8%E8%B1%AA",
+    "readingTime": 8,
+    "featured": true,
+    "date": "2026-03-19",
+    "path": "People/林書豪.md"
+  },
+  {
+    "title": "離島與海洋文化",
+    "description": "從澎湖玄武岩到蘭嶼飛魚祭，台灣離島如何孕育獨特的海洋文明",
+    "category": "Geography",
+    "tags": [
+      "離島",
+      "海洋文化",
+      "澎湖",
+      "金門",
+      "馬祖",
+      "綠島",
+      "蘭嶼",
+      "小琉球"
+    ],
+    "url": "https://taiwan.md/Geography/%E9%9B%A2%E5%B3%B6%E8%88%87%E6%B5%B7%E6%B4%8B%E6%96%87%E5%8C%96",
+    "readingTime": 17,
+    "featured": true,
+    "date": "2026-03-18",
+    "path": "Geography/離島與海洋文化.md"
   }
 ]

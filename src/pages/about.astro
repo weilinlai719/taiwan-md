@@ -266,6 +266,29 @@ import ProticoScript from '../components/ProticoScript.astro';
       <div class="section-inner">
         <h2 class="section-title">創辦人與協作團隊</h2>
 
+        <div class="project-stats">
+          <div class="stat-item">
+            <span class="stat-number">660+</span>
+            <span class="stat-label">頁面</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">106</span>
+            <span class="stat-label">國家</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">600+</span>
+            <span class="stat-label">GitHub Stars</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">23+</span>
+            <span class="stat-label">貢獻者</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">60K+</span>
+            <span class="stat-label">使用者</span>
+          </div>
+        </div>
+
         <blockquote class="founder-quote standalone-quote">
           「即使有時候我們在國際上被刁難，或是處境比較危險，我以我的國家為榮，以台灣為榮。越往外走，就越深地發現——我們的家其實就很美好。」
           <cite>— 哲宇</cite>
@@ -336,10 +359,6 @@ import ProticoScript from '../components/ProticoScript.astro';
           <a href="https://cheyuwu.com" target="_blank" class="link-inline">
             <span class="link-icon">🌐</span>
             <span class="link-text">cheyuwu.com</span>
-          </a>
-          <a href="https://muse.cheyuwu.com" target="_blank" class="link-inline">
-            <span class="link-icon">🫧</span>
-            <span class="link-text">muse.cheyuwu.com</span>
           </a>
           <a href="https://github.com/frank890417" target="_blank" class="link-inline">
             <span class="link-icon">💻</span>
@@ -1193,6 +1212,44 @@ import ProticoScript from '../components/ProticoScript.astro';
     color: #1f2937;
     line-height: 1.4;
     margin: 0;
+  }
+
+  /* Project Stats */
+  .project-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e40af;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-weight: 500;
+  }
+
+  @media (max-width: 480px) {
+    .project-stats {
+      gap: 1rem;
+    }
+    .stat-number {
+      font-size: 1.5rem;
+    }
   }
 
   /* Standalone Quote */
