@@ -110,9 +110,8 @@ const i18n = {
     map: isEn ? 'Map' : '地圖',
     about: isEn ? 'About' : '關於',
     contribute: isEn ? 'Contribute' : '貢獻',
-    resources: isEn ? 'Resources' : '資源',
+    resources: isEn ? 'Resources & Projects' : '🔗 資源與專案',
     data: isEn ? 'Data Taiwan' : '📊 數據台灣',
-    projects: isEn ? 'Projects' : '專案',
   },
   footer: {
     explore: isEn ? 'Explore' : '探索',
@@ -194,7 +193,6 @@ const navConfig = [
   { path: '/contribute', label: i18n.nav.contribute },
   { path: '/resources', label: i18n.nav.resources },
   { path: '/data', label: i18n.nav.data },
-  { path: '/projects', label: i18n.nav.projects },
 ].map((item) => {
   const fullPath = isEn ? `/en${item.path}` : item.path;
   const pathWithoutHash = fullPath.replace(/#.*$/, '');
