@@ -67,6 +67,20 @@ Surviving night markets are undergoing "fewer but better" transformation.
 
 Taichung government promotes "star rating certification," with nearly half of Fengjia vendors achieving three-star status. Ningxia Night Market is praised as "Taiwan's top night market," pursuing refinement to attract international tourists.
 
+## A Marketing Empire with Zero Budget
+
+But the night market's most remarkable survival mechanism isn't government certification—it's an entirely self-organizing review and advertising network.
+
+No vendor can afford an ad agency. They don't need one. Taiwan's food YouTubers and Instagram influencers show up on their own—because night markets are inherently great content. A "Top 10 Must-Eat Stalls at Shilin Night Market" video easily hits a million views, costs virtually nothing to produce, and outperforms any TV commercial.
+
+Then there's Google Maps reviews. Taiwanese people's devotion to "how many Google stars" might be the highest in the world. Once a night market stall accumulates a 4.5-star rating with over a thousand reviews, it essentially has a free, permanent billboard. Vendors don't need to understand algorithms—their customers do the work for them.
+
+The final piece is queuing itself. When Taiwanese people see a line, their instinct isn't "too long, forget it"—it's "must be good." The queue is social proof, free street advertising, and a self-reinforcing loop: the longer the line, the more people want to join it.
+
+Influencer videos → Google review accumulation → queuing crowds → more influencers showing up. Nobody designed this system. Nobody manages it. Yet it's more effective than any branded marketing strategy.
+
+This is probably the world's largest "zero-budget marketing ecosystem."
+
 ## A Global Tourism Policy Miracle
 
 Here lies Taiwan night markets' true uniqueness: they're embedded in core government tourism policy.
