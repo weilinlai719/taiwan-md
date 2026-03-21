@@ -1,0 +1,109 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<section class="contribute" aria-labelledby="contribute-heading">
+  <div class="contribute-content">
+    <h2 id="contribute-heading">{t('home.contribute.heading')}</h2>
+    <p>{t('home.contribute.description')}</p>
+    <div class="contribute-buttons">
+      <a href={translatePath('/contribute')} class="btn btn-primary"
+        >{t('home.contribute.guide')}</a
+      >
+      <a
+        href="https://github.com/frank890417/taiwan-md"
+        class="btn btn-secondary"
+        target="_blank">{t('home.contribute.github')}</a
+      >
+    </div>
+  </div>
+</section>
+
+<style>
+  .contribute {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding: 5rem 2rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contribute::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2394a3b8' fill-opacity='0.05' fill-rule='nonzero'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+  }
+  .contribute-content {
+    position: relative;
+    z-index: 2;
+  }
+  .contribute-content h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    font-weight: 700;
+  }
+  .contribute-content p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+  }
+  .contribute-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  .btn-primary {
+    background: #1e40af;
+    color: white;
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+  }
+  .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(30, 64, 175, 0.4);
+  }
+  .btn-secondary {
+    background: white;
+    color: #1e40af;
+    border: 2px solid #1e40af;
+  }
+  .btn-secondary:hover {
+    background: #1e40af;
+    color: white;
+    transform: translateY(-2px);
+  }
+  @media (max-width: 768px) {
+    .contribute-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

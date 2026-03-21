@@ -1,0 +1,245 @@
+---
+import { useTranslations, getLangFromUrl } from '../../i18n/utils';
+
+interface Props {
+  articlesJson?: string;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { articlesJson } = Astro.props;
+const isEn = lang === 'en';
+---
+
+<section class="random-discovery">
+  <div class="random-discovery-content">
+    <button id="random-discovery-btn" class="random-btn">
+      <span class="random-icon">🎲</span>
+      <span class="random-text">{t('home.random.button')}</span>
+      <span class="random-subtitle">{t('home.random.subtitle')}</span>
+    </button>
+    <p class="random-description">{t('home.random.description')}</p>
+  </div>
+</section>
+
+<script is:inline define:vars={{ articlesJson, isEn }}>
+  document.addEventListener('DOMContentLoaded', async function () {
+    const randomBtn = document.getElementById('random-discovery-btn');
+    let articles = [];
+
+    if (articlesJson) {
+      articles = JSON.parse(articlesJson);
+    } else {
+      // ZH mode: fetch from API
+      var catLabels = {
+        history: '📜 歷史',
+        geography: '🗺️ 地理',
+        culture: '🎭 文化',
+        food: '🍜 美食',
+        art: '🎨 藝術',
+        music: '🎵 音樂',
+        technology: '💻 科技',
+        nature: '🌿 自然',
+        people: '👤 人物',
+        society: '⚖️ 社會',
+        economy: '📈 經濟',
+        lifestyle: '🏮 生活',
+      };
+      try {
+        const res = await fetch('/api/articles.json');
+        if (res.ok) {
+          const raw = await res.json();
+          articles = raw
+            .filter(function (a) {
+              return a.category !== 'en' && !a.url.includes('/en/');
+            })
+            .map(function (a) {
+              var u = a.url
+                .replace('https://taiwan.md', '')
+                .replace(/^\/([^\/]+)/, function (m, p) {
+                  return '/' + p.toLowerCase();
+                });
+              return {
+                title: a.title,
+                url: u,
+                category: catLabels[a.category.toLowerCase()] || a.category,
+              };
+            });
+        }
+      } catch (e) {
+        articles = [];
+      }
+    }
+
+    if (randomBtn && articles.length > 0) {
+      let shuffled = [...articles];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      let currentIndex = 0;
+
+      randomBtn.addEventListener('click', function () {
+        if (currentIndex >= shuffled.length) {
+          currentIndex = 0;
+          for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+          }
+        }
+        const randomArticle = shuffled[currentIndex++];
+        const textEl = randomBtn.querySelector('.random-text');
+        const subtitleEl = randomBtn.querySelector('.random-subtitle');
+        const originalText = textEl.textContent;
+        randomBtn.style.pointerEvents = 'none';
+        let ticks = 0;
+        const totalTicks = 8;
+        const interval = setInterval(function () {
+          const temp = articles[Math.floor(Math.random() * articles.length)];
+          textEl.textContent = temp.title;
+          if (subtitleEl) subtitleEl.textContent = temp.category || '';
+          ticks++;
+          if (ticks >= totalTicks) {
+            clearInterval(interval);
+            textEl.textContent = randomArticle.title;
+            if (subtitleEl)
+              subtitleEl.textContent = randomArticle.category || '';
+            setTimeout(function () {
+              window.location.href = randomArticle.url;
+            }, 600);
+          }
+        }, 100);
+      });
+    }
+  });
+</script>
+
+<style>
+  .random-discovery {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fed7aa 100%);
+    border-radius: 24px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  .random-discovery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f59e0b' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M15 0L20 10L30 15L20 20L15 30L10 20L0 15L10 10Z'/%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+  .random-discovery-content {
+    position: relative;
+    z-index: 2;
+  }
+  .random-btn {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 1.5rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+    margin-bottom: 1.5rem;
+    min-width: 280px;
+    font-family:
+      'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+  }
+  .random-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+  .random-btn:hover::before {
+    left: 100%;
+  }
+  .random-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.4);
+    background: linear-gradient(135deg, #d97706, #b45309);
+  }
+  .random-btn:active {
+    transform: scale(0.95) translateY(-4px);
+  }
+  .random-icon {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    animation: dice-roll 2s ease-in-out infinite;
+  }
+  @keyframes dice-roll {
+    0%,
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(5deg) scale(1.05);
+    }
+    50% {
+      transform: rotate(-5deg) scale(1.1);
+    }
+    75% {
+      transform: rotate(3deg) scale(1.05);
+    }
+  }
+  .random-text {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+  }
+  .random-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .random-description {
+    color: #92400e;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  @media (max-width: 480px) {
+    .random-discovery {
+      margin: 3rem 1rem;
+      padding: 2rem 1rem;
+    }
+    .random-btn {
+      min-width: 250px;
+      padding: 1.2rem 2rem;
+      font-size: 1.1rem;
+    }
+    .random-text {
+      font-size: 1.1rem;
+    }
+    .random-subtitle {
+      font-size: 0.85rem;
+    }
+  }
+</style>

@@ -1,0 +1,182 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from '../../i18n/utils';
+import { commitIcon, timeAgo } from '../../lib/commits';
+
+interface Props {
+  commits: { hash: string; date: string; message: string }[];
+}
+
+const { commits } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+{
+  commits.length > 0 && (
+    <section class="recent-updates">
+      <div class="updates-inner">
+        <div class="updates-header">
+          <h2>{t('home.updates.heading')}</h2>
+          <p class="updates-subtitle">{t('home.updates.subtitle')}</p>
+        </div>
+        <div class="updates-list">
+          {commits.map((commit) => (
+            <a
+              href={`https://github.com/frank890417/taiwan-md/commit/${commit.hash}`}
+              target="_blank"
+              class="update-item"
+            >
+              <span class="update-icon">{commitIcon(commit.message)}</span>
+              <span class="update-message">{commit.message}</span>
+              <span class="update-time">{timeAgo(commit.date, lang)}</span>
+            </a>
+          ))}
+        </div>
+        <div class="updates-footer">
+          <a href={translatePath('/changelog')} class="updates-more-btn">
+            {t('home.updates.viewAll')}
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .recent-updates {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  .updates-inner {
+    background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%);
+    border-radius: 20px;
+    border: 1px solid #e0f2fe;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .updates-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(
+      circle,
+      rgba(59, 130, 246, 0.05) 0%,
+      transparent 70%
+    );
+  }
+  .updates-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+  .updates-header h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+    font-family:
+      'jf-lanyanghei', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+  }
+  .updates-subtitle {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 500;
+  }
+  .updates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .update-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: inherit;
+  }
+  .update-item:hover {
+    border-color: #bfdbfe;
+    background: #f0f9ff;
+    transform: translateX(4px);
+  }
+  .update-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .update-message {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #1f2937;
+    font-weight: 600;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .update-time {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    color: #94a3b8;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .updates-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  .updates-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.6rem 1.5rem;
+    background: #1e3a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .updates-more-btn:hover {
+    background: #1e40af;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+  }
+  @media (max-width: 768px) {
+    .recent-updates {
+      padding: 0 1rem;
+      margin: 3rem auto;
+    }
+    .updates-inner {
+      padding: 1.5rem;
+    }
+    .updates-header h2 {
+      font-size: 1.5rem;
+    }
+    .update-message {
+      font-size: 0.85rem;
+    }
+  }
+</style>

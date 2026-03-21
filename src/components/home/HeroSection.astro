@@ -1,0 +1,388 @@
+---
+import { useTranslations, getLangFromUrl } from '../../i18n/utils';
+import HeroStats from '../HeroStats.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="taiwan-mountains"></div>
+    <svg class="taiwan-silhouette" viewBox="0 0 100 100" aria-hidden="true">
+      <path
+        d="M30 20 C 35 18 40 20 42 25 C 44 30 46 35 48 40 C 50 45 52 50 50 55 C 48 60 46 65 44 70 C 42 75 40 80 35 82 C 30 84 25 82 22 78 C 19 74 20 69 21 64 C 22 59 24 54 26 49 C 28 44 29 39 30 34 C 31 29 30 24 30 20 Z"
+        fill="rgba(34, 197, 94, 0.08)"
+        stroke="rgba(34, 197, 94, 0.15)"
+        stroke-width="0.5"></path>
+    </svg>
+    <div class="flowing-gradient"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="title-text">Taiwan.md</span>
+      <span class="title-glow"></span>
+    </h1>
+    <h2 class="hero-subtitle">{t('home.hero.subtitle')}</h2>
+    <p class="hero-description">
+      {t('home.hero.description')}<br />
+      <span class="highlight">{t('home.hero.highlight')}</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#categories" class="btn-cta primary">
+        <span>{t('home.hero.cta.explore')}</span>
+        <svg
+          class="cta-arrow"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+      <a
+        href="https://github.com/frank890417/taiwan-md"
+        target="_blank"
+        class="btn-cta secondary"
+      >
+        <svg
+          class="github-icon"
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+          ></path>
+        </svg>
+        <span>⭐ Star on GitHub</span>
+      </a>
+    </div>
+    {
+      lang === 'zh-TW' && (
+        <div class="hero-transparency">
+          <p>
+            {t('home.hero.transparency')}
+            <a
+              href="https://github.com/frank890417/taiwan-md/issues"
+              target="_blank"
+            >
+              {t('home.hero.transparency.link')}
+            </a>
+          </p>
+        </div>
+      )
+    }
+    <HeroStats />
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 8rem 0 6rem;
+    background: linear-gradient(
+      180deg,
+      #2d5016 0%,
+      #4a7c28 30%,
+      #6b9b3a 60%,
+      #87ceeb 100%
+    );
+    color: white;
+    margin: -2rem 0 0;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(
+        circle at 30% 20%,
+        rgba(255, 255, 255, 0.05) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 70% 80%,
+        rgba(107, 155, 58, 0.1) 0%,
+        transparent 50%
+      );
+    z-index: 1;
+  }
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .taiwan-mountains {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background:
+      radial-gradient(
+        ellipse 1000px 100px at 5% 100%,
+        rgba(61, 79, 47, 0.1) 0%,
+        transparent 80%
+      ),
+      radial-gradient(
+        ellipse 800px 120px at 15% 100%,
+        rgba(61, 79, 47, 0.15) 0%,
+        transparent 75%
+      ),
+      radial-gradient(
+        ellipse 700px 160px at 35% 100%,
+        rgba(90, 114, 71, 0.2) 0%,
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 600px 180px at 55% 100%,
+        rgba(90, 114, 71, 0.25) 0%,
+        transparent 65%
+      ),
+      radial-gradient(
+        ellipse 500px 200px at 70% 100%,
+        rgba(143, 188, 107, 0.3) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 400px 220px at 85% 100%,
+        rgba(143, 188, 107, 0.35) 0%,
+        transparent 55%
+      );
+  }
+  .taiwan-silhouette {
+    position: absolute;
+    top: 15%;
+    right: 8%;
+    width: 180px;
+    height: 180px;
+    opacity: 0.15;
+    filter: drop-shadow(0 0 10px rgba(143, 188, 107, 0.2));
+  }
+  .flowing-gradient {
+    display: none;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .hero-title {
+    position: relative;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: 'jf-kamabit', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: white;
+  }
+  .title-text {
+    position: relative;
+    color: white;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  .title-glow {
+    display: none;
+  }
+  .hero-subtitle {
+    font-family:
+      'jf-lanyangming', 'Noto Serif TC', 'Source Han Serif TC', serif;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  .hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  .hero-description br {
+    margin-bottom: 0.5rem;
+  }
+  .highlight {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .hero-transparency {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .hero-transparency p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+  .hero-transparency a {
+    color: rgba(171, 196, 104, 0.8);
+    text-decoration: underline;
+  }
+  .hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .btn-cta {
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+  .btn-cta.primary {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2d5016;
+    border: none;
+  }
+  .btn-cta.primary:hover {
+    background: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .btn-cta.secondary {
+    background: transparent;
+    color: white;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+  }
+  .btn-cta.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-1px);
+  }
+  .cta-arrow {
+    transition: all 0.3s ease;
+  }
+  .btn-cta.primary:hover .cta-arrow {
+    transform: translateX(3px);
+  }
+  .btn-cta.secondary:hover .github-icon {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1024px) {
+    .hero-title {
+      font-size: 5rem;
+    }
+    .hero-subtitle {
+      font-size: 2.4rem;
+    }
+    .taiwan-silhouette {
+      width: 160px;
+      height: 160px;
+    }
+  }
+  @media (max-width: 768px) {
+    .hero {
+      padding: 5rem 1rem;
+      min-height: auto;
+    }
+    .hero-content {
+      padding: 0 1rem;
+    }
+    .hero-title {
+      font-size: 3.5rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+    .hero-subtitle {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .hero-description {
+      font-size: 1.1rem;
+      padding: 0;
+      margin-bottom: 3rem;
+      max-width: 100%;
+    }
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .btn-cta {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      padding: 1.3rem 2.5rem;
+      font-size: 1.1rem;
+    }
+    .taiwan-silhouette {
+      width: 120px;
+      height: 120px;
+      top: 10%;
+      right: 5%;
+      opacity: 0.2;
+    }
+    .taiwan-mountains {
+      height: 35%;
+    }
+  }
+  @media (max-width: 480px) {
+    .hero {
+      padding: 3rem 0.5rem;
+      min-height: auto;
+    }
+    .hero-title {
+      font-size: 2.8rem;
+    }
+    .hero-subtitle {
+      font-size: 1.6rem;
+    }
+    .hero-description {
+      font-size: 1rem;
+    }
+    .btn-cta {
+      padding: 1.2rem 2rem;
+      font-size: 1rem;
+    }
+    .taiwan-silhouette {
+      width: 100px;
+      height: 100px;
+      opacity: 0.15;
+    }
+  }
+</style>

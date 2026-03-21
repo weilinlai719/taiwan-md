@@ -1,0 +1,63 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const langSwitchHref = lang === 'zh-TW' ? '/en' : '/';
+---
+
+<section class="language-statement">
+  <div class="language-inner">
+    <h3>{t('home.lang.heading')}</h3>
+    <p set:html={t('home.lang.p1')} />
+    <p>{t('home.lang.p2')}</p>
+    <p>
+      {t('home.lang.p3.prefix')}<a href={langSwitchHref}
+        >{t('home.lang.p3.linkText')}</a
+      >{t('home.lang.p3.suffix')}
+    </p>
+    <p class="language-en"><em>{t('home.lang.en')}</em></p>
+  </div>
+</section>
+
+<style>
+  .language-statement {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #fefce8, #fff7ed);
+    border-radius: 16px;
+    border-left: 4px solid #d97706;
+  }
+  .language-inner h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #92400e;
+    font-family:
+      'jf-lanyangming', 'Noto Serif TC', 'Source Han Serif TC', serif;
+    font-weight: 300;
+  }
+  .language-inner p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #44403c;
+    margin-bottom: 0.75rem;
+  }
+  .language-inner a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .language-en {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e7e5e4;
+    color: #78716c;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  @media (max-width: 768px) {
+    .language-statement {
+      margin: 0 1rem 4rem;
+    }
+  }
+</style>

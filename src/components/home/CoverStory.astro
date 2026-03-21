@@ -1,0 +1,213 @@
+---
+import {
+  useTranslations,
+  getLangFromUrl,
+  useTranslatedPath,
+} from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const quotes = [
+  {
+    eraKey: 'home.cover.era.indigenous' as const,
+    quoteKey: 'home.cover.quote.indigenous' as const,
+    citeKey: 'home.cover.cite.indigenous' as const,
+  },
+  {
+    era: '1584',
+    quoteKey: 'home.cover.quote.1584' as const,
+    citeKey: 'home.cover.cite.1584' as const,
+  },
+  {
+    era: '1697',
+    quoteKey: 'home.cover.quote.1697' as const,
+    citeKey: 'home.cover.cite.1697' as const,
+  },
+  {
+    era: '1926',
+    quoteKey: 'home.cover.quote.1926' as const,
+    citeKey: 'home.cover.cite.1926' as const,
+  },
+  {
+    era: '1946',
+    quoteKey: 'home.cover.quote.1946' as const,
+    citeKey: 'home.cover.cite.1946' as const,
+  },
+  {
+    era: '2013',
+    quoteKey: 'home.cover.quote.2013' as const,
+    citeKey: 'home.cover.cite.2013' as const,
+  },
+  {
+    eraKey: 'home.cover.era.contemporary' as const,
+    quoteKey: 'home.cover.quote.contemporary' as const,
+    citeKey: 'home.cover.cite.contemporary' as const,
+  },
+];
+---
+
+<section class="cover-story">
+  <div class="cover-content">
+    <h2>{t('home.cover.heading')}</h2>
+    <p class="cover-lead">
+      {t('home.cover.lead')}<br />
+      {t('home.cover.lead2')}
+    </p>
+    <div class="quotes-timeline">
+      {
+        quotes.map((q) => (
+          <div class="quote-era">
+            <span class="era-label">
+              {'eraKey' in q && q.eraKey ? t(q.eraKey) : q.era}
+            </span>
+            <blockquote>
+              {t(q.quoteKey)}
+              <cite>{t(q.citeKey)}</cite>
+            </blockquote>
+          </div>
+        ))
+      }
+    </div>
+    <div class="cover-closing">
+      <p>{t('home.cover.closing1')}</p>
+      <p>
+        <strong>{t('home.cover.closing2')}</strong>
+        {t('home.cover.closing3')}
+      </p>
+      <a href={translatePath('/about')} class="cover-link"
+        >{t('home.cover.link')}</a
+      >
+    </div>
+  </div>
+</section>
+
+<style>
+  .cover-story {
+    padding: 6rem 2rem;
+    background: #fafbfc;
+  }
+  .cover-content {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .cover-content h2 {
+    font-family:
+      'jf-lanyangming', 'Noto Serif TC', 'Source Han Serif TC', serif;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0;
+  }
+  .cover-lead {
+    text-align: center;
+    font-family:
+      'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+    font-size: 1.1rem;
+    color: #475569;
+    line-height: 2;
+    margin-bottom: 3rem;
+    font-weight: 600;
+  }
+  .quotes-timeline {
+    position: relative;
+    padding-left: 3rem;
+  }
+  .quotes-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #e2e8f0, #3b82f6, #059669, #e2e8f0);
+  }
+  .quote-era {
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+  .quote-era::before {
+    content: '';
+    position: absolute;
+    left: -2.35rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    background: #3b82f6;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #3b82f6;
+  }
+  .quote-era:nth-child(even)::before {
+    background: #059669;
+    box-shadow: 0 0 0 2px #059669;
+  }
+  .quote-era:last-child::before {
+    background: #fbbf24;
+    box-shadow: 0 0 0 2px #fbbf24;
+  }
+  .era-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #3b82f6;
+    margin-bottom: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    background: #eff6ff;
+    border-radius: 4px;
+  }
+  .quote-era:nth-child(even) .era-label {
+    color: #059669;
+    background: #ecfdf5;
+  }
+  .quote-era:last-child .era-label {
+    color: #b45309;
+    background: #fffbeb;
+  }
+  .quote-era blockquote {
+    margin: 0;
+    font-family:
+      'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #1e293b;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .quote-era cite {
+    display: block;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-style: normal;
+    margin-top: 0.4rem;
+  }
+  .cover-closing {
+    margin-top: 3rem;
+    text-align: center;
+    font-family:
+      'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #475569;
+  }
+  .cover-closing strong {
+    color: #1a1a2e;
+  }
+  .cover-closing p {
+    margin-bottom: 1rem;
+  }
+  .cover-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .cover-link:hover {
+    text-decoration: underline;
+  }
+</style>

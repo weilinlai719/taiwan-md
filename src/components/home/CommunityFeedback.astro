@@ -1,0 +1,202 @@
+---
+interface Props {
+  feedbacks: { name: string; text: string }[];
+}
+const { feedbacks } = Astro.props;
+const row1 = feedbacks.filter((_: any, i: number) => i % 3 === 0);
+const row2 = feedbacks.filter((_: any, i: number) => i % 3 === 1);
+const row3 = feedbacks.filter((_: any, i: number) => i % 3 === 2);
+---
+
+<section class="community-feedback" aria-labelledby="feedback-heading">
+  <div class="feedback-header">
+    <h2 id="feedback-heading">來自社群的聲音</h2>
+    <p>真實使用者的回饋</p>
+  </div>
+  <div class="feedback-marquee">
+    <div class="feedback-row feedback-row-left">
+      <div class="feedback-track">
+        {
+          row1.map((f) => (
+            <div class="feedback-bubble">
+              <div class="bubble-text">{f.text}</div>
+              <div class="bubble-name">{f.name}</div>
+            </div>
+          ))
+        }
+        {
+          row1.map((f) => (
+            <div class="feedback-bubble" aria-hidden="true">
+              <div class="bubble-text">{f.text}</div>
+              <div class="bubble-name">{f.name}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="feedback-row feedback-row-right">
+      <div class="feedback-track">
+        {
+          row2.map((f) => (
+            <div class="feedback-bubble">
+              <div class="bubble-text">{f.text}</div>
+              <div class="bubble-name">{f.name}</div>
+            </div>
+          ))
+        }
+        {
+          row2.map((f) => (
+            <div class="feedback-bubble" aria-hidden="true">
+              <div class="bubble-text">{f.text}</div>
+              <div class="bubble-name">{f.name}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="feedback-row feedback-row-left">
+      <div class="feedback-track">
+        {
+          row3.map((f) => (
+            <div class="feedback-bubble">
+              <div class="bubble-text">{f.text}</div>
+              <div class="bubble-name">{f.name}</div>
+            </div>
+          ))
+        }
+        {
+          row3.map((f) => (
+            <div class="feedback-bubble" aria-hidden="true">
+              <div class="bubble-text">{f.text}</div>
+              <div class="bubble-name">{f.name}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .community-feedback {
+    padding: 5rem 0 3rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+  .feedback-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .feedback-header h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family:
+      'jf-lanyangming', 'Noto Serif TC', 'Source Han Serif TC', serif;
+  }
+  .feedback-header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+  }
+  .feedback-marquee {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .feedback-row {
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5%,
+      black 95%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5%,
+      black 95%,
+      transparent
+    );
+  }
+  .feedback-track {
+    display: flex;
+    gap: 1.2rem;
+    width: max-content;
+  }
+  .feedback-row-left .feedback-track {
+    animation: marquee-left 100s linear infinite;
+  }
+  .feedback-row-right .feedback-track {
+    animation: marquee-right 90s linear infinite;
+  }
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .feedback-bubble {
+    flex-shrink: 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1rem 1.4rem;
+    max-width: 360px;
+    backdrop-filter: blur(4px);
+  }
+  .feedback-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 24px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid rgba(255, 255, 255, 0.08);
+  }
+  .bubble-text {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .bubble-name {
+    margin-top: 0.6rem;
+    color: #7dd3fc;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .community-feedback {
+      padding: 3rem 0 2rem;
+    }
+    .feedback-header h2 {
+      font-size: 1.5rem;
+    }
+    .feedback-bubble {
+      padding: 0.75rem 1rem;
+      max-width: 280px;
+      border-radius: 0.75rem;
+    }
+    .bubble-text {
+      font-size: 0.85rem;
+    }
+    .bubble-name {
+      font-size: 0.75rem;
+    }
+  }
+</style>

@@ -1,0 +1,107 @@
+---
+import { useTranslations, getLangFromUrl } from '../../i18n/utils';
+import CategoryGrid from '../CategoryGrid.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const isEn = lang === 'en';
+---
+
+<section class="categories" id="categories">
+  <div class="categories-header">
+    <h2 class="section-title">{t('home.categories.heading')}</h2>
+  </div>
+
+  <div class="explore-prose">
+    <slot name="prose" />
+  </div>
+
+  <div class="section-divider">
+    <div class="divider-line"></div>
+    <span class="divider-text">{t('home.categories.divider')}</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <CategoryGrid lang={isEn ? 'en' : undefined} />
+</section>
+
+<style>
+  .categories {
+    margin: 6rem 0;
+  }
+  .categories-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .explore-prose {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+    font-family:
+      'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+    line-height: 2.2;
+  }
+  .explore-prose :global(p) {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .explore-prose :global(a) {
+    color: #1f2937;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 700;
+  }
+  .explore-prose :global(a.topic-pill) {
+    display: inline-block;
+    background: rgba(45, 80, 22, 0.08);
+    border: 1.5px solid rgba(45, 80, 22, 0.2);
+    border-radius: 6px;
+    padding: 0.15rem 0.6rem;
+    font-weight: 700;
+    color: #2d5016;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+  .explore-prose :global(a.topic-pill:hover) {
+    background: rgba(45, 80, 22, 0.15);
+    border-color: rgba(45, 80, 22, 0.4);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(45, 80, 22, 0.15);
+  }
+  .explore-prose :global(a:hover) {
+    color: #2d5016;
+  }
+  .section-divider {
+    display: flex;
+    align-items: center;
+    margin: 4rem auto;
+    max-width: 600px;
+    padding: 0 2rem;
+  }
+  .divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d1d5db, transparent);
+  }
+  .divider-text {
+    padding: 0 2rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  @media (max-width: 480px) {
+    .explore-prose {
+      padding: 0 1rem;
+    }
+    .explore-prose :global(p) {
+      font-size: 1rem;
+    }
+    .section-divider {
+      padding: 0 1rem;
+    }
+  }
+</style>
