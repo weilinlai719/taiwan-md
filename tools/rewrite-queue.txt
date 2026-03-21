@@ -1,7 +1,3 @@
-
-art/台灣建築.md
-about/創辦人.md
-society/環保與永續發展.md
 society/台灣長期照顧制度發展.md
 society/台灣同婚與性別平權.md
 people/齊柏林.md
