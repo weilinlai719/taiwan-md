@@ -27,9 +27,9 @@ export const aboutUI = {
     'about.stats.pages.label': 'Pages',
     'about.stats.countries.number': '106',
     'about.stats.countries.label': 'Countries',
-    'about.stats.stars.number': '690+',
+    'about.stats.stars.number': '700',
     'about.stats.stars.label': 'GitHub Stars',
-    'about.stats.contributors.number': '21+',
+    'about.stats.contributors.number': '24+',
     'about.stats.contributors.label': 'Contributors',
     'about.stats.users.number': '60K+',
     'about.stats.users.label': 'Users',
@@ -104,6 +104,12 @@ export const aboutUI = {
       'Milestone: 56,000 Users・106 Countries・660+ Pages',
     'about.timeline.2026-03-20.desc.html':
       "On the third day after launch, GA4 accumulated <strong>56,000 active users</strong> and <strong>134,000 page views</strong>, from <strong>106 countries</strong> — from Bhutan to Vanuatu, the world is reading Taiwan. GitHub broke <strong>600 stars</strong>, with <strong>23 contributors</strong> joining. The knowledge base expanded to <strong>660+ pages</strong> (321 Chinese + 339 English), covering 12 major categories and 105 Taiwanese figures. The Facebook post's community effect continued to ferment, with the semiconductor industry becoming the most popular single article.",
+
+    'about.timeline.2026-03-22.date': '2026 / 03 / 22',
+    'about.timeline.2026-03-22.title':
+      '🎉 700 Stars・Interactive Map・D3 Visualization・AI Contribution System',
+    'about.timeline.2026-03-22.desc.html':
+      'GitHub reached <strong>700 stars</strong> with <strong>24 contributors</strong>. Major features launched: <strong>interactive Taiwan map</strong> (county filtering, marker previews, curated routes), <strong>Food Hub D3 visualizations</strong> (flavor wheel + relationship graph for 29 Taiwanese dishes), <strong>Changelog with relative timestamps</strong>, and a unified <strong>"Ask Your AI" contribution system</strong> — paste one prompt to ChatGPT/Claude/Gemini to write or translate articles following editorial standards. All food images replaced with <strong>real Wikimedia Commons photos</strong>. Spanish knowledge base launched with 46 articles.',
 
     'about.timeline.ongoing.date': 'Ongoing',
     'about.timeline.ongoing.title': 'From Personal SSOT to National SSOT',
@@ -332,6 +338,12 @@ export const aboutUI = {
       '里程碑：56,000 使用者 ・ 106 國 ・ 660+ 頁面',
     'about.timeline.2026-03-20.desc.html':
       '上線第三天，GA4 累計 <strong>56,000 活躍使用者</strong>、<strong>134,000 頁面瀏覽</strong>，來自 <strong>106 個國家</strong>——從不丹到萬那杜，世界正在讀台灣。GitHub 突破 <strong>600 Stars</strong>，<strong>23 位貢獻者</strong>加入。知識庫擴展至 <strong>660+ 頁面</strong>（321 中文 + 339 英文），涵蓋 12 大分類、105 位台灣人物。Facebook 貼文的社群效應持續發酵，半導體產業成為最受歡迎的單篇文章。',
+
+    'about.timeline.2026-03-22.date': '2026 / 03 / 22',
+    'about.timeline.2026-03-22.title':
+      '🎉 700 Stars ・ 互動地圖 ・ D3 視覺化 ・ AI 貢獻系統',
+    'about.timeline.2026-03-22.desc.html':
+      'GitHub 達到 <strong>700 Stars</strong>，<strong>24 位貢獻者</strong>。重大功能上線：<strong>互動式台灣地圖</strong>（縣市過濾、地標預覽、四條策展路線）、<strong>美食 D3 互動視覺化</strong>（風味輪 + 關係圖，29 道台灣料理可視化探索）、<strong>Changelog 相對時間顯示</strong>，以及統一的<strong>「貼給你的 AI」貢獻系統</strong>——複製一段 Prompt 給 ChatGPT / Claude / Gemini，AI 會引導你依照編輯標準寫文章或翻譯。全部美食照片替換為 <strong>Wikimedia Commons 實拍圖</strong>。西班牙文知識庫上線，46 篇文章。',
 
     'about.timeline.ongoing.date': '持續進行中',
     'about.timeline.ongoing.title': '從個人 SSOT 到國家 SSOT',
