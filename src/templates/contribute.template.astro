@@ -567,86 +567,6 @@ const t = useTranslations(lang);
     </section>
   </div>
 
-  <!-- i18n Progress Section - Position 9 -->
-  <section class="i18n-progress-section">
-    <div class="i18n-inner">
-      <h2>{t('contribute.i18n.title')}</h2>
-      <p class="i18n-desc">
-        {
-          t('contribute.i18n.desc').replace(
-            '{coverage}',
-            i18nProgress.coverage_en.toString(),
-          )
-        }
-      </p>
-
-      <div class="progress-overview">
-        <div class="progress-main">
-          <h3>{t('contribute.i18n.english')}</h3>
-          <div class="progress-bar">
-            <div
-              class="progress-fill english"
-              style={`width: ${i18nProgress.coverage_en}%`}
-            >
-              {i18nProgress.coverage_en}%
-            </div>
-          </div>
-          <p class="progress-detail">
-            {i18nProgress.total_en} / {i18nProgress.total_zh}
-            {t('contribute.i18n.articles')}
-          </p>
-        </div>
-
-        <div class="progress-other">
-          <div class="progress-item">
-            <span>{t('contribute.i18n.japanese')}</span>
-            <div class="progress-bar empty">
-              <div class="progress-fill" style="width: 0%">0%</div>
-            </div>
-          </div>
-          <div class="progress-item">
-            <span>{t('contribute.i18n.korean')}</span>
-            <div class="progress-bar empty">
-              <div class="progress-fill" style="width: 0%">0%</div>
-            </div>
-          </div>
-          <div class="progress-item">
-            <span>{t('contribute.i18n.spanish')}</span>
-            <div class="progress-bar empty">
-              <div class="progress-fill" style="width: 0%">0%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="category-breakdown">
-        <h3>{t('contribute.i18n.category.title')}</h3>
-        <div class="category-grid">
-          {
-            Object.entries(i18nProgress.categories)
-              .filter(([cat]) => cat !== 'root')
-              .map(([category, counts]) => (
-                <div class="category-item">
-                  <span class="category-name">{category}</span>
-                  <div class="category-progress">
-                    <div class="progress-bar mini">
-                      <div
-                        class="progress-fill"
-                        style={`width: ${counts.zh ? (counts.en / counts.zh) * 100 : 0}%`}
-                      />
-                    </div>
-                    <span class="category-count">
-                      {counts.en}/{counts.zh}
-                    </span>
-                  </div>
-                </div>
-              ))
-          }
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Token Donation Section - Position 8 -->
   <section class="token-donation" id="token-donation">
     <div class="token-inner">
@@ -726,6 +646,86 @@ const t = useTranslations(lang);
           <strong>{t('contribute.token.note.p2')}</strong>
         </p>
         <p set:html={t('contribute.token.note.p3.html')} />
+      </div>
+    </div>
+  </section>
+
+  <!-- i18n Progress Section - Position 9 -->
+  <section class="i18n-progress-section">
+    <div class="i18n-inner">
+      <h2>{t('contribute.i18n.title')}</h2>
+      <p class="i18n-desc">
+        {
+          t('contribute.i18n.desc').replace(
+            '{coverage}',
+            i18nProgress.coverage_en.toString(),
+          )
+        }
+      </p>
+
+      <div class="progress-overview">
+        <div class="progress-main">
+          <h3>{t('contribute.i18n.english')}</h3>
+          <div class="progress-bar">
+            <div
+              class="progress-fill english"
+              style={`width: ${i18nProgress.coverage_en}%`}
+            >
+              {i18nProgress.coverage_en}%
+            </div>
+          </div>
+          <p class="progress-detail">
+            {i18nProgress.total_en} / {i18nProgress.total_zh}
+            {t('contribute.i18n.articles')}
+          </p>
+        </div>
+
+        <div class="progress-other">
+          <div class="progress-item">
+            <span>{t('contribute.i18n.japanese')}</span>
+            <div class="progress-bar empty">
+              <div class="progress-fill" style="width: 0%">0%</div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <span>{t('contribute.i18n.korean')}</span>
+            <div class="progress-bar empty">
+              <div class="progress-fill" style="width: 0%">0%</div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <span>{t('contribute.i18n.spanish')}</span>
+            <div class="progress-bar empty">
+              <div class="progress-fill" style="width: 0%">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-breakdown">
+        <h3>{t('contribute.i18n.category.title')}</h3>
+        <div class="category-grid">
+          {
+            Object.entries(i18nProgress.categories)
+              .filter(([cat]) => cat !== 'root')
+              .map(([category, counts]) => (
+                <div class="category-item">
+                  <span class="category-name">{category}</span>
+                  <div class="category-progress">
+                    <div class="progress-bar mini">
+                      <div
+                        class="progress-fill"
+                        style={`width: ${counts.zh ? (counts.en / counts.zh) * 100 : 0}%`}
+                      />
+                    </div>
+                    <span class="category-count">
+                      {counts.en}/{counts.zh}
+                    </span>
+                  </div>
+                </div>
+              ))
+          }
+        </div>
       </div>
     </div>
   </section>
