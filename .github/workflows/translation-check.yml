@@ -1,0 +1,109 @@
+name: Translation PR Check
+
+on:
+  pull_request:
+    paths:
+      - 'knowledge/en/**'
+      - 'knowledge/es/**'
+      - 'knowledge/ja/**'
+      - 'knowledge/ko/**'
+      - 'knowledge/fr/**'
+      - 'knowledge/de/**'
+      - 'knowledge/vi/**'
+
+jobs:
+  check-translation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check translation format
+        run: |
+          echo "🔍 Checking translation files..."
+          
+          ERRORS=0
+          
+          # Get changed translation files
+          FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -- 'knowledge/en/' 'knowledge/es/' 'knowledge/ja/' 'knowledge/ko/' 'knowledge/fr/' 'knowledge/de/' 'knowledge/vi/' 2>/dev/null || echo "")
+          
+          if [ -z "$FILES" ]; then
+            echo "No translation files changed."
+            exit 0
+          fi
+          
+          for FILE in $FILES; do
+            echo ""
+            echo "📄 Checking: $FILE"
+            
+            if [ ! -f "$FILE" ]; then
+              echo "  ⚠️ File not found (deleted?), skipping"
+              continue
+            fi
+            
+            # Check frontmatter exists
+            if ! head -1 "$FILE" | grep -q '^---$'; then
+              echo "  ❌ Missing frontmatter (must start with ---)"
+              ERRORS=$((ERRORS + 1))
+            fi
+            
+            # Check title in frontmatter
+            if ! grep -q "^title:" "$FILE"; then
+              echo "  ❌ Missing title in frontmatter"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "  ✅ Has title"
+            fi
+            
+            # Check description in frontmatter
+            if ! grep -q "^description:" "$FILE"; then
+              echo "  ⚠️ Missing description (recommended)"
+            else
+              echo "  ✅ Has description"
+            fi
+            
+            # Check category in frontmatter
+            if ! grep -q "^category:" "$FILE"; then
+              echo "  ⚠️ Missing category (recommended)"
+            fi
+            
+            # Check minimum content length (at least 50 lines for real article)
+            LINES=$(wc -l < "$FILE")
+            if [ "$LINES" -lt 20 ]; then
+              echo "  ❌ Too short ($LINES lines, minimum 20)"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "  ✅ Length OK ($LINES lines)"
+            fi
+            
+            # Check file is in correct directory structure
+            LANG=$(echo "$FILE" | sed 's|knowledge/\([^/]*\)/.*|\1|')
+            if ! echo "$LANG" | grep -qE '^(en|es|ja|ko|fr|de|vi|pt|th|id|ar)$'; then
+              echo "  ❌ Unknown language directory: $LANG"
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "  ✅ Language: $LANG"
+            fi
+            
+            # Check for Chinese source exists
+            CATEGORY=$(echo "$FILE" | sed "s|knowledge/$LANG/\([^/]*\)/.*|\1|")
+            echo "  📂 Category: $CATEGORY"
+            
+            # Warn about potential issues
+            if grep -qi "province of china\|part of china\|chinese taipei" "$FILE" 2>/dev/null; then
+              echo "  ❌ Contains problematic Taiwan reference"
+              ERRORS=$((ERRORS + 1))
+            fi
+            
+            if grep -qi "aborigines" "$FILE" 2>/dev/null; then
+              echo "  ⚠️ Uses 'aborigines' — prefer 'Indigenous peoples'"
+            fi
+          done
+          
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━"
+          if [ $ERRORS -gt 0 ]; then
+            echo "❌ Found $ERRORS error(s). Please fix before merge."
+            exit 1
+          else
+            echo "✅ All translation checks passed!"
+          fi

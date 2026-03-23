@@ -116,13 +116,28 @@
 
 ---
 
-## 🤝 翻譯後的 PR 流程
+## 🤝 提交方式（三條路，PR 優先）
 
-1. Fork repo → 新增翻譯檔案
-2. PR 標題：`translate(es): 珍珠奶茶 → bubble-tea`
-3. 描述裡說明你用了什麼 AI + 你是否為母語者
-4. Maintainer 審核（通常 24h 內）
-5. Merge 🎉
+### 🥇 GitHub PR（推薦！零人工介入）
+
+1. 在 GitHub 點 `Add file` → `Create new file`
+2. 路徑：`knowledge/{lang}/{Category}/{slug}.md`
+3. 貼上翻譯內容
+4. Commit message：`translate(es): 珍珠奶茶 → bubble-tea`
+5. 選 `Create a new branch and start a pull request`
+6. PR 描述寫：用了什麼 AI + 是否母語者
+7. **自動觸發審核 → Merge** 🎉
+
+### 🥈 GitHub Issue（不會 Git 也行）
+
+1. [開新 Issue](https://github.com/frank890417/taiwan-md/issues/new)
+2. 標題：`translate(ja): 牛肉麵 → beef-noodle-soup`
+3. 內容：貼完整 `.md` 檔案
+4. 維護者會幫你轉成 PR
+
+### 🥉 Email（最後手段）
+
+寄到 cheyu.wu@monoame.com，附完整 `.md` 檔案
 
 ---
 
