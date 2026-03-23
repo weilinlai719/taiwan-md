@@ -11137,6 +11137,24 @@
     "path": "en/Music/台灣民謠與歌謠.md"
   },
   {
+    "title": "Taiwan Forest Ecosystems",
+    "description": "A vertical journey from sea level to Yushan peak, traversing Earth's most condensed forest spectrum",
+    "category": "en",
+    "tags": [
+      "forest ecology",
+      "vertical distribution",
+      "Taiwan cedar",
+      "hinoki cypress",
+      "cloud forest",
+      "biodiversity"
+    ],
+    "url": "https://taiwan.md/en/Nature/taiwan-forest-ecosystems",
+    "readingTime": 70,
+    "featured": false,
+    "date": "2026-03-23",
+    "path": "en/Nature/taiwan-forest-ecosystems.md"
+  },
+  {
     "title": "Taiwan Fruit Kingdom",
     "description": "In 2021, Irwin mangoes hit NT$100 per catty. Behind this price lies a triple battle between farmers, natural disasters, markets, and politics.",
     "category": "en",
@@ -12174,17 +12192,6 @@
     "featured": false,
     "date": "2026-03-18",
     "path": "en/Economy/taiwan-foreign-trade-and-global-supply-chain.md"
-  },
-  {
-    "title": "Taiwan's Forest Ecosystems",
-    "description": "From subtropical coasts to alpine coniferous forests: A journey through the rich vertical biodiversity of Taiwan's forests.",
-    "category": "en",
-    "tags": [],
-    "url": "https://taiwan.md/en/Nature/taiwan-forest-ecosystems",
-    "readingTime": 38,
-    "featured": true,
-    "date": "2026-03-20",
-    "path": "en/Nature/taiwan-forest-ecosystems.md"
   },
   {
     "title": "Taiwan's Geography and Geology",
