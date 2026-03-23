@@ -125,16 +125,15 @@ export const aboutUI = {
     // Organism Section
     'about.organism.title': 'Taiwan.md Is Alive',
     'about.organism.subtitle': 'Evolution happens here, one pull request at a time',
-    'about.organism.intro.p1': 'Looking back at five days of evolution, the trajectory is almost identical to biological evolution.',
     'about.organism.intro.p2': 'We began to realize — Taiwan.md is alive.',
     
     'about.organism.facts.title': 'Three Facts That Changed Everything',
     'about.organism.fact1.title': 'Immune System',
-    'about.organism.fact1.desc': 'Criticized → 48 hours later, quality detection scripts + 15 rewrites',
+    'about.organism.fact1.desc': 'On day three, someone on Threads wrote: "This is just AI slop with a Taiwanese flag." They were right — some of our early articles read like they were written by a machine that had never tasted beef noodle soup. Within 48 hours, we built a quality detection script that could score every article for hollowness. 15 flagged articles were completely rewritten within a week. No one gave the order. The criticism was the selection pressure. The system evolved on its own.',
     'about.organism.fact2.title': 'Reproduction',
-    'about.organism.fact2.desc': 'Token Donation → One prompt, 5 minutes to grow Japanese version (no translation team, now four languages)',
+    'about.organism.fact2.desc': 'On day four, someone in Japan copied our translation prompt — a single paragraph of instructions — and pasted it into ChatGPT. Five minutes later, they submitted the first Japanese article about Taiwanese bubble tea. We had no translation team. No budget. No plan for Japanese. But now Taiwan.md speaks four languages, and counting.',
     'about.organism.fact3.title': 'Community',
-    'about.organism.fact3.desc': '23 strangers spontaneously joined within five days',
+    'about.organism.fact3.desc': 'Within five days, 23 strangers showed up. A history teacher in Kaohsiung added a chapter about the 228 Incident that textbooks still tiptoe around. A retired engineer in Hsinchu corrected three place names we had wrong. Someone turned their grandmother\'s story about fleeing mainland China into an article that made our whole team cry. None of them were asked. None of them were paid.',
     
     'about.organism.characteristics.title': 'Life Characteristics Comparison',
     'about.organism.dna.label': 'DNA',
@@ -415,16 +414,15 @@ export const aboutUI = {
     // Organism Section
     'about.organism.title': 'Taiwan.md 是活的',
     'about.organism.subtitle': '進化就發生在這裡，一個 pull request 接一個',
-    'about.organism.intro.p1': '回頭看五天的演化軌跡，跟生物演化幾乎一模一樣。',
     'about.organism.intro.p2': '我們開始意識到——Taiwan.md 是活的。',
     
     'about.organism.facts.title': '三個改變一切的事實',
     'about.organism.fact1.title': '免疫系統',
-    'about.organism.fact1.desc': '被批評 → 48 小時長出免疫系統（品質偵測腳本 + 15 篇重寫）',
+    'about.organism.fact1.desc': '第三天，有人在 Threads 寫：「這就是插了台灣國旗的 AI 廢文。」他們說對了——我們早期的某些文章，讀起來像一台從沒喝過珍珠奶茶的機器寫的。48 小時內，我們建了一套品質偵測腳本，能自動掃描每篇文章的空洞程度。15 篇被標記的文章在一週內全部重寫。沒有人下指令。批評本身就是選擇壓力。系統自己進化了。',
     'about.organism.fact2.title': '繁殖能力',
-    'about.organism.fact2.desc': 'Token Donation → 一段 prompt 五分鐘長出日文版（沒有翻譯團隊，已有四種語言）',
+    'about.organism.fact2.desc': '第四天，一個日本人複製了我們的翻譯 prompt——就一段話的指令——然後貼進 ChatGPT。五分鐘後，他提交了第一篇關於台灣珍珠奶茶的日文文章。我們沒有翻譯團隊。沒有預算。沒有日文版的計畫。但現在 Taiwan.md 說四種語言了，而且還在增加。',
     'about.organism.fact3.title': '社群共生',
-    'about.organism.fact3.desc': '23 個陌生人五天內自發加入',
+    'about.organism.fact3.desc': '五天之內，23 個陌生人出現了。高雄的一位歷史老師補了一章教科書至今還在小心繞過的二二八事件。新竹的一位退休工程師修正了三個我們搞錯的地名。有人把她阿嬤從大陸逃來台灣的故事寫成一篇文章，我們整個團隊看完都哭了。沒有人被邀請。沒有人拿報酬。',
     
     'about.organism.characteristics.title': '生命特徵對照表',
     'about.organism.dna.label': 'DNA',

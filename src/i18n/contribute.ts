@@ -454,9 +454,9 @@ export const contributeUI = {
 
     // Digital Organism Section
     'contribute.organism.title': '🧬 Taiwan.md Is More Than a Website',
-    'contribute.organism.fact1.html': 'On day three, someone said our articles read like AI slop. 48 hours later, a quality detection script was live, and 15 flagged articles were completely rewritten within a week. No one gave the order — selection pressure appeared, and the system evolved on its own.',
-    'contribute.organism.fact2.html': 'On day four, someone in Japan pasted our translation prompt to their AI. Five minutes later, the first Japanese article was submitted. No translation team, but now there are four languages.',
-    'contribute.organism.fact3.html': 'Within five days, 23 strangers spontaneously joined and wrote down the Taiwan they know. Someone added history that textbooks never taught. Someone corrected a place name we got wrong. Someone turned their grandmother\'s story into an article.',
+    'contribute.organism.fact1.html': 'On day three, someone on Threads wrote: "This is just AI slop with a Taiwanese flag." They were right. Within 48 hours, we built a quality detection script that scores every article for hollowness. 15 flagged articles were completely rewritten. No one gave the order. The criticism was the selection pressure. The system evolved on its own.',
+    'contribute.organism.fact2.html': 'On day four, someone in Japan copied our translation prompt — a single paragraph — and pasted it into ChatGPT. Five minutes later, the first Japanese article about bubble tea was submitted. No translation team. No budget. But now Taiwan.md speaks four languages.',
+    'contribute.organism.fact3.html': 'Within five days, 23 strangers showed up. A history teacher added chapters textbooks still tiptoe around. A retired engineer corrected place names we got wrong. Someone turned their grandmother\'s story into an article that made our whole team cry. None were asked. None were paid.',
     'contribute.organism.alive.html': '<strong>We began to realize — Taiwan.md is alive.</strong>',
     'contribute.organism.traits.html': 'It has DNA (writing standards inherited by every new article). An immune system (automatically detects hollow content). Metabolism (low-quality content gets digested and rewritten). Reproduction (one prompt grows a new language version). Memory (Git remembers every change).',
     'contribute.organism.reef.html': '<strong>Taiwan.md is a digital coral reef.</strong> Coral provides structure, algae provides energy, fish bring diversity, ocean currents bring nutrients. No single species "owns" a coral reef — it emerges from all life together.',
@@ -898,9 +898,9 @@ export const contributeUI = {
 
     // Digital Organism Section
     'contribute.organism.title': '🧬 Taiwan.md 不只是一個網站',
-    'contribute.organism.fact1.html': '第三天，有人說我們的文章像 AI 寫的廢文。48 小時後，品質偵測腳本上線，15 篇被標記的文章一週內全部重寫。沒有人下指令，選擇壓力出現，系統自己進化了。',
-    'contribute.organism.fact2.html': '第四天，一個日本人把我們的翻譯 prompt 貼給 AI，五分鐘後提交了第一篇日文文章。沒有翻譯團隊，但現在已經有四種語言。',
-    'contribute.organism.fact3.html': '五天之內，23 個陌生人自發加入，寫下他們知道的台灣。有人補充了教科書沒寫的歷史，有人修正了我們搞錯的地名，有人把自己阿嬤的故事變成一篇文章。',
+    'contribute.organism.fact1.html': '第三天，有人在 Threads 寫：「這就是插了台灣國旗的 AI 廢文。」他們說對了。48 小時內，我們建了品質偵測腳本，自動掃描每篇文章的空洞程度。15 篇被標記的文章全部重寫。沒有人下指令。批評本身就是選擇壓力。系統自己進化了。',
+    'contribute.organism.fact2.html': '第四天，一個日本人複製了我們的翻譯 prompt——就一段話——貼進 ChatGPT。五分鐘後，第一篇關於珍珠奶茶的日文文章提交了。沒有翻譯團隊，沒有預算。但現在 Taiwan.md 說四種語言了。',
+    'contribute.organism.fact3.html': '五天之內，23 個陌生人出現了。高雄的歷史老師補了教科書至今還在繞過的篇章。退休工程師修正了我們搞錯的地名。有人把她阿嬤的故事寫成文章，我們整個團隊看完都哭了。沒有人被邀請。沒有人拿報酬。',
     'contribute.organism.alive.html': '<strong>我們開始意識到——Taiwan.md 是活的。</strong>',
     'contribute.organism.traits.html': '它有 DNA（寫作標準會遺傳給每一篇新文章）。有免疫系統（自動偵測空洞內容）。有代謝（低品質的內容會被消化、重寫）。有繁殖能力（一段 prompt 就能長出新的語言版本）。有記憶（Git 記住每一次改變）。',
     'contribute.organism.reef.html': '<strong>Taiwan.md 是一座數位的珊瑚礁。</strong>珊瑚提供結構，藻類提供能量，魚群帶來多樣性，洋流帶來養分。沒有任何單一物種「擁有」珊瑚礁——它是所有生命共同湧現的結果。',
