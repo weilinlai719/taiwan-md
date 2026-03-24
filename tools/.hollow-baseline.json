@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "timestamp": "2026-03-24T11:43:21Z",
+  "timestamp": "2026-03-24T12:10:47Z",
   "total": 438,
   "flagged": 157,
   "files": [
@@ -65,7 +65,7 @@
     {"file": "food/台灣手搖飲文化.md", "score": 5},
     {"file": "food/台灣新住民美食融合.md", "score": 4},
     {"file": "food/台灣早餐文化.md", "score": 6},
-    {"file": "food/台灣水果王國.md", "score": 9},
+    {"file": "food/台灣水果王國.md", "score": 4},
     {"file": "food/台灣海鮮文化.md", "score": 4},
     {"file": "food/台灣素食文化.md", "score": 5},
     {"file": "food/台灣醬料與調味.md", "score": 7},
