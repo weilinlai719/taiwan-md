@@ -44,13 +44,13 @@ Taiwan.md is an open-source, curated, AI-friendly knowledge base that helps the 
 | Metric                   | Count |
 | ------------------------ | ----- |
 | 📄 Total pages built     | 660+  |
-| 🇹🇼 Chinese articles      | 419 |
-| 🇺🇸 English articles      | 411  |
+| 🇹🇼 Chinese articles      | 445 |
+| 🇺🇸 English articles      | 488  |
 | 📂 Categories            | 12    |
 | 🏛️ Hub pages             | 12    |
 | 🕸️ Knowledge graph nodes | 220+  |
 | 🔗 Resource websites     | 146+  |
-| 👥 Contributors          | 24    |
+| 👥 Contributors          | 30    |
 
 ---
 
