@@ -3,8 +3,8 @@ title: 'André Chiang: Taiwanese Culinary Innovator'
 description: "Taiwan's international celebrity chef, top 50 world restaurants chef, RAW founder, globally renowned for his 'Octaphilosophy'"
 date: 2026-03-19
 tags:
-subcategory: 'Food & Craft'
   ['People', 'André Chiang', 'Chef', 'Michelin', 'RAW', 'Culinary', 'Taiwan']
+subcategory: 'Food & Craft'
 lastVerified: 2026-03-19
 ---
 

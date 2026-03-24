@@ -1,6 +1,6 @@
 ---
-title: 'Huang Kuo-chen: Teaching Taiwan's Children to "Understand" Not Just "Finish Reading"'
-description: 'Founder of Pin Xue Tang, promoting reading literacy education in Taiwan, working to change the educational predicament of "good at tests but bad at thinking"'
+title: "Huang Kuo-chen: Teaching Taiwan's Children to 'Understand' Not Just 'Finish Reading'"
+description: "Founder of Pin Xue Tang, promoting reading literacy education in Taiwan, working to change the educational predicament of 'good at tests but bad at thinking'"
 date: 2026-03-20
 tags: ['Education', 'Reading Literacy', 'Pin Xue Tang', 'Reading Comprehension', 'Educational Innovation', 'Literacy Education']
 subcategory: 'Education & Society'

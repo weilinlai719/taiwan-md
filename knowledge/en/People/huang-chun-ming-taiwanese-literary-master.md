@@ -1,8 +1,8 @@
 ---
 title: 'Huang Chun-ming: Master of Taiwanese Literary Humanism'
-description: 'Author of "The Sandwich Man" and "The Days of Looking at the Sea," representative writer of Yilan nativist literature and chronicler of ordinary people\'s lives'
+description: 'Author of "The Sandwich Man" and "The Days of Looking at the Sea," representative writer of Yilan nativist literature and chronicler of ordinary people''s lives'
 date: 2026-03-19
-tags: [people, Huang Chun-ming, The Sandwich Man, The Days of Looking at the Sea, nativist literature, Yilan, ordinary people]
+tags: ['Taiwan history', 'book collector', 'Huang Zhen-nan', 'Taiwanese history', 'Living Water Bookstore']
 subcategory: 'Literature'
 lastVerified: 2026-03-19
 lastHumanReview: false

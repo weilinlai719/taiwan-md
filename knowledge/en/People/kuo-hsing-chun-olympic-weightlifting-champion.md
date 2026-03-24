@@ -3,7 +3,6 @@ title: 'Kuo Hsing-chun'
 description: "Taiwan's weightlifting goddess, Tokyo 2021 Olympic gold medalist, triple Olympic record holder in the 59kg category"
 date: 2026-03-19
 tags:
-subcategory: 'Sports'
   [
     People,
     Kuo Hsing-chun,
@@ -13,6 +12,7 @@ subcategory: 'Sports'
     Athletes,
     Taiwan,
   ]
+subcategory: 'Sports'
 lastVerified: 2026-03-20
 ---
 

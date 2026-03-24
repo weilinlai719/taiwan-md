@@ -3,7 +3,6 @@ title: 'Chi-Huey Wong: Pioneer of Glycoscience'
 description: 'World-renowned authority in carbohydrate chemistry, former president of Academia Sinica, and Nobel Prize candidate'
 date: 2026-03-20
 tags:
-subcategory: 'Science & Academia'
   [
     'academia',
     'chemistry',
@@ -12,6 +11,7 @@ subcategory: 'Science & Academia'
     'carbohydrate chemistry',
     'Tanvex controversy',
   ]
+subcategory: 'Science & Academia'
 lastVerified: 2026-03-20
 ---
 

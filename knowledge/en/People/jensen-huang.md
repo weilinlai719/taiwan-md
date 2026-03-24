@@ -3,8 +3,8 @@ title: 'Jensen Huang'
 description: 'Co-founder and CEO of NVIDIA, the ‘godfather of AI,’ whose vision and Taiwan ties reshaped global computing'
 date: 2026-03-19
 tags:
-subcategory: 'Tech & Business'
   [People, Jensen Huang, NVIDIA, AI, Semiconductors, Technology, Taiwan, Tainan]
+subcategory: 'Tech & Business'
 lastVerified: 2026-03-19
 featured: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Lu Guan-wei: From Medical School to Education Revolutionary'
-description: 'Founder of Taiwan's Khan Academy - how a doctor gave up medicine to democratize education'
+description: "Founder of Taiwan's Khan Academy - how a doctor gave up medicine to democratize education"
 date: 2026-03-20
 tags: ['Education', 'Junyi Academy', 'Online learning', 'Educational technology', 'Social enterprise', 'Rural education']
 subcategory: 'Education & Society'

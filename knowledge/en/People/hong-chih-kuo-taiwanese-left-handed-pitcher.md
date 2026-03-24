@@ -3,7 +3,6 @@ title: "Hong-Chih Kuo: Taiwan's Left-Handed Ace"
 description: "Left-handed pitcher who made his mark in MLB with the Los Angeles Dodgers, representing Taiwan's baseball pride on the international stage"
 date: 2026-03-20
 tags:
-subcategory: 'Sports'
   [
     'sports',
     'baseball',
@@ -12,6 +11,7 @@ subcategory: 'Sports'
     'left-handed pitcher',
     'Taiwan baseball',
   ]
+subcategory: 'Sports'
 lastVerified: 2026-03-20
 ---
 

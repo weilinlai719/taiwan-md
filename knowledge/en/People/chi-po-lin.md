@@ -1,6 +1,6 @@
 ---
 title: 'Chi Po-lin'
-description: 'How a government clerk who couldn\'t afford helicopters on his salary mortgaged his house to create Taiwan\'s most successful documentary'
+description: "How a government clerk who couldn't afford helicopters on his salary mortgaged his house to create Taiwan's most successful documentary"
 date: 2026-03-23
 tags: ['People', 'Chi Po-lin', 'Documentary', 'Beyond Beauty Taiwan', 'Director', 'Photographer', 'Aerial Photography', 'Environment']
 subcategory: 'Arts and Creativity'
