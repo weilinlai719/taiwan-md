@@ -127,10 +127,13 @@ const categoryList = [
                   {item.label} <span class="dropdown-arrow">▾</span>
                 </a>
                 <div class="dropdown-menu">
-                  <a href={translatePath('/graph')} class="dropdown-item dropdown-section-header">
+                  <a
+                    href={translatePath('/graph')}
+                    class="dropdown-item dropdown-section-header"
+                  >
                     🕸️ {t('nav.graph-view')}
                   </a>
-                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-divider" />
                   {categoryList.map((category) => (
                     <a href={category.path} class="dropdown-item">
                       {category.emoji} {category.label}
@@ -150,13 +153,22 @@ const categoryList = [
                   {item.label} <span class="dropdown-arrow">▾</span>
                 </a>
                 <div class="dropdown-menu">
-                  <a href={`${translatePath('/about')}#story`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/about')}#story`}
+                    class="dropdown-item"
+                  >
                     📖 {lang === 'en' ? 'Our Story' : '我們的故事'}
                   </a>
-                  <a href={`${translatePath('/about')}#organism`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/about')}#organism`}
+                    class="dropdown-item"
+                  >
                     🧬 {lang === 'en' ? 'Digital Organism' : '數位生命體'}
                   </a>
-                  <a href={`${translatePath('/about')}#team`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/about')}#team`}
+                    class="dropdown-item"
+                  >
                     👥 {lang === 'en' ? 'Team' : '團隊'}
                   </a>
                   <a href={translatePath('/changelog')} class="dropdown-item">
@@ -176,16 +188,29 @@ const categoryList = [
                   {item.label} <span class="dropdown-arrow">▾</span>
                 </a>
                 <div class="dropdown-menu">
-                  <a href={`${translatePath('/contribute')}#form`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/contribute')}#form`}
+                    class="dropdown-item"
+                  >
                     📝 {lang === 'en' ? 'Submit Article' : '投稿文章'}
                   </a>
-                  <a href={`${translatePath('/contribute')}#token-donation`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/contribute')}#token-donation`}
+                    class="dropdown-item"
+                  >
                     🪙 {lang === 'en' ? 'Donate AI Tokens' : '捐出你的 AI 額度'}
                   </a>
-                  <a href={`${translatePath('/contribute')}#organism`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/contribute')}#organism`}
+                    class="dropdown-item"
+                  >
                     🧬 {lang === 'en' ? 'Why Contribute' : '為什麼參與'}
                   </a>
-                  <a href="https://github.com/frank890417/taiwan-md" target="_blank" class="dropdown-item">
+                  <a
+                    href="https://github.com/frank890417/taiwan-md"
+                    target="_blank"
+                    class="dropdown-item"
+                  >
                     🐙 GitHub
                   </a>
                 </div>
@@ -202,19 +227,34 @@ const categoryList = [
                   {item.label} <span class="dropdown-arrow">▾</span>
                 </a>
                 <div class="dropdown-menu">
-                  <a href={`${translatePath('/data')}#global`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/data')}#global`}
+                    class="dropdown-item"
+                  >
                     🌏 {lang === 'en' ? 'Taiwan vs World' : '台灣 vs 世界'}
                   </a>
-                  <a href={`${translatePath('/data')}#shape`} class="dropdown-item">
-                    🗺️ {lang === 'en' ? 'Taiwan\'s Shape' : '台灣的形狀'}
+                  <a
+                    href={`${translatePath('/data')}#shape`}
+                    class="dropdown-item"
+                  >
+                    🗺️ {lang === 'en' ? "Taiwan's Shape" : '台灣的形狀'}
                   </a>
-                  <a href={`${translatePath('/data')}#democracy`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/data')}#democracy`}
+                    class="dropdown-item"
+                  >
                     📡 {lang === 'en' ? 'Digital Democracy' : '數位民主'}
                   </a>
-                  <a href={`${translatePath('/data')}#opendata`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/data')}#opendata`}
+                    class="dropdown-item"
+                  >
                     📊 {lang === 'en' ? 'Open Data' : '開放資料'}
                   </a>
-                  <a href={`${translatePath('/data')}#enterprise`} class="dropdown-item">
+                  <a
+                    href={`${translatePath('/data')}#enterprise`}
+                    class="dropdown-item"
+                  >
                     🏢 {lang === 'en' ? 'Enterprise Map' : '企業版圖'}
                   </a>
                 </div>
@@ -250,7 +290,10 @@ const categoryList = [
           if (item.path === '/assets') {
             return null;
           }
-          const mobileHref = item.path === '/#categories' ? translatePath('/graph') : item.fullPath;
+          const mobileHref =
+            item.path === '/#categories'
+              ? translatePath('/graph')
+              : item.fullPath;
           return (
             <a
               href={mobileHref}
@@ -384,6 +427,9 @@ const categoryList = [
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   .header-inner {
     max-width: var(--container-wide);
@@ -392,6 +438,12 @@ const categoryList = [
     display: flex;
     align-items: center;
     gap: 1.25rem;
+  }
+
+  @media (min-width: 769px) {
+    .header-inner {
+      padding-right: max(var(--space-page-x), 1.5rem);
+    }
   }
   .logo {
     text-decoration: none;
@@ -649,6 +701,7 @@ const categoryList = [
     padding: 3px;
     flex-shrink: 0;
     box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+    margin-right: 0.5rem;
   }
   .lang-btn {
     padding: 0.4rem 0.8rem;
