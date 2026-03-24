@@ -26,25 +26,35 @@ const LANGS = ['', 'en', 'es', 'ja']; // '' = zh-TW root
 
 const STRICT = process.argv.includes('--strict');
 const CI_MODE = process.argv.includes('--ci');
+const STAGED_MODE = process.argv.includes('--staged');
 // Default: YAML parse errors are hard errors, missing fields are warnings
 // --strict: everything is an error
-// --ci: only validate changed files (git diff vs main)
+// --ci: only validate changed files (git diff HEAD~1)
+// --staged: only validate staged files (git diff --cached, for pre-commit hook)
 
 let errors = [];
 let warnings = [];
 let totalFiles = 0;
 let passedFiles = 0;
 
-// In CI mode, get list of changed .md files in knowledge/
+// In CI/staged mode, get list of changed .md files in knowledge/
 let changedFiles = null;
-if (CI_MODE) {
+if (CI_MODE || STAGED_MODE) {
   try {
     const { execSync } = await import('node:child_process');
-    const diff = execSync('git diff --name-only HEAD~1 -- knowledge/', { encoding: 'utf-8' });
+    const cmd = STAGED_MODE
+      ? 'git diff --cached --name-only --diff-filter=ACM -- knowledge/'
+      : 'git diff --name-only HEAD~1 -- knowledge/';
+    const diff = execSync(cmd, { encoding: 'utf-8' });
     changedFiles = new Set(diff.trim().split('\n').filter(Boolean));
-    console.log(`🔍 CI mode: checking ${changedFiles.size} changed files\n`);
+    const mode = STAGED_MODE ? 'Staged' : 'CI';
+    if (changedFiles.size === 0) {
+      console.log(`🔍 ${mode} mode: no knowledge/ .md files changed, skipping.\n`);
+      process.exit(0);
+    }
+    console.log(`🔍 ${mode} mode: checking ${changedFiles.size} file(s)\n`);
   } catch {
-    console.log('⚠️  CI mode: could not get git diff, checking all files\n');
+    console.log('⚠️  Could not get git diff, checking all files\n');
   }
 }
 
