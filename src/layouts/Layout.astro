@@ -71,7 +71,12 @@ const jfClass = [
       />
     </noscript>
     <title>{title} | Taiwan.md</title>
-    <link rel="alternate" type="application/rss+xml" title="Taiwan.md RSS" href="/rss.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Taiwan.md RSS"
+      href="/rss.xml"
+    />
     <SEO
       title={title}
       description={description}
@@ -296,7 +301,9 @@ const jfClass = [
           var res = await fetch('/api/search-index.json');
           if (res.ok) _searchIdx = await res.json();
           else _searchIdx = [];
-        } catch(e) { _searchIdx = []; }
+        } catch (e) {
+          _searchIdx = [];
+        }
         return _searchIdx;
       }
       function initSearch() {
@@ -383,8 +390,23 @@ const jfClass = [
           if (e.key === 'Escape' && modal.classList.contains('open')) {
             modal.classList.remove('open');
           }
-          // Cmd/Ctrl+K to open
-          if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          // Cmd/Ctrl+K or "/" to open search
+          var shouldOpen = (e.metaKey || e.ctrlKey) && e.key === 'k';
+          if (
+            !shouldOpen &&
+            e.key === '/' &&
+            !modal.classList.contains('open')
+          ) {
+            var tag = (e.target.tagName || '').toLowerCase();
+            if (
+              tag !== 'input' &&
+              tag !== 'textarea' &&
+              !e.target.isContentEditable
+            ) {
+              shouldOpen = true;
+            }
+          }
+          if (shouldOpen) {
             e.preventDefault();
             modal.classList.toggle('open');
             if (modal.classList.contains('open')) {
@@ -523,10 +545,13 @@ const jfClass = [
     --border-soft: 1px solid rgba(148, 163, 184, 0.2);
     /* === Taiwan Typography System === */
     --font-title: 'Noto Serif TC', 'Source Han Serif TC', 'PMingLiU', serif;
-    --font-reading: 'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
-    --font-interface: 'Noto Sans TC', 'Source Han Sans TC', 'PingFang TC', sans-serif;
+    --font-reading:
+      'jf-jinxuanlatte', 'Noto Sans TC', 'Source Han Sans TC', sans-serif;
+    --font-interface:
+      'Noto Sans TC', 'Source Han Sans TC', 'PingFang TC', sans-serif;
     --font-quote: 'jf-lanyangming', 'Noto Serif TC', serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Source Code Pro', 'Consolas', monospace;
+    --font-mono:
+      'SF Mono', 'Fira Code', 'Source Code Pro', 'Consolas', monospace;
     /* Legacy compatibility */
     --font-editorial: var(--font-title);
     --title-display-size: clamp(2.25rem, 5vw, 3.2rem);
@@ -584,7 +609,9 @@ const jfClass = [
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     /* 優化中文字體顯示 */
-    font-feature-settings: "kern" 1, "liga" 1;
+    font-feature-settings:
+      'kern' 1,
+      'liga' 1;
   }
 
   /* Taiwan Typography: 標題字體層級 */
