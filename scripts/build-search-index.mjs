@@ -7,36 +7,39 @@
  * Output: public/api/search-minisearch.json
  */
 
-import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
-import { resolve, join, basename } from "node:path";
-import matter from "gray-matter";
-import MiniSearch from "minisearch";
+import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { resolve, join, basename } from 'node:path';
+import matter from 'gray-matter';
+import MiniSearch from 'minisearch';
 
 const CATEGORY_MAP = {
-  history: "History",
-  geography: "Geography",
-  culture: "Culture",
-  food: "Food",
-  art: "Art",
-  music: "Music",
-  technology: "Technology",
-  nature: "Nature",
-  people: "People",
-  society: "Society",
-  economy: "Economy",
-  lifestyle: "Lifestyle",
+  history: 'History',
+  geography: 'Geography',
+  culture: 'Culture',
+  food: 'Food',
+  art: 'Art',
+  music: 'Music',
+  technology: 'Technology',
+  nature: 'Nature',
+  people: 'People',
+  society: 'Society',
+  economy: 'Economy',
+  lifestyle: 'Lifestyle',
 };
 
 // ── CJK bigram tokenizer ──
 
 const isCJK = (cp) =>
-  (cp >= 0x4e00 && cp <= 0x9fff) || (cp >= 0x3400 && cp <= 0x4dbf);
+  (cp >= 0x4e00 && cp <= 0x9fff) ||
+  (cp >= 0x3400 && cp <= 0x4dbf) ||
+  (cp >= 0xf900 && cp <= 0xfaff) ||
+  (cp >= 0x3100 && cp <= 0x312f);
 
-const LATIN_RE = /[a-z0-9][\w-]*[a-z0-9]|[a-z0-9]/g;
+const LATIN_RE = /[a-z0-9][a-z0-9-]*[a-z0-9]|[a-z0-9]/g;
 
 function bigramTokenize(text) {
-  if (!text) return "";
-  const normalized = text.toLowerCase().normalize("NFKC");
+  if (!text) return '';
+  const normalized = text.toLowerCase().normalize('NFKC');
   const tokens = [];
 
   // Latin words (2+ chars)
@@ -54,7 +57,7 @@ function bigramTokenize(text) {
     }
   }
 
-  return tokens.join(" ");
+  return tokens.join(' ');
 }
 
 // ── Scan articles ──
@@ -65,56 +68,78 @@ async function scanArticles() {
 
   for (const [slug, folder] of Object.entries(CATEGORY_MAP)) {
     // Chinese articles
+    const zhPath = resolve(process.cwd(), 'knowledge', folder);
     try {
-      const zhPath = resolve(process.cwd(), "knowledge", folder);
       const files = (await readdir(zhPath)).filter(
-        (f) => f.endsWith(".md") && !f.startsWith("_"),
+        (f) => f.endsWith('.md') && !f.startsWith('_'),
       );
       for (const file of files) {
-        const { data } = matter(await readFile(join(zhPath, file), "utf-8"));
-        const name = basename(file, ".md");
-        const title = data.title || name;
-        const description = data.description || "";
-        const tags = data.tags || [];
-        docs.push({
-          id: id++,
-          t: title,
-          d: description,
-          u: `/${slug}/${name}`,
-          tags,
-          lang: "zh-TW",
-          title_bigram: bigramTokenize(title),
-          desc_bigram: bigramTokenize(description),
-          tags_bigram: bigramTokenize(tags.join(" ")),
-        });
+        try {
+          const { data } = matter(await readFile(join(zhPath, file), 'utf-8'));
+          const name = basename(file, '.md');
+          const title = data.title || name;
+          const description = data.description || '';
+          const tags = Array.isArray(data.tags)
+            ? data.tags
+            : data.tags
+              ? [data.tags]
+              : [];
+          docs.push({
+            id: id++,
+            t: title,
+            d: description,
+            u: `/${slug}/${name}`,
+            tags,
+            lang: 'zh-TW',
+            title_bigram: bigramTokenize(title),
+            desc_bigram: bigramTokenize(description),
+            tags_bigram: bigramTokenize(tags.join(' ')),
+          });
+        } catch {
+          console.warn(`[search] skipped ${file}: YAML parse error`);
+        }
       }
-    } catch {}
+    } catch (err) {
+      if (err.code !== 'ENOENT')
+        console.warn(`[search] error reading ${zhPath}:`, err.message);
+    }
 
     // English articles
+    const enPath = resolve(process.cwd(), 'knowledge', 'en', folder);
     try {
-      const enPath = resolve(process.cwd(), "knowledge", "en", folder);
       const files = (await readdir(enPath)).filter(
-        (f) => f.endsWith(".md") && !f.startsWith("_"),
+        (f) => f.endsWith('.md') && !f.startsWith('_'),
       );
       for (const file of files) {
-        const { data } = matter(await readFile(join(enPath, file), "utf-8"));
-        const name = basename(file, ".md");
-        const title = data.title || name;
-        const description = data.description || "";
-        const tags = data.tags || [];
-        docs.push({
-          id: id++,
-          t: title,
-          d: description,
-          u: `/en/${slug}/${name}`,
-          tags,
-          lang: "en",
-          title_bigram: bigramTokenize(title),
-          desc_bigram: bigramTokenize(description),
-          tags_bigram: bigramTokenize(tags.join(" ")),
-        });
+        try {
+          const { data } = matter(await readFile(join(enPath, file), 'utf-8'));
+          const name = basename(file, '.md');
+          const title = data.title || name;
+          const description = data.description || '';
+          const tags = Array.isArray(data.tags)
+            ? data.tags
+            : data.tags
+              ? [data.tags]
+              : [];
+          docs.push({
+            id: id++,
+            t: title,
+            d: description,
+            u: `/en/${slug}/${name}`,
+            tags,
+            lang: 'en',
+            title_bigram: bigramTokenize(title),
+            desc_bigram: bigramTokenize(description),
+            tags_bigram: bigramTokenize(tags.join(' ')),
+          });
+        } catch {
+          console.warn(`[search] skipped ${file}: YAML parse error`);
+        }
       }
-    } catch {}
+    } catch (err) {
+      if (err.code !== 'ENOENT')
+        console.warn(`[search] error reading ${enPath}:`, err.message);
+    }
   }
 
   return docs;
@@ -125,9 +150,9 @@ async function scanArticles() {
 const docs = await scanArticles();
 
 const miniSearch = new MiniSearch({
-  idField: "id",
-  fields: ["title_bigram", "desc_bigram", "tags_bigram"],
-  storeFields: ["t", "d", "u", "tags", "lang"],
+  idField: 'id',
+  fields: ['title_bigram', 'desc_bigram', 'tags_bigram'],
+  storeFields: ['t', 'd', 'u', 'tags', 'lang'],
   tokenize: (text) => text.split(/\s+/).filter(Boolean),
   searchOptions: {
     boost: { title_bigram: 6, tags_bigram: 4, desc_bigram: 2 },
@@ -138,11 +163,11 @@ const miniSearch = new MiniSearch({
 miniSearch.addAll(docs);
 
 const serialized = JSON.stringify(miniSearch);
-await mkdir(resolve(process.cwd(), "public", "api"), { recursive: true });
+await mkdir(resolve(process.cwd(), 'public', 'api'), { recursive: true });
 await writeFile(
-  resolve(process.cwd(), "public", "api", "search-minisearch.json"),
+  resolve(process.cwd(), 'public', 'api', 'search-minisearch.json'),
   serialized,
-  "utf-8",
+  'utf-8',
 );
 
 console.log(

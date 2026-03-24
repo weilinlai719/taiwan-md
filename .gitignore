@@ -24,3 +24,4 @@ pnpm-debug.log*
 .idea/
 public/api/random.json
 public/api/random.json
+public/api/search-minisearch.json

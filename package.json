@@ -27,8 +27,7 @@
     "marked": "^17.0.4",
     "minisearch": "^7.2.0",
     "rehype-external-links": "^3.0.0",
-    "remark-wiki-link": "^2.0.1",
-    "unist-util-visit": "^5.1.0"
+    "remark-wiki-link": "^2.0.1"
   },
   "devDependencies": {
     "husky": "^9.1.7",
