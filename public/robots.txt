@@ -29,6 +29,10 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
+User-agent: MistralAI-User
+Allow: /
+
+
 # Additional AI/ML crawlers
 User-agent: ChatGPT-User
 Allow: /
