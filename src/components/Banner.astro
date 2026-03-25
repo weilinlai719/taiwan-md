@@ -6,7 +6,7 @@ const currentPath = Astro.url.pathname;
 const { enLink } = await getLangSwitchPath(currentPath);
 ---
 
-<div id="lang-banner" class="lang-banner" style="display:none;">
+<div id="lang-banner" class="lang-banner">
   <span
     >🌐 English version available → <a href={enLink}>Switch to English</a></span
   >
@@ -16,16 +16,6 @@ const { enLink } = await getLangSwitchPath(currentPath);
     aria-label="Close">✕</button
   >
 </div>
-<script is:inline>
-  (function () {
-    if (localStorage.getItem('lang-banner-dismissed')) return;
-    var lang = navigator.language || navigator.userLanguage || '';
-    if (lang.startsWith('zh')) return;
-    if (window.location.pathname.startsWith('/en')) return;
-    var b = document.getElementById('lang-banner');
-    if (b) b.style.display = 'flex';
-  })();
-</script>
 <style>
   .lang-banner {
     display: flex;
