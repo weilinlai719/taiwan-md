@@ -460,7 +460,7 @@ const categoryList = [
       });
     });
 
-    // If banner is visible on homepage, offset the fixed header below it
+    // Keep the header below the language banner on homepage only.
     const isHero = header.hasAttribute('data-hero');
     if (isHero) {
       const banner = document.getElementById('lang-banner');
@@ -555,11 +555,13 @@ const categoryList = [
   }
 
   /* =============================================
-     HEADER — FIXED OVERLAY
+     HEADER — GLOBAL FIXED BAR
   ============================================= */
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     background: var(--header-bg);
     backdrop-filter: blur(var(--header-blur));
@@ -570,12 +572,6 @@ const categoryList = [
       backdrop-filter 0.45s cubic-bezier(0.4, 0, 0.2, 1),
       border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  /* Homepage: fixed overlay so hero flows behind */
-  header[data-hero] {
-    position: fixed;
-    left: 0;
-    right: 0;
   }
   .header-inner {
     max-width: var(--container-wide);
