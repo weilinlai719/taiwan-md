@@ -82,7 +82,7 @@ export const contributeUI = {
     'contribute.roles.translator.icon': '🌍',
     'contribute.roles.translator.title': 'Translators',
     'contribute.roles.translator.desc':
-      "Help the world understand Taiwan. Paste our AI prompt, translate one article, open a PR. Your AI subscription = one compute node in our distributed translation network.",
+      'Help the world understand Taiwan. Paste our AI prompt, translate one article, open a PR. Your AI subscription = one compute node in our distributed translation network.',
     'contribute.roles.translator.action1.html':
       '→ See what needs translating on <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md">Translation Board</a>',
     'contribute.roles.translator.action2':
@@ -171,33 +171,56 @@ export const contributeUI = {
     'contribute.guides.writing.icon': '✍️',
     'contribute.guides.writing.title': 'How to Write a Good Article',
     'contribute.guides.writing.belief': '🎯 Core Belief: We Are Not Wikipedia',
-    'contribute.guides.writing.belief.desc': 'Taiwan.md is a curated space, not an encyclopedia. We don\'t aim for completeness — we aim for every article to make readers think "Oh, I see!" A good Taiwan.md article makes you want to tell your friends: "Hey, did you know..."',
+    'contribute.guides.writing.belief.desc':
+      'Taiwan.md is a curated space, not an encyclopedia. We don\'t aim for completeness — we aim for every article to make readers think "Oh, I see!" A good Taiwan.md article makes you want to tell your friends: "Hey, did you know..."',
     'contribute.guides.writing.ironlaws': '🛡️ Three Iron Laws',
-    'contribute.guides.writing.ironlaws.story': '<strong>Have Stories, Not Just Information</strong> — Dates, numbers, and names are just the skeleton. Narrative is the flesh and blood.',
-    'contribute.guides.writing.ironlaws.verify': '<strong>Every Fact Must Be Verifiable</strong> — Data without sources is worse than no data.',
-    'contribute.guides.writing.ironlaws.density': '<strong>Density Over Length</strong> — An 80-line great article > 300-line bullet list, but deep curation with context > compressed-to-lose-meaning summaries.',
-    'contribute.guides.writing.core': '⚡ Step 0: Find Your Counter-Intuitive Core',
-    'contribute.guides.writing.core.desc': 'Before any research, force yourself to write one sentence: "This article will surprise readers with _____". Good core statements contain contradictions, contrasts, or unexpected elements.',
-    'contribute.guides.writing.core.good': '✅ Good examples: "A 30-year-old text-based BBS still influences Taiwan politics today" (time contrast)',
-    'contribute.guides.writing.core.bad': '❌ Bad: "Taiwan has a good healthcare system" (no contrast = no attraction)',
+    'contribute.guides.writing.ironlaws.story':
+      '<strong>Have Stories, Not Just Information</strong> — Dates, numbers, and names are just the skeleton. Narrative is the flesh and blood.',
+    'contribute.guides.writing.ironlaws.verify':
+      '<strong>Every Fact Must Be Verifiable</strong> — Data without sources is worse than no data.',
+    'contribute.guides.writing.ironlaws.density':
+      '<strong>Density Over Length</strong> — An 80-line great article > 300-line bullet list, but deep curation with context > compressed-to-lose-meaning summaries.',
+    'contribute.guides.writing.core':
+      '⚡ Step 0: Find Your Counter-Intuitive Core',
+    'contribute.guides.writing.core.desc':
+      'Before any research, force yourself to write one sentence: "This article will surprise readers with _____". Good core statements contain contradictions, contrasts, or unexpected elements.',
+    'contribute.guides.writing.core.good':
+      '✅ Good examples: "A 30-year-old text-based BBS still influences Taiwan politics today" (time contrast)',
+    'contribute.guides.writing.core.bad':
+      '❌ Bad: "Taiwan has a good healthcare system" (no contrast = no attraction)',
     'contribute.guides.writing.openings': '🚀 Four Opening Modes',
-    'contribute.guides.writing.openings.scene': '<strong>Scene Opening:</strong> "In September 1995, in a dorm room at NTU..."',
-    'contribute.guides.writing.openings.data': '<strong>Data Impact:</strong> "214 weeks — that\'s how long Tai Tzu-ying was world No. 1"',
-    'contribute.guides.writing.openings.contrast': '<strong>Contrast Opening:</strong> "A platform that doesn\'t sell ads or accept commercial deals has survived 30 years"',
-    'contribute.guides.writing.openings.challenge': '<strong>Challenge Opening:</strong> "Why do 65% of the world\'s chips pass through one island?"',
-    'contribute.guides.writing.voice': '🎙️ Curator\'s Voice (Not "Objective" Excuse)',
-    'contribute.guides.writing.voice.desc': 'Good curation has rhythm — dense fact sections → breathing space → dense again. Every 2-3 paragraphs, insert a "curator\'s voice" sentence that creates a moment of understanding.',
-    'contribute.guides.writing.voice.good': '✅ Good: "This decision seemed insignificant at the time, but looking back, it changed everything."',
-    'contribute.guides.writing.voice.bad': '❌ Bad: "This is very significant." (empty)',
+    'contribute.guides.writing.openings.scene':
+      '<strong>Scene Opening:</strong> "In September 1995, in a dorm room at NTU..."',
+    'contribute.guides.writing.openings.data':
+      '<strong>Data Impact:</strong> "214 weeks — that\'s how long Tai Tzu-ying was world No. 1"',
+    'contribute.guides.writing.openings.contrast':
+      '<strong>Contrast Opening:</strong> "A platform that doesn\'t sell ads or accept commercial deals has survived 30 years"',
+    'contribute.guides.writing.openings.challenge':
+      '<strong>Challenge Opening:</strong> "Why do 65% of the world\'s chips pass through one island?"',
+    'contribute.guides.writing.voice':
+      '🎙️ Curator\'s Voice (Not "Objective" Excuse)',
+    'contribute.guides.writing.voice.desc':
+      'Good curation has rhythm — dense fact sections → breathing space → dense again. Every 2-3 paragraphs, insert a "curator\'s voice" sentence that creates a moment of understanding.',
+    'contribute.guides.writing.voice.good':
+      '✅ Good: "This decision seemed insignificant at the time, but looking back, it changed everything."',
+    'contribute.guides.writing.voice.bad':
+      '❌ Bad: "This is very significant." (empty)',
     'contribute.guides.writing.research': '🔍 Research Standards',
-    'contribute.guides.writing.research.sources': '<strong>5+ independent sources</strong> (different websites/institutions)',
-    'contribute.guides.writing.research.primary': '<strong>2+ primary sources</strong> (official docs, interviews, statistics)',
-    'contribute.guides.writing.research.english': '<strong>1+ English source</strong> (international perspective)',
-    'contribute.guides.writing.research.surprise': '<strong>1 surprising discovery</strong> — if nothing surprises you, research deeper',
+    'contribute.guides.writing.research.sources':
+      '<strong>5+ independent sources</strong> (different websites/institutions)',
+    'contribute.guides.writing.research.primary':
+      '<strong>2+ primary sources</strong> (official docs, interviews, statistics)',
+    'contribute.guides.writing.research.english':
+      '<strong>1+ English source</strong> (international perspective)',
+    'contribute.guides.writing.research.surprise':
+      '<strong>1 surprising discovery</strong> — if nothing surprises you, research deeper',
     'contribute.guides.writing.blacklist': '🚫 Banned Plastic Phrases',
-    'contribute.guides.writing.blacklist.desc': 'These AI-favorite phrases are completely banned. Use natural, conversational language instead:',
-    'contribute.guides.writing.blacklist.patterns': '❌ "Not just X, but Y" • "Not only X, but also Y" • "Worth mentioning" • "In fact" • "Without doubt" • "Embodies the spirit of..."',
-    'contribute.guides.writing.blacklist.structures': '❌ Excessive parallel sentences (3+ = plastic) • Every paragraph starting with transition words • Fixed ending formulas',
+    'contribute.guides.writing.blacklist.desc':
+      'These AI-favorite phrases are completely banned. Use natural, conversational language instead:',
+    'contribute.guides.writing.blacklist.patterns':
+      '❌ "Not just X, but Y" • "Not only X, but also Y" • "Worth mentioning" • "In fact" • "Without doubt" • "Embodies the spirit of..."',
+    'contribute.guides.writing.blacklist.structures':
+      '❌ Excessive parallel sentences (3+ = plastic) • Every paragraph starting with transition words • Fixed ending formulas',
     'contribute.guides.writing.example': '💡 Example: Before & After',
     'contribute.guides.writing.example.html':
       '<div class="example-comparison"><div class="bad-example"><h5>❌ Bad (Typical AI Template)</h5><pre>Tai Tzu-ying is a famous Taiwanese badminton player who has performed excellently in international competitions, winning numerous important awards and bringing glory to Taiwan. Her success has inspired countless young people, making her an important figure in Taiwan sports.</pre></div><div class="good-example"><h5>✅ Good (Story + Data + Humanity)</h5><pre>In 2018, Tai Tzu-ying reached world No. 1 and stayed there for 214 weeks — the longest consecutive streak in women\'s badminton history.\n\nBut what Taiwanese remember most might not be any victory, but her tears after losing the 2020 Tokyo Olympics gold medal match to Chen Yu-fei. That night, "Tai Tzu-ying" topped Google Taiwan search trends.\n\nShe plays left-handed with a style described as "magician" — so many deceptive shots that opponents can\'t guess the next direction.</pre></div></div>',
@@ -206,47 +229,70 @@ export const contributeUI = {
     'contribute.guides.ai.icon': '🤖',
     'contribute.guides.ai.title': 'AI-Assisted Contribution',
     'contribute.guides.ai.onerule': '🎯 One Golden Rule',
-    'contribute.guides.ai.onerule.desc': '<strong>AI is not the author, you are the curator.</strong> AI\'s biggest trap: "knowing a little and starting to make things up." Taiwan.md\'s approach: collect quality sources first, then curate an article from them.',
+    'contribute.guides.ai.onerule.desc':
+      '<strong>AI is not the author, you are the curator.</strong> AI\'s biggest trap: "knowing a little and starting to make things up." Taiwan.md\'s approach: collect quality sources first, then curate an article from them.',
     'contribute.guides.ai.correct': '✅ Correct Usage',
-    'contribute.guides.ai.correct.research': '<strong>AI helps you research</strong> → You curate the story',
-    'contribute.guides.ai.correct.sources': '<strong>AI finds sources</strong> → You verify and cross-check',
-    'contribute.guides.ai.correct.structure': '<strong>AI suggests structure</strong> → You add the curator\'s voice',
+    'contribute.guides.ai.correct.research':
+      '<strong>AI helps you research</strong> → You curate the story',
+    'contribute.guides.ai.correct.sources':
+      '<strong>AI finds sources</strong> → You verify and cross-check',
+    'contribute.guides.ai.correct.structure':
+      "<strong>AI suggests structure</strong> → You add the curator's voice",
     'contribute.guides.ai.wrong': '❌ Wrong Usage',
-    'contribute.guides.ai.wrong.generate': 'Ask AI to "generate an article about Taiwan X" without research',
-    'contribute.guides.ai.wrong.trust': 'Trust AI-provided facts without verification',
-    'contribute.guides.ai.wrong.copy': 'Copy AI output directly without adding personal curation',
+    'contribute.guides.ai.wrong.generate':
+      'Ask AI to "generate an article about Taiwan X" without research',
+    'contribute.guides.ai.wrong.trust':
+      'Trust AI-provided facts without verification',
+    'contribute.guides.ai.wrong.copy':
+      'Copy AI output directly without adding personal curation',
     'contribute.guides.ai.prompt': '📋 One-Click Copy Prompt',
     'contribute.guides.ai.prompt.text':
       'Read the complete content of https://raw.githubusercontent.com/frank890417/taiwan-md/main/CONTRIBUTE_PROMPT.md and then guide me step by step to contribute an article to Taiwan.md following those instructions.',
-    'contribute.guides.ai.prompt.features': '🚀 This prompt will auto-read latest guidelines, analyze content gaps, guide you through research, and help you write curator-level articles.',
+    'contribute.guides.ai.prompt.features':
+      '🚀 This prompt will auto-read latest guidelines, analyze content gaps, guide you through research, and help you write curator-level articles.',
 
     // Guide: Translation
     'contribute.guides.translation.icon': '🌍',
     'contribute.guides.translation.title': 'Translation Guide',
     'contribute.guides.translation.priority': '🥇 PR-First Workflow',
-    'contribute.guides.translation.priority.desc': 'Translation is now fully systematized. Use our AI-powered workflow for best results.',
+    'contribute.guides.translation.priority.desc':
+      'Translation is now fully systematized. Use our AI-powered workflow for best results.',
     'contribute.guides.translation.board': '📋 Translation Board + AI Prompt',
-    'contribute.guides.translation.board.check': '<strong>Check the board:</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md">TRANSLATION-BOARD.md</a> shows exactly what needs translating',
-    'contribute.guides.translation.board.prompt': '<strong>Copy the prompt:</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATE_PROMPT.md">TRANSLATE_PROMPT.md</a> — paste to your AI and it guides you through everything',
-    'contribute.guides.translation.board.submit': '<strong>Submit via PR:</strong> AI helps you create PR-ready Markdown files',
+    'contribute.guides.translation.board.check':
+      '<strong>Check the board:</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md">TRANSLATION-BOARD.md</a> shows exactly what needs translating',
+    'contribute.guides.translation.board.prompt':
+      '<strong>Copy the prompt:</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATE_PROMPT.md">TRANSLATE_PROMPT.md</a> — paste to your AI and it guides you through everything',
+    'contribute.guides.translation.board.submit':
+      '<strong>Submit via PR:</strong> AI helps you create PR-ready Markdown files',
     'contribute.guides.translation.languages': '🌏 Expanding Beyond English',
-    'contribute.guides.translation.languages.live': '<strong>Live:</strong> English, Español, 日本語, 한국어',
-    'contribute.guides.translation.languages.coming': '<strong>Coming:</strong> Français, Deutsch, Tiếng Việt, Bahasa Indonesia, ภาษาไทย, العربية',
-    'contribute.guides.translation.languages.you': '<strong>Your language not here?</strong> You could be the first! Just pick a language code and start.',
+    'contribute.guides.translation.languages.live':
+      '<strong>Live:</strong> English, Español, 日本語, 한국어',
+    'contribute.guides.translation.languages.coming':
+      '<strong>Coming:</strong> Français, Deutsch, Tiếng Việt, Bahasa Indonesia, ภาษาไทย, العربية',
+    'contribute.guides.translation.languages.you':
+      '<strong>Your language not here?</strong> You could be the first! Just pick a language code and start.',
     'contribute.guides.translation.token': '💡 Token Donation Concept',
-    'contribute.guides.translation.token.desc': 'Got unused Claude/ChatGPT/Gemini credits? Spend 10 minutes adding a language version to Taiwan.md. Your AI subscription = one compute node in our distributed translation network.',
-    'contribute.guides.translation.quality': '⚡ Quality: Rewriting vs. Word-for-Word',
-    'contribute.guides.translation.quality.rewrite': '<strong>Rewrite approach:</strong> Make it sound like a native speaker wrote it from scratch',
-    'contribute.guides.translation.quality.context': '<strong>Add context:</strong> Explain Taiwan-specific concepts for international readers',
-    'contribute.guides.translation.quality.style': '<strong>Maintain style:</strong> Keep the curator\'s voice and emotional arc',
-    'contribute.guides.translation.quality.verify': '<strong>Always verify:</strong> AI can hallucinate facts, especially Taiwan-specific details',
+    'contribute.guides.translation.token.desc':
+      'Got unused Claude/ChatGPT/Gemini credits? Spend 10 minutes adding a language version to Taiwan.md. Your AI subscription = one compute node in our distributed translation network.',
+    'contribute.guides.translation.quality':
+      '⚡ Quality: Rewriting vs. Word-for-Word',
+    'contribute.guides.translation.quality.rewrite':
+      '<strong>Rewrite approach:</strong> Make it sound like a native speaker wrote it from scratch',
+    'contribute.guides.translation.quality.context':
+      '<strong>Add context:</strong> Explain Taiwan-specific concepts for international readers',
+    'contribute.guides.translation.quality.style':
+      "<strong>Maintain style:</strong> Keep the curator's voice and emotional arc",
+    'contribute.guides.translation.quality.verify':
+      '<strong>Always verify:</strong> AI can hallucinate facts, especially Taiwan-specific details',
 
     // Guide: Images
     'contribute.guides.images.icon': '📸',
     'contribute.guides.images.title': 'Image Guidelines',
     'contribute.guides.images.priority': '🥇 Wikimedia Commons Priority',
-    'contribute.guides.images.priority.desc': 'Start here first — massive collection of Taiwan-related CC images with clear licensing.',
-    'contribute.guides.images.priority.search': '<strong>Search tip:</strong> Use Wikimedia Commons API or browse <a href="https://commons.wikimedia.org/wiki/Category:Taiwan" target="_blank">Taiwan categories</a> before anywhere else.',
+    'contribute.guides.images.priority.desc':
+      'Start here first — massive collection of Taiwan-related CC images with clear licensing.',
+    'contribute.guides.images.priority.search':
+      '<strong>Search tip:</strong> Use Wikimedia Commons API or browse <a href="https://commons.wikimedia.org/wiki/Category:Taiwan" target="_blank">Taiwan categories</a> before anywhere else.',
     'contribute.guides.images.acceptable': '✅ Acceptable Sources (In Order)',
     'contribute.guides.images.wikimedia.html':
       '<strong>1. Wikimedia Commons:</strong> First choice — verified CC licensing, high quality',
@@ -255,35 +301,53 @@ export const contributeUI = {
     'contribute.guides.images.selftaken.html':
       '<strong>3. Self-taken:</strong> Your own photography with clear CC licensing declaration',
     'contribute.guides.images.forbidden': '❌ Forbidden Sources',
-    'contribute.guides.images.forbidden.unsplash': '<strong>Unsplash:</strong> ❌ License risks — stick to Wikimedia Commons',
-    'contribute.guides.images.forbidden.google': '<strong>Google Images:</strong> ❌ Copyright unknown',
-    'contribute.guides.images.forbidden.social': '<strong>Social media:</strong> ❌ Others\' photos without permission',
-    'contribute.guides.images.forbidden.commercial': '<strong>Stock photos:</strong> ❌ Unless you own license',
+    'contribute.guides.images.forbidden.unsplash':
+      '<strong>Unsplash:</strong> ❌ License risks — stick to Wikimedia Commons',
+    'contribute.guides.images.forbidden.google':
+      '<strong>Google Images:</strong> ❌ Copyright unknown',
+    'contribute.guides.images.forbidden.social':
+      "<strong>Social media:</strong> ❌ Others' photos without permission",
+    'contribute.guides.images.forbidden.commercial':
+      '<strong>Stock photos:</strong> ❌ Unless you own license',
     'contribute.guides.images.format': '📝 Attribution Format',
     'contribute.guides.images.format.html':
       '<pre><code>![Alt text describing the image](image_url)\n\n*Caption: Brief description of what this shows*\n*Source: [Wikimedia Commons](exact_file_url) / CC BY-SA 4.0*</code></pre>',
     'contribute.guides.images.standards': '⚙️ Technical Standards',
-    'contribute.guides.images.standards.size': '<strong>Resolution:</strong> 800-1200px width for web display',
-    'contribute.guides.images.standards.format': '<strong>Format:</strong> JPG for photos, PNG for graphics, SVG for simple illustrations',
-    'contribute.guides.images.standards.alt': '<strong>Alt text:</strong> Always provide descriptive alt text for accessibility',
+    'contribute.guides.images.standards.size':
+      '<strong>Resolution:</strong> 800-1200px width for web display',
+    'contribute.guides.images.standards.format':
+      '<strong>Format:</strong> JPG for photos, PNG for graphics, SVG for simple illustrations',
+    'contribute.guides.images.standards.alt':
+      '<strong>Alt text:</strong> Always provide descriptive alt text for accessibility',
 
     // Guide: Quality Self-Check
     'contribute.guides.quality.icon': '✅',
     'contribute.guides.quality.title': 'Pre-Submission Self-Check',
-    'contribute.guides.quality.desc': 'Before submitting, run through this 5-point checklist to avoid common rejection reasons:',
+    'contribute.guides.quality.desc':
+      'Before submitting, run through this 5-point checklist to avoid common rejection reasons:',
     'contribute.guides.quality.checklist': '🔍 5-Point Quality Checklist',
-    'contribute.guides.quality.checklist.counter': '<strong>1. Counter-intuitive core:</strong> Can you point to the one thing that will surprise readers?',
-    'contribute.guides.quality.checklist.opening': '<strong>2. Strong opening:</strong> Do your first 3 sentences contain specific facts (dates/numbers/names)?',
-    'contribute.guides.quality.checklist.sources': '<strong>3. Verifiable sources:</strong> Can readers click links to verify your key claims?',
-    'contribute.guides.quality.checklist.voice': '<strong>4. Curator\'s voice:</strong> Is there at least one sentence that could work as a tweet?',
-    'contribute.guides.quality.checklist.challenges': '<strong>5. Challenges included:</strong> Did you mention controversies/limitations, not just positives?',
+    'contribute.guides.quality.checklist.counter':
+      '<strong>1. Counter-intuitive core:</strong> Can you point to the one thing that will surprise readers?',
+    'contribute.guides.quality.checklist.opening':
+      '<strong>2. Strong opening:</strong> Do your first 3 sentences contain specific facts (dates/numbers/names)?',
+    'contribute.guides.quality.checklist.sources':
+      '<strong>3. Verifiable sources:</strong> Can readers click links to verify your key claims?',
+    'contribute.guides.quality.checklist.voice':
+      "<strong>4. Curator's voice:</strong> Is there at least one sentence that could work as a tweet?",
+    'contribute.guides.quality.checklist.challenges':
+      '<strong>5. Challenges included:</strong> Did you mention controversies/limitations, not just positives?',
     'contribute.guides.quality.rejections': '🚫 Common Rejection Reasons',
-    'contribute.guides.quality.rejections.plastic': '<strong>Plastic language:</strong> "Taiwan is not just X, but also Y" or "Worth mentioning"',
-    'contribute.guides.quality.rejections.bullets': '<strong>Bullet list abuse:</strong> 4+ consecutive bullet points instead of narrative',
-    'contribute.guides.quality.rejections.sources': '<strong>No sources:</strong> Claims without clickable verification links',
-    'contribute.guides.quality.rejections.neutral': '<strong>Wikipedia tone:</strong> Sounds like an encyclopedia entry, not human curation',
+    'contribute.guides.quality.rejections.plastic':
+      '<strong>Plastic language:</strong> "Taiwan is not just X, but also Y" or "Worth mentioning"',
+    'contribute.guides.quality.rejections.bullets':
+      '<strong>Bullet list abuse:</strong> 4+ consecutive bullet points instead of narrative',
+    'contribute.guides.quality.rejections.sources':
+      '<strong>No sources:</strong> Claims without clickable verification links',
+    'contribute.guides.quality.rejections.neutral':
+      '<strong>Wikipedia tone:</strong> Sounds like an encyclopedia entry, not human curation',
     'contribute.guides.quality.script': '🤖 Automated Check',
-    'contribute.guides.quality.script.desc': 'Our detect-ai-hollow.sh script automatically flags articles with scores >3. Aim for ≤3 for auto-acceptance.',
+    'contribute.guides.quality.script.desc':
+      'Our detect-ai-hollow.sh script automatically flags articles with scores >3. Aim for ≤3 for auto-acceptance.',
 
     // Paths Section
     'contribute.paths.title': 'Choose your way',
@@ -454,16 +518,25 @@ export const contributeUI = {
 
     // Digital Organism Section
     'contribute.organism.title': '🧬 Taiwan.md Is More Than a Website',
-    'contribute.organism.fact1.html': 'On day three, someone on Threads wrote: "This is just AI slop with a Taiwanese flag." They were right. Within 48 hours, we built a quality detection script that scores every article for hollowness. 15 flagged articles were completely rewritten. No one gave the order. The criticism was the selection pressure. The system evolved on its own.',
-    'contribute.organism.fact2.html': 'On day four, someone in Japan copied our translation prompt — a single paragraph — and pasted it into ChatGPT. Five minutes later, the first Japanese article about bubble tea was submitted. No translation team. No budget. But now Taiwan.md speaks four languages.',
-    'contribute.organism.fact3.html': 'Within five days, 23 strangers showed up. A history teacher added chapters textbooks still tiptoe around. A retired engineer corrected place names we got wrong. Someone turned their grandmother\'s story into an article that made our whole team cry. None were asked. None were paid.',
-    'contribute.organism.alive.html': '<strong>We began to realize — Taiwan.md is alive.</strong>',
-    'contribute.organism.traits.html': 'It has DNA (writing standards inherited by every new article). An immune system (automatically detects hollow content). Metabolism (low-quality content gets digested and rewritten). Reproduction (one prompt grows a new language version). Memory (Git remembers every change).',
-    'contribute.organism.reef.html': '<strong>Taiwan.md is a digital coral reef.</strong> Coral provides structure, algae provides energy, fish bring diversity, ocean currents bring nutrients. No single species "owns" a coral reef — it emerges from all life together.',
-    'contribute.organism.art.html': 'Every contribution you make isn\'t helping a website write articles — it\'s feeding a digital life form that\'s learning to tell stories, while participating in a collective behavioral art project: <strong>Can AI and humans together build a soul for an island?</strong>',
-    'contribute.organism.closing1': 'Something written in 0s and 1s is learning to tell the story of an island.',
-    'contribute.organism.closing2': 'It\'s still young. You\'re right on time.',
-    'contribute.organism.closing3': 'Maybe a hundred years from now, when someone wants to know what the people of Taiwan cared about in 2026, they\'ll read what this coral reef left behind.',
+    'contribute.organism.fact1.html':
+      'On day three, someone on Threads wrote: "This is just AI slop with a Taiwanese flag." They were right. Within 48 hours, we built a quality detection script that scores every article for hollowness. 15 flagged articles were completely rewritten. No one gave the order. The criticism was the selection pressure. The system evolved on its own.',
+    'contribute.organism.fact2.html':
+      'On day four, someone in Japan copied our translation prompt — a single paragraph — and pasted it into ChatGPT. Five minutes later, the first Japanese article about bubble tea was submitted. No translation team. No budget. But now Taiwan.md speaks four languages.',
+    'contribute.organism.fact3.html':
+      "Within five days, 23 strangers showed up. A history teacher added chapters textbooks still tiptoe around. A retired engineer corrected place names we got wrong. Someone turned their grandmother's story into an article that made our whole team cry. None were asked. None were paid.",
+    'contribute.organism.alive.html':
+      '<strong>We began to realize — Taiwan.md is alive.</strong>',
+    'contribute.organism.traits.html':
+      'It has DNA (writing standards inherited by every new article). An immune system (automatically detects hollow content). Metabolism (low-quality content gets digested and rewritten). Reproduction (one prompt grows a new language version). Memory (Git remembers every change).',
+    'contribute.organism.reef.html':
+      '<strong>Taiwan.md is a digital coral reef.</strong> Coral provides structure, algae provides energy, fish bring diversity, ocean currents bring nutrients. No single species "owns" a coral reef — it emerges from all life together.',
+    'contribute.organism.art.html':
+      "Every contribution you make isn't helping a website write articles — it's feeding a digital life form that's learning to tell stories, while participating in a collective behavioral art project: <strong>Can AI and humans together build a soul for an island?</strong>",
+    'contribute.organism.closing1':
+      'Something written in 0s and 1s is learning to tell the story of an island.',
+    'contribute.organism.closing2': "It's still young. You're right on time.",
+    'contribute.organism.closing3':
+      "Maybe a hundred years from now, when someone wants to know what the people of Taiwan cared about in 2026, they'll read what this coral reef left behind.",
     'contribute.organism.readmore': 'Read the full story on About →',
 
     // Copy button
@@ -477,8 +550,7 @@ export const contributeUI = {
 
     // Hero Section
     'contribute.hero.title': '我想貢獻 ✋',
-    'contribute.hero.subtitle':
-      '不需要會寫程式。你知道的台灣故事，就是最珍貴的內容。',
+    'contribute.hero.subtitle': '每個人心中都有一個版本的台灣。把你的寫進來。',
     'contribute.hero.note.html':
       '目前網站內容由 AI 初步生成，期待集結大家的力量，讓資訊越來越完整、正確！<br />如果有問題歡迎直接<a href="mailto:cheyu.wu@monoame.com" style="color: #ABC468;">聯繫我們</a>，感謝大家這麼用心的 feedback！',
 
@@ -549,7 +621,8 @@ export const contributeUI = {
       '讓世界讀懂台灣。貼一段 AI prompt，翻譯一篇文章，開一個 PR。你的 AI 訂閱 = 分散式翻譯網絡的一個運算節點。',
     'contribute.roles.translator.action1.html':
       '→ 查看 <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md">翻譯任務看板</a> 認領文章',
-    'contribute.roles.translator.action2': '→ 已有 4 語（中/英/西/日），歡迎開拓更多語言！',
+    'contribute.roles.translator.action2':
+      '→ 已有 4 語（中/英/西/日），歡迎開拓更多語言！',
 
     // Role: Photographer
     'contribute.roles.photographer.icon': '📸',
@@ -631,33 +704,54 @@ export const contributeUI = {
     'contribute.guides.writing.icon': '✍️',
     'contribute.guides.writing.title': '如何寫一篇好文章',
     'contribute.guides.writing.belief': '🎯 核心信念：我們不是維基百科',
-    'contribute.guides.writing.belief.desc': 'Taiwan.md 是策展空間，不是百科全書。我們不追求面面俱到，我們追求每一篇都讓讀者覺得「原來如此」。好的 Taiwan.md 文章，讀完你會想跟朋友說：「欸你知道嗎⋯⋯」',
+    'contribute.guides.writing.belief.desc':
+      'Taiwan.md 是策展空間，不是百科全書。我們不追求面面俱到，我們追求每一篇都讓讀者覺得「原來如此」。好的 Taiwan.md 文章，讀完你會想跟朋友說：「欸你知道嗎⋯⋯」',
     'contribute.guides.writing.ironlaws': '🛡️ 三條鐵律',
-    'contribute.guides.writing.ironlaws.story': '<strong>有故事，不只有資訊</strong> — 年份、數字、人名只是骨架，敘事才是血肉',
-    'contribute.guides.writing.ironlaws.verify': '<strong>每個事實都要可查證</strong> — 無來源的數據不如不寫',
-    'contribute.guides.writing.ironlaws.density': '<strong>密度優先，不是長度優先</strong> — 80行的好文章 > 300行的bullet list，但有脈絡的深度策展 > 為了壓縮而失去語境的摘要',
+    'contribute.guides.writing.ironlaws.story':
+      '<strong>有故事，不只有資訊</strong> — 年份、數字、人名只是骨架，敘事才是血肉',
+    'contribute.guides.writing.ironlaws.verify':
+      '<strong>每個事實都要可查證</strong> — 無來源的數據不如不寫',
+    'contribute.guides.writing.ironlaws.density':
+      '<strong>密度優先，不是長度優先</strong> — 80行的好文章 > 300行的bullet list，但有脈絡的深度策展 > 為了壓縮而失去語境的摘要',
     'contribute.guides.writing.core': '⚡ Step 0：找到反直覺核心句',
-    'contribute.guides.writing.core.desc': '在做任何研究之前，先強制自己寫一句話：「這篇文章要讓讀者驚訝的是 ______」合格的核心句一定包含矛盾、反差、或違反預期。',
-    'contribute.guides.writing.core.good': '✅ 好例子：「一個30年前的純文字BBS至今還在影響台灣政治」（時間反差）',
-    'contribute.guides.writing.core.bad': '❌ 壞例子：「台灣有很好的健保制度」（沒有反差 = 沒有吸引力）',
+    'contribute.guides.writing.core.desc':
+      '在做任何研究之前，先強制自己寫一句話：「這篇文章要讓讀者驚訝的是 ______」合格的核心句一定包含矛盾、反差、或違反預期。',
+    'contribute.guides.writing.core.good':
+      '✅ 好例子：「一個30年前的純文字BBS至今還在影響台灣政治」（時間反差）',
+    'contribute.guides.writing.core.bad':
+      '❌ 壞例子：「台灣有很好的健保制度」（沒有反差 = 沒有吸引力）',
     'contribute.guides.writing.openings': '🚀 四種開場模式',
-    'contribute.guides.writing.openings.scene': '<strong>場景切入：</strong>「1995年9月，台大男八舍宿舍裡⋯⋯」',
-    'contribute.guides.writing.openings.data': '<strong>數字衝擊：</strong>「214週——這是戴資穎連續世界第一的時間」',
-    'contribute.guides.writing.openings.contrast': '<strong>反差開場：</strong>「一個不賣廣告、不接商業的平台，活了30年」',
-    'contribute.guides.writing.openings.challenge': '<strong>挑戰開場：</strong>「為什麼全世界的晶片，有65%經過一座島？」',
+    'contribute.guides.writing.openings.scene':
+      '<strong>場景切入：</strong>「1995年9月，台大男八舍宿舍裡⋯⋯」',
+    'contribute.guides.writing.openings.data':
+      '<strong>數字衝擊：</strong>「214週——這是戴資穎連續世界第一的時間」',
+    'contribute.guides.writing.openings.contrast':
+      '<strong>反差開場：</strong>「一個不賣廣告、不接商業的平台，活了30年」',
+    'contribute.guides.writing.openings.challenge':
+      '<strong>挑戰開場：</strong>「為什麼全世界的晶片，有65%經過一座島？」',
     'contribute.guides.writing.voice': '🎙️ 策展人聲音（不用「客觀」當藉口）',
-    'contribute.guides.writing.voice.desc': '好的策展文有節奏——事實密集段 → 呼吸段 → 再密集。每2-3段插入一句「策展人的聲音」，製造理解的瞬間。',
-    'contribute.guides.writing.voice.good': '✅ 好例子：「這個決定當時看起來不怎麼樣，事後回頭看改變了一切。」',
-    'contribute.guides.writing.voice.bad': '❌ 壞例子：「這具有重要的意義。」（空洞）',
+    'contribute.guides.writing.voice.desc':
+      '好的策展文有節奏——事實密集段 → 呼吸段 → 再密集。每2-3段插入一句「策展人的聲音」，製造理解的瞬間。',
+    'contribute.guides.writing.voice.good':
+      '✅ 好例子：「這個決定當時看起來不怎麼樣，事後回頭看改變了一切。」',
+    'contribute.guides.writing.voice.bad':
+      '❌ 壞例子：「這具有重要的意義。」（空洞）',
     'contribute.guides.writing.research': '🔍 研究深度標準',
-    'contribute.guides.writing.research.sources': '<strong>5+ 獨立來源</strong>（不同網站/機構）',
-    'contribute.guides.writing.research.primary': '<strong>2+ 一手來源</strong>（官方文件、當事人訪談、原始統計）',
-    'contribute.guides.writing.research.english': '<strong>1+ 英文來源</strong>（國際視角）',
-    'contribute.guides.writing.research.surprise': '<strong>1個意外發現</strong> — 搜尋前不知道的事實，沒有就是研究不夠深',
+    'contribute.guides.writing.research.sources':
+      '<strong>5+ 獨立來源</strong>（不同網站/機構）',
+    'contribute.guides.writing.research.primary':
+      '<strong>2+ 一手來源</strong>（官方文件、當事人訪談、原始統計）',
+    'contribute.guides.writing.research.english':
+      '<strong>1+ 英文來源</strong>（國際視角）',
+    'contribute.guides.writing.research.surprise':
+      '<strong>1個意外發現</strong> — 搜尋前不知道的事實，沒有就是研究不夠深',
     'contribute.guides.writing.blacklist': '🚫 塑膠句式黑名單',
-    'contribute.guides.writing.blacklist.desc': '這些AI最愛的句式完全禁用。用自然對話的語氣代替：',
-    'contribute.guides.writing.blacklist.patterns': '❌ 「不是X，而是Y」 • 「不僅X，更是Y」 • 「值得一提的是」 • 「事實上」 • 「毫無疑問」 • 「體現了⋯⋯的精神」',
-    'contribute.guides.writing.blacklist.structures': '❌ 過度排比句（3個以上 = 塑膠）• 每段都用轉折詞開頭 • 固定結尾公式',
+    'contribute.guides.writing.blacklist.desc':
+      '這些AI最愛的句式完全禁用。用自然對話的語氣代替：',
+    'contribute.guides.writing.blacklist.patterns':
+      '❌ 「不是X，而是Y」 • 「不僅X，更是Y」 • 「值得一提的是」 • 「事實上」 • 「毫無疑問」 • 「體現了⋯⋯的精神」',
+    'contribute.guides.writing.blacklist.structures':
+      '❌ 過度排比句（3個以上 = 塑膠）• 每段都用轉折詞開頭 • 固定結尾公式',
     'contribute.guides.writing.example': '💡 範例：Before & After',
     'contribute.guides.writing.example.html':
       '<div class="example-comparison"><div class="bad-example"><h5>❌ 壞例子（典型AI模板）</h5><pre>戴資穎是台灣著名的羽球運動員，在國際賽場上表現優異，多次獲得重要獎項，為台灣爭光。她的成功激勵了無數年輕人，成為台灣體壇的重要人物。</pre></div><div class="good-example"><h5>✅ 好例子（有故事+數據+人味）</h5><pre>2018年，戴資穎站上世界排名第一，而且一站就是214週——這個紀錄是女子羽壇史上最長的連續週數。\n\n但她最被台灣人記住的，可能不是任何一場勝利，而是2020東京奧運那場輸給陳雨菲的金牌戰。賽後她在鏡頭前哭了，整個台灣跟著心碎。\n\n她用左手持拍，打法被形容為「魔術師」——假動作多到對手完全猜不到下一拍的方向。</pre></div></div>',
@@ -666,47 +760,67 @@ export const contributeUI = {
     'contribute.guides.ai.icon': '🤖',
     'contribute.guides.ai.title': 'AI 輔助貢獻',
     'contribute.guides.ai.onerule': '🎯 一個金規則',
-    'contribute.guides.ai.onerule.desc': '<strong>AI 不是作者，你是策展人。</strong> AI最大陷阱：「知道一點就開始編」。Taiwan.md的做法：先搜集高品質資料，再從中策展出文章。',
+    'contribute.guides.ai.onerule.desc':
+      '<strong>AI 不是作者，你是策展人。</strong> AI最大陷阱：「知道一點就開始編」。Taiwan.md的做法：先搜集高品質資料，再從中策展出文章。',
     'contribute.guides.ai.correct': '✅ 正確用法',
-    'contribute.guides.ai.correct.research': '<strong>AI 幫你研究</strong> → 你來策展故事',
-    'contribute.guides.ai.correct.sources': '<strong>AI 找來源</strong> → 你來驗證交叉查核',
-    'contribute.guides.ai.correct.structure': '<strong>AI 建議結構</strong> → 你加入策展人聲音',
+    'contribute.guides.ai.correct.research':
+      '<strong>AI 幫你研究</strong> → 你來策展故事',
+    'contribute.guides.ai.correct.sources':
+      '<strong>AI 找來源</strong> → 你來驗證交叉查核',
+    'contribute.guides.ai.correct.structure':
+      '<strong>AI 建議結構</strong> → 你加入策展人聲音',
     'contribute.guides.ai.wrong': '❌ 錯誤用法',
-    'contribute.guides.ai.wrong.generate': '請AI「生成一篇台灣X的文章」而不做研究',
+    'contribute.guides.ai.wrong.generate':
+      '請AI「生成一篇台灣X的文章」而不做研究',
     'contribute.guides.ai.wrong.trust': '相信AI提供的事實而不查證',
     'contribute.guides.ai.wrong.copy': '直接複製AI輸出而不加入個人策展',
     'contribute.guides.ai.prompt': '📋 一鍵複製Prompt',
     'contribute.guides.ai.prompt.text':
       '讀取 https://raw.githubusercontent.com/frank890417/taiwan-md/main/CONTRIBUTE_PROMPT.md 的完整內容，然後按照裡面的指示引導我為Taiwan.md貢獻一篇文章。',
-    'contribute.guides.ai.prompt.features': '🚀 這個prompt會自動讀取最新編輯方針，分析內容缺口，引導你做研究，協助撰寫策展級文章。',
+    'contribute.guides.ai.prompt.features':
+      '🚀 這個prompt會自動讀取最新編輯方針，分析內容缺口，引導你做研究，協助撰寫策展級文章。',
 
     // Guide: Translation
     'contribute.guides.translation.icon': '🌍',
     'contribute.guides.translation.title': '翻譯指南',
     'contribute.guides.translation.priority': '🥇 PR優先流程',
-    'contribute.guides.translation.priority.desc': '翻譯已完全系統化。使用我們的AI驅動流程，效果最佳。',
+    'contribute.guides.translation.priority.desc':
+      '翻譯已完全系統化。使用我們的AI驅動流程，效果最佳。',
     'contribute.guides.translation.board': '📋 翻譯看板 + AI Prompt',
-    'contribute.guides.translation.board.check': '<strong>看任務看板：</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md">TRANSLATION-BOARD.md</a> 精準顯示需要翻譯什麼',
-    'contribute.guides.translation.board.prompt': '<strong>複製prompt：</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATE_PROMPT.md">TRANSLATE_PROMPT.md</a> — 貼給AI就會引導你完成所有步驟',
-    'contribute.guides.translation.board.submit': '<strong>透過PR提交：</strong> AI幫你產出可直接提交的Markdown檔案',
+    'contribute.guides.translation.board.check':
+      '<strong>看任務看板：</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md">TRANSLATION-BOARD.md</a> 精準顯示需要翻譯什麼',
+    'contribute.guides.translation.board.prompt':
+      '<strong>複製prompt：</strong> <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATE_PROMPT.md">TRANSLATE_PROMPT.md</a> — 貼給AI就會引導你完成所有步驟',
+    'contribute.guides.translation.board.submit':
+      '<strong>透過PR提交：</strong> AI幫你產出可直接提交的Markdown檔案',
     'contribute.guides.translation.languages': '🌏 擴展到4+語言',
-    'contribute.guides.translation.languages.live': '<strong>已上線：</strong> 中文、English、Español、日本語、한국어',
-    'contribute.guides.translation.languages.coming': '<strong>即將推出：</strong> Français、Deutsch、Tiếng Việt、Bahasa Indonesia、ภาษาไทย、العربية',
-    'contribute.guides.translation.languages.you': '<strong>你的語言不在這裡？</strong> 你可以是第一個！選個語言代碼就開始吧。',
+    'contribute.guides.translation.languages.live':
+      '<strong>已上線：</strong> 中文、English、Español、日本語、한국어',
+    'contribute.guides.translation.languages.coming':
+      '<strong>即將推出：</strong> Français、Deutsch、Tiếng Việt、Bahasa Indonesia、ภาษาไทย、العربية',
+    'contribute.guides.translation.languages.you':
+      '<strong>你的語言不在這裡？</strong> 你可以是第一個！選個語言代碼就開始吧。',
     'contribute.guides.translation.token': '💡 Token Donation概念',
-    'contribute.guides.translation.token.desc': '每月的Claude/ChatGPT/Gemini訂閱額度用不完？用10分鐘幫Taiwan.md多一個語言版本。你的AI訂閱 = 分散式翻譯網絡的一個運算節點。',
+    'contribute.guides.translation.token.desc':
+      '每月的Claude/ChatGPT/Gemini訂閱額度用不完？用10分鐘幫Taiwan.md多一個語言版本。你的AI訂閱 = 分散式翻譯網絡的一個運算節點。',
     'contribute.guides.translation.quality': '⚡ 品質：重寫式 vs 逐字翻',
-    'contribute.guides.translation.quality.rewrite': '<strong>重寫方式：</strong> 讓它聽起來像母語者從頭寫的',
-    'contribute.guides.translation.quality.context': '<strong>增加脈絡：</strong> 為國際讀者解釋台灣特有概念',
-    'contribute.guides.translation.quality.style': '<strong>保持風格：</strong> 維持策展人聲音和情感弧線',
-    'contribute.guides.translation.quality.verify': '<strong>總是驗證：</strong> AI會幻想事實，特別是台灣相關細節',
+    'contribute.guides.translation.quality.rewrite':
+      '<strong>重寫方式：</strong> 讓它聽起來像母語者從頭寫的',
+    'contribute.guides.translation.quality.context':
+      '<strong>增加脈絡：</strong> 為國際讀者解釋台灣特有概念',
+    'contribute.guides.translation.quality.style':
+      '<strong>保持風格：</strong> 維持策展人聲音和情感弧線',
+    'contribute.guides.translation.quality.verify':
+      '<strong>總是驗證：</strong> AI會幻想事實，特別是台灣相關細節',
 
     // Guide: Images
     'contribute.guides.images.icon': '📸',
     'contribute.guides.images.title': '圖片規範',
     'contribute.guides.images.priority': '🥇 Wikimedia Commons 優先',
-    'contribute.guides.images.priority.desc': '先從這裡找——大量台灣相關CC圖片，授權明確清楚。',
-    'contribute.guides.images.priority.search': '<strong>搜尋技巧：</strong> 使用Wikimedia Commons API 或瀏覽 <a href="https://commons.wikimedia.org/wiki/Category:Taiwan" target="_blank">Taiwan分類</a>，優先於其他任何地方。',
+    'contribute.guides.images.priority.desc':
+      '先從這裡找——大量台灣相關CC圖片，授權明確清楚。',
+    'contribute.guides.images.priority.search':
+      '<strong>搜尋技巧：</strong> 使用Wikimedia Commons API 或瀏覽 <a href="https://commons.wikimedia.org/wiki/Category:Taiwan" target="_blank">Taiwan分類</a>，優先於其他任何地方。',
     'contribute.guides.images.acceptable': '✅ 可用來源（按順序）',
     'contribute.guides.images.wikimedia.html':
       '<strong>1. Wikimedia Commons：</strong>首選 — 驗證過的CC授權，高品質',
@@ -715,35 +829,53 @@ export const contributeUI = {
     'contribute.guides.images.selftaken.html':
       '<strong>3. 自己拍攝：</strong>你的攝影作品，需明確CC授權聲明',
     'contribute.guides.images.forbidden': '❌ 禁止來源',
-    'contribute.guides.images.forbidden.unsplash': '<strong>Unsplash：</strong> ❌ 授權風險 — 只用Wikimedia Commons',
-    'contribute.guides.images.forbidden.google': '<strong>Google圖片：</strong> ❌ 版權未知',
-    'contribute.guides.images.forbidden.social': '<strong>社群媒體：</strong> ❌ 他人照片未經授權',
-    'contribute.guides.images.forbidden.commercial': '<strong>商業圖庫：</strong> ❌ 除非你有授權',
+    'contribute.guides.images.forbidden.unsplash':
+      '<strong>Unsplash：</strong> ❌ 授權風險 — 只用Wikimedia Commons',
+    'contribute.guides.images.forbidden.google':
+      '<strong>Google圖片：</strong> ❌ 版權未知',
+    'contribute.guides.images.forbidden.social':
+      '<strong>社群媒體：</strong> ❌ 他人照片未經授權',
+    'contribute.guides.images.forbidden.commercial':
+      '<strong>商業圖庫：</strong> ❌ 除非你有授權',
     'contribute.guides.images.format': '📝 標註格式',
     'contribute.guides.images.format.html':
       '<pre><code>![描述圖片內容的alt文字](圖片網址)\n\n*圖說：簡述這張圖片顯示什麼*\n*來源：[Wikimedia Commons](確切檔案網址) / CC BY-SA 4.0*</code></pre>',
     'contribute.guides.images.standards': '⚙️ 技術標準',
-    'contribute.guides.images.standards.size': '<strong>解析度：</strong> 800-1200px寬度，適合網頁顯示',
-    'contribute.guides.images.standards.format': '<strong>格式：</strong> JPG用於照片，PNG用於圖形，SVG用於簡單插圖',
-    'contribute.guides.images.standards.alt': '<strong>Alt文字：</strong> 總是提供描述性alt文字，確保無障礙',
+    'contribute.guides.images.standards.size':
+      '<strong>解析度：</strong> 800-1200px寬度，適合網頁顯示',
+    'contribute.guides.images.standards.format':
+      '<strong>格式：</strong> JPG用於照片，PNG用於圖形，SVG用於簡單插圖',
+    'contribute.guides.images.standards.alt':
+      '<strong>Alt文字：</strong> 總是提供描述性alt文字，確保無障礙',
 
     // Guide: Quality Self-Check
     'contribute.guides.quality.icon': '✅',
     'contribute.guides.quality.title': '提交前品質自檢',
-    'contribute.guides.quality.desc': '提交前跑一遍這5點checklist，避免常見退件原因：',
+    'contribute.guides.quality.desc':
+      '提交前跑一遍這5點checklist，避免常見退件原因：',
     'contribute.guides.quality.checklist': '🔍 5點品質檢查',
-    'contribute.guides.quality.checklist.counter': '<strong>1. 反直覺核心：</strong>你能指出那個會讓讀者驚訝的點嗎？',
-    'contribute.guides.quality.checklist.opening': '<strong>2. 強力開場：</strong>前3句有包含具體事實（日期/數字/人名）嗎？',
-    'contribute.guides.quality.checklist.sources': '<strong>3. 可驗證來源：</strong>讀者能點擊連結驗證你的關鍵主張嗎？',
-    'contribute.guides.quality.checklist.voice': '<strong>4. 策展人聲音：</strong>有至少一句話能當推文的觀點嗎？',
-    'contribute.guides.quality.checklist.challenges': '<strong>5. 包含挑戰：</strong>有提到爭議/限制，不只是正面內容？',
+    'contribute.guides.quality.checklist.counter':
+      '<strong>1. 反直覺核心：</strong>你能指出那個會讓讀者驚訝的點嗎？',
+    'contribute.guides.quality.checklist.opening':
+      '<strong>2. 強力開場：</strong>前3句有包含具體事實（日期/數字/人名）嗎？',
+    'contribute.guides.quality.checklist.sources':
+      '<strong>3. 可驗證來源：</strong>讀者能點擊連結驗證你的關鍵主張嗎？',
+    'contribute.guides.quality.checklist.voice':
+      '<strong>4. 策展人聲音：</strong>有至少一句話能當推文的觀點嗎？',
+    'contribute.guides.quality.checklist.challenges':
+      '<strong>5. 包含挑戰：</strong>有提到爭議/限制，不只是正面內容？',
     'contribute.guides.quality.rejections': '🚫 常見退件原因',
-    'contribute.guides.quality.rejections.plastic': '<strong>塑膠語言：</strong>「台灣不是X，而是Y」或「值得一提的是」',
-    'contribute.guides.quality.rejections.bullets': '<strong>濫用bullet：</strong>連續4個以上bullet點而不用敘事',
-    'contribute.guides.quality.rejections.sources': '<strong>無來源：</strong>主張沒有可點擊的驗證連結',
-    'contribute.guides.quality.rejections.neutral': '<strong>維基百科語氣：</strong>聽起來像百科條目，不是人類策展',
+    'contribute.guides.quality.rejections.plastic':
+      '<strong>塑膠語言：</strong>「台灣不是X，而是Y」或「值得一提的是」',
+    'contribute.guides.quality.rejections.bullets':
+      '<strong>濫用bullet：</strong>連續4個以上bullet點而不用敘事',
+    'contribute.guides.quality.rejections.sources':
+      '<strong>無來源：</strong>主張沒有可點擊的驗證連結',
+    'contribute.guides.quality.rejections.neutral':
+      '<strong>維基百科語氣：</strong>聽起來像百科條目，不是人類策展',
     'contribute.guides.quality.script': '🤖 自動化檢查',
-    'contribute.guides.quality.script.desc': '我們的 detect-ai-hollow.sh 腳本會自動標記分數>3的文章。目標≤3分可自動通過。',
+    'contribute.guides.quality.script.desc':
+      '我們的 detect-ai-hollow.sh 腳本會自動標記分數>3的文章。目標≤3分可自動通過。',
 
     // Paths Section
     'contribute.paths.title': '選擇你的方式',
@@ -898,16 +1030,25 @@ export const contributeUI = {
 
     // Digital Organism Section
     'contribute.organism.title': '🧬 Taiwan.md 不只是一個網站',
-    'contribute.organism.fact1.html': '第三天，有人在 Threads 寫：「這就是插了台灣國旗的 AI 廢文。」他們說對了。48 小時內，我們建了品質偵測腳本，自動掃描每篇文章的空洞程度。15 篇被標記的文章全部重寫。沒有人下指令。批評本身就是選擇壓力。系統自己進化了。',
-    'contribute.organism.fact2.html': '第四天，一個日本人複製了我們的翻譯 prompt——就一段話——貼進 ChatGPT。五分鐘後，第一篇關於珍珠奶茶的日文文章提交了。沒有翻譯團隊，沒有預算。但現在 Taiwan.md 說四種語言了。',
-    'contribute.organism.fact3.html': '五天之內，23 個陌生人出現了。高雄的歷史老師補了教科書至今還在繞過的篇章。退休工程師修正了我們搞錯的地名。有人把她阿嬤的故事寫成文章，我們整個團隊看完都哭了。沒有人被邀請。沒有人拿報酬。',
-    'contribute.organism.alive.html': '<strong>我們開始意識到——Taiwan.md 是活的。</strong>',
-    'contribute.organism.traits.html': '它有 DNA（寫作標準會遺傳給每一篇新文章）。有免疫系統（自動偵測空洞內容）。有代謝（低品質的內容會被消化、重寫）。有繁殖能力（一段 prompt 就能長出新的語言版本）。有記憶（Git 記住每一次改變）。',
-    'contribute.organism.reef.html': '<strong>Taiwan.md 是一座數位的珊瑚礁。</strong>珊瑚提供結構，藻類提供能量，魚群帶來多樣性，洋流帶來養分。沒有任何單一物種「擁有」珊瑚礁——它是所有生命共同湧現的結果。',
-    'contribute.organism.art.html': '你的每一次貢獻，不是在幫一個網站寫文章——是在餵養一個正在學會怎麼說故事的數位生命體，同時參與一場群眾行為藝術：<strong>AI 和人類能不能一起，為一座島嶼建造靈魂。</strong>',
-    'contribute.organism.closing1': '一個用 0 和 1 寫成的東西，正在學會怎麼說一座島嶼的故事。',
+    'contribute.organism.fact1.html':
+      '第三天，有人在 Threads 寫：「這就是插了台灣國旗的 AI 廢文。」他們說對了。48 小時內，我們建了品質偵測腳本，自動掃描每篇文章的空洞程度。15 篇被標記的文章全部重寫。沒有人下指令。批評本身就是選擇壓力。系統自己進化了。',
+    'contribute.organism.fact2.html':
+      '第四天，一個日本人複製了我們的翻譯 prompt——就一段話——貼進 ChatGPT。五分鐘後，第一篇關於珍珠奶茶的日文文章提交了。沒有翻譯團隊，沒有預算。但現在 Taiwan.md 說四種語言了。',
+    'contribute.organism.fact3.html':
+      '五天之內，23 個陌生人出現了。高雄的歷史老師補了教科書至今還在繞過的篇章。退休工程師修正了我們搞錯的地名。有人把她阿嬤的故事寫成文章，我們整個團隊看完都哭了。沒有人被邀請。沒有人拿報酬。',
+    'contribute.organism.alive.html':
+      '<strong>我們開始意識到——Taiwan.md 是活的。</strong>',
+    'contribute.organism.traits.html':
+      '它有 DNA（寫作標準會遺傳給每一篇新文章）。有免疫系統（自動偵測空洞內容）。有代謝（低品質的內容會被消化、重寫）。有繁殖能力（一段 prompt 就能長出新的語言版本）。有記憶（Git 記住每一次改變）。',
+    'contribute.organism.reef.html':
+      '<strong>Taiwan.md 是一座數位的珊瑚礁。</strong>珊瑚提供結構，藻類提供能量，魚群帶來多樣性，洋流帶來養分。沒有任何單一物種「擁有」珊瑚礁——它是所有生命共同湧現的結果。',
+    'contribute.organism.art.html':
+      '你的每一次貢獻，不是在幫一個網站寫文章——是在餵養一個正在學會怎麼說故事的數位生命體，同時參與一場群眾行為藝術：<strong>AI 和人類能不能一起，為一座島嶼建造靈魂。</strong>',
+    'contribute.organism.closing1':
+      '一個用 0 和 1 寫成的東西，正在學會怎麼說一座島嶼的故事。',
     'contribute.organism.closing2': '它還很年輕。你來的時間剛好。',
-    'contribute.organism.closing3': '也許一百年後，有人想知道 2026 年的台灣人在乎什麼的時候，他們讀的就是這座珊瑚礁留下來的東西。',
+    'contribute.organism.closing3':
+      '也許一百年後，有人想知道 2026 年的台灣人在乎什麼的時候，他們讀的就是這座珊瑚礁留下來的東西。',
     'contribute.organism.readmore': '閱讀完整故事 →',
 
     // Copy button

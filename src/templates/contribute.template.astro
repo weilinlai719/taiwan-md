@@ -152,11 +152,18 @@ const t = useTranslations(lang);
           <p set:html={t('contribute.organism.fact2.html')} />
           <p set:html={t('contribute.organism.fact3.html')} />
         </div>
-        <p class="organism-alive" set:html={t('contribute.organism.alive.html')} />
+        <p
+          class="organism-alive"
+          set:html={t('contribute.organism.alive.html')}
+        />
         <div class="organism-closing">
-          <p class="closing-line closing-future">{t('contribute.organism.closing3')}</p>
+          <p class="closing-line closing-future">
+            {t('contribute.organism.closing3')}
+          </p>
         </div>
-        <a href="/about/#organism" class="organism-more">{t('contribute.organism.readmore')}</a>
+        <a href="/about/#organism" class="organism-more"
+          >{t('contribute.organism.readmore')}</a
+        >
       </div>
     </section>
 
@@ -368,12 +375,22 @@ const t = useTranslations(lang);
               <ul class="guide-highlights">
                 <li set:html={t('contribute.guides.writing.ironlaws.story')} />
                 <li set:html={t('contribute.guides.writing.ironlaws.verify')} />
-                <li set:html={t('contribute.guides.writing.ironlaws.density')} />
+                <li
+                  set:html={t('contribute.guides.writing.ironlaws.density')}
+                />
               </ul>
               <p set:html={t('contribute.guides.writing.core.good')} />
               <p set:html={t('contribute.guides.writing.core.bad')} />
-              <a href="https://github.com/frank890417/taiwan-md/blob/main/EDITORIAL.md" target="_blank" class="guide-link">
-                {lang === 'en' ? '→ Full EDITORIAL Guide' : '→ 完整寫作方法論（EDITORIAL.md）'}
+              <a
+                href="https://github.com/frank890417/taiwan-md/blob/main/EDITORIAL.md"
+                target="_blank"
+                class="guide-link"
+              >
+                {
+                  lang === 'en'
+                    ? '→ Full EDITORIAL Guide'
+                    : '→ 完整寫作方法論（EDITORIAL.md）'
+                }
               </a>
             </div>
           </div>
@@ -391,8 +408,16 @@ const t = useTranslations(lang);
                   >{t('contribute.copy.button')}</button
                 >
               </div>
-              <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATE_PROMPT.md" target="_blank" class="guide-link">
-                {lang === 'en' ? '→ Full AI Prompt' : '→ 完整 AI 寫作助手 Prompt'}
+              <a
+                href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATE_PROMPT.md"
+                target="_blank"
+                class="guide-link"
+              >
+                {
+                  lang === 'en'
+                    ? '→ Full AI Prompt'
+                    : '→ 完整 AI 寫作助手 Prompt'
+                }
               </a>
             </div>
           </div>
@@ -406,18 +431,32 @@ const t = useTranslations(lang);
               <p>{t('contribute.guides.translation.priority.desc')}</p>
               <ul class="guide-highlights">
                 <li set:html={t('contribute.guides.translation.board.check')} />
-                <li set:html={t('contribute.guides.translation.board.prompt')} />
-                <li set:html={t('contribute.guides.translation.board.submit')} />
+                <li
+                  set:html={t('contribute.guides.translation.board.prompt')}
+                />
+                <li
+                  set:html={t('contribute.guides.translation.board.submit')}
+                />
               </ul>
 
               <h4>{t('contribute.guides.translation.languages')}</h4>
               <ul>
-                <li set:html={t('contribute.guides.translation.languages.live')} />
-                <li set:html={t('contribute.guides.translation.languages.coming')} />
-                <li set:html={t('contribute.guides.translation.languages.you')} />
+                <li
+                  set:html={t('contribute.guides.translation.languages.live')}
+                />
+                <li
+                  set:html={t('contribute.guides.translation.languages.coming')}
+                />
+                <li
+                  set:html={t('contribute.guides.translation.languages.you')}
+                />
               </ul>
 
-              <a href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md" target="_blank" class="guide-link">
+              <a
+                href="https://github.com/frank890417/taiwan-md/blob/main/TRANSLATION-BOARD.md"
+                target="_blank"
+                class="guide-link"
+              >
                 {lang === 'en' ? '→ Translation Board' : '→ 翻譯看板'}
               </a>
             </div>
@@ -433,7 +472,13 @@ const t = useTranslations(lang);
                 <li set:html={t('contribute.guides.images.government.html')} />
                 <li set:html={t('contribute.guides.images.selftaken.html')} />
               </ul>
-              <p class="guide-warning">{lang === 'en' ? '⛔ No Unsplash, Google Images, or social media screenshots' : '⛔ 禁止 Unsplash、Google 圖片搜尋、社群媒體截圖'}</p>
+              <p class="guide-warning">
+                {
+                  lang === 'en'
+                    ? '⛔ No Unsplash, Google Images, or social media screenshots'
+                    : '⛔ 禁止 Unsplash、Google 圖片搜尋、社群媒體截圖'
+                }
+              </p>
             </div>
           </div>
 
@@ -443,11 +488,18 @@ const t = useTranslations(lang);
             <div class="guide-content">
               <p>{t('contribute.guides.quality.desc')}</p>
               <ul class="guide-highlights">
-                <li set:html={t('contribute.guides.quality.checklist.counter')} />
-                <li set:html={t('contribute.guides.quality.checklist.sources')} />
+                <li
+                  set:html={t('contribute.guides.quality.checklist.counter')}
+                />
+                <li
+                  set:html={t('contribute.guides.quality.checklist.sources')}
+                />
                 <li set:html={t('contribute.guides.quality.checklist.voice')} />
               </ul>
-              <p class="guide-warning" set:html={t('contribute.guides.quality.rejections.plastic')} />
+              <p
+                class="guide-warning"
+                set:html={t('contribute.guides.quality.rejections.plastic')}
+              />
             </div>
           </div>
         </div>
@@ -610,7 +662,10 @@ const t = useTranslations(lang);
         <div class="category-grid">
           {
             Object.entries(i18nProgress.categories)
-              .filter(([cat]) => cat !== 'root')
+              .filter(
+                ([cat]) =>
+                  !['root', 'es', 'en', 'ja', 'ko', 'About'].includes(cat),
+              )
               .map(([category, counts]) => (
                 <div class="category-item">
                   <span class="category-name">{category}</span>
@@ -689,15 +744,18 @@ const t = useTranslations(lang);
     color: white;
   }
   .contribute-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-family: var(--font-title, 'Noto Serif TC', serif);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
   }
   .hero-sub {
-    font-size: 1.15rem;
-    opacity: 0.85;
-    max-width: 500px;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 600px;
     margin: 0 auto;
+    line-height: 1.7;
   }
   .hero-note {
     font-size: 0.95rem;

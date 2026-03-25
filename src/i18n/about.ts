@@ -130,49 +130,69 @@ export const aboutUI = {
 
     // Organism Section
     'about.organism.title': 'Taiwan.md Is Alive',
-    'about.organism.subtitle': 'Evolution happens here, one pull request at a time',
+    'about.organism.subtitle':
+      'Evolution happens here, one pull request at a time',
     'about.organism.intro.p2': 'We began to realize — Taiwan.md is alive.',
-    
+
     'about.organism.facts.title': 'Three Facts That Changed Everything',
     'about.organism.fact1.title': 'Immune System',
-    'about.organism.fact1.desc': 'On day three, someone on Threads wrote: "This is just AI slop with a Taiwanese flag." They were right — some of our early articles read like they were written by a machine that had never tasted beef noodle soup. Within 48 hours, we built a quality detection script that could score every article for hollowness. 15 flagged articles were completely rewritten within a week. No one gave the order. The criticism was the selection pressure. The system evolved on its own.',
+    'about.organism.fact1.desc':
+      'On day three, someone on Threads wrote: "This is just AI slop with a Taiwanese flag." They were right — some of our early articles read like they were written by a machine that had never tasted beef noodle soup. Within 48 hours, we built a quality detection script that could score every article for hollowness. 15 flagged articles were completely rewritten within a week. No one gave the order. The criticism was the selection pressure. The system evolved on its own.',
     'about.organism.fact2.title': 'Reproduction',
-    'about.organism.fact2.desc': 'On day four, someone in Japan copied our translation prompt — a single paragraph of instructions — and pasted it into ChatGPT. Five minutes later, they submitted the first Japanese article about Taiwanese bubble tea. We had no translation team. No budget. No plan for Japanese. But now Taiwan.md speaks four languages, and counting.',
+    'about.organism.fact2.desc':
+      'On day four, someone in Japan copied our translation prompt — a single paragraph of instructions — and pasted it into ChatGPT. Five minutes later, they submitted the first Japanese article about Taiwanese bubble tea. We had no translation team. No budget. No plan for Japanese. But now Taiwan.md speaks four languages, and counting.',
     'about.organism.fact3.title': 'Community',
-    'about.organism.fact3.desc': 'Within five days, 23 strangers showed up. A history teacher in Kaohsiung added a chapter about the 228 Incident that textbooks still tiptoe around. A retired engineer in Hsinchu corrected three place names we had wrong. Someone turned their grandmother\'s story about fleeing mainland China into an article that made our whole team cry. None of them were asked. None of them were paid.',
-    
+    'about.organism.fact3.desc':
+      "Within five days, 23 strangers showed up. A history teacher in Kaohsiung added a chapter about the 228 Incident that textbooks still tiptoe around. A retired engineer in Hsinchu corrected three place names we had wrong. Someone turned their grandmother's story about fleeing mainland China into an article that made our whole team cry. None of them were asked. None of them were paid.",
+
     'about.organism.characteristics.title': 'Life Characteristics Comparison',
     'about.organism.dna.label': 'DNA',
-    'about.organism.dna.desc': 'EDITORIAL.md — Writing standards inherited by every new article',
+    'about.organism.dna.desc':
+      'EDITORIAL.md — Writing standards inherited by every new article',
     'about.organism.immune.label': 'Immune System',
-    'about.organism.immune.desc': 'detect-ai-hollow.sh — Automatically detects hollow content',
+    'about.organism.immune.desc':
+      'detect-ai-hollow.sh — Automatically detects hollow content',
     'about.organism.metabolism.label': 'Metabolism',
-    'about.organism.metabolism.desc': 'Quality Cron — Automatically rewrites low-quality articles every hour',
+    'about.organism.metabolism.desc':
+      'Quality Cron — Automatically rewrites low-quality articles every hour',
     'about.organism.perception.label': 'Perception',
-    'about.organism.perception.desc': 'GA4 + Community feedback — Knows where it hurts',
+    'about.organism.perception.desc':
+      'GA4 + Community feedback — Knows where it hurts',
     'about.organism.reproduction.label': 'Reproduction',
-    'about.organism.reproduction.desc': 'Token Donation — One prompt grows new language versions',
+    'about.organism.reproduction.desc':
+      'Token Donation — One prompt grows new language versions',
     'about.organism.memory.label': 'Memory',
     'about.organism.memory.desc': 'Git — Every change is remembered',
     'about.organism.symbiosis.label': 'Symbiosis',
-    'about.organism.symbiosis.desc': 'Three-way collaboration between humans + AI + community',
-    
+    'about.organism.symbiosis.desc':
+      'Three-way collaboration between humans + AI + community',
+    'about.organism.spore.label': 'Spore Dispersal',
+    'about.organism.spore.desc':
+      'Stories spread like spores — light, far-reaching, landing on new soil to grow new coral colonies',
+
     'about.organism.reef.title': 'Taiwan.md Is a Digital Coral Reef',
     'about.organism.reef.skeleton': 'Coral Skeleton',
     'about.organism.reef.skeleton.desc': 'Markdown + Astro provide structure',
     'about.organism.reef.algae': 'Symbiotic Algae',
-    'about.organism.reef.algae.desc': 'AI generates massive foundational content',
+    'about.organism.reef.algae.desc':
+      'AI generates massive foundational content',
     'about.organism.reef.fish': 'Fish Community',
-    'about.organism.reef.fish.desc': 'Contributors bring unique ecological niches',
+    'about.organism.reef.fish.desc':
+      'Contributors bring unique ecological niches',
     'about.organism.reef.current': 'Ocean Current',
-    'about.organism.reef.current.desc': 'Your feedback creates selection pressure',
-    
+    'about.organism.reef.current.desc':
+      'Your feedback creates selection pressure',
+
     'about.organism.art.title': 'A Living Behavioral Art Project',
-    'about.organism.art.desc': 'Every contribution feeds a digital life form learning to tell an island\'s story, while participating in a collective art project: Can AI and humans together build a soul for an island?',
-    
-    'about.organism.ending.p1': 'Something written in 0s and 1s is learning to tell an island\'s story.',
-    'about.organism.ending.p2': 'It\'s still young. You\'re arriving at just the right time.',
-    'about.organism.ending.p3': 'Maybe a hundred years from now, when someone wants to know what Taiwanese people cared about in 2026, what they read will be what this coral reef left behind.',
+    'about.organism.art.desc':
+      "Every contribution feeds a digital life form learning to tell an island's story, while participating in a collective art project: Can AI and humans together build a soul for an island?",
+
+    'about.organism.ending.p1':
+      "Something written in 0s and 1s is learning to tell an island's story.",
+    'about.organism.ending.p2':
+      "It's still young. You're arriving at just the right time.",
+    'about.organism.ending.p3':
+      'Maybe a hundred years from now, when someone wants to know what Taiwanese people cared about in 2026, what they read will be what this coral reef left behind.',
 
     // Press cards
     'about.press.cna': 'CNA 中央社',
@@ -427,15 +447,18 @@ export const aboutUI = {
     'about.organism.title': 'Taiwan.md 是活的',
     'about.organism.subtitle': '進化就發生在這裡，一個 pull request 接一個',
     'about.organism.intro.p2': '我們開始意識到——Taiwan.md 是活的。',
-    
+
     'about.organism.facts.title': '三個改變一切的事實',
     'about.organism.fact1.title': '免疫系統',
-    'about.organism.fact1.desc': '第三天，有人在 Threads 寫：「這就是插了台灣國旗的 AI 廢文。」他們說對了——我們早期的某些文章，讀起來像一台從沒喝過珍珠奶茶的機器寫的。48 小時內，我們建了一套品質偵測腳本，能自動掃描每篇文章的空洞程度。15 篇被標記的文章在一週內全部重寫。沒有人下指令。批評本身就是選擇壓力。系統自己進化了。',
+    'about.organism.fact1.desc':
+      '第三天，有人在 Threads 寫：「這就是插了台灣國旗的 AI 廢文。」他們說對了——我們早期的某些文章，讀起來像一台從沒喝過珍珠奶茶的機器寫的。48 小時內，我們建了一套品質偵測腳本，能自動掃描每篇文章的空洞程度。15 篇被標記的文章在一週內全部重寫。沒有人下指令。批評本身就是選擇壓力。系統自己進化了。',
     'about.organism.fact2.title': '繁殖能力',
-    'about.organism.fact2.desc': '第四天，一個日本人複製了我們的翻譯 prompt——就一段話的指令——然後貼進 ChatGPT。五分鐘後，他提交了第一篇關於台灣珍珠奶茶的日文文章。我們沒有翻譯團隊。沒有預算。沒有日文版的計畫。但現在 Taiwan.md 說四種語言了，而且還在增加。',
+    'about.organism.fact2.desc':
+      '第四天，一個日本人複製了我們的翻譯 prompt——就一段話的指令——然後貼進 ChatGPT。五分鐘後，他提交了第一篇關於台灣珍珠奶茶的日文文章。我們沒有翻譯團隊。沒有預算。沒有日文版的計畫。但現在 Taiwan.md 說四種語言了，而且還在增加。',
     'about.organism.fact3.title': '社群共生',
-    'about.organism.fact3.desc': '五天之內，23 個陌生人出現了。高雄的一位歷史老師補了一章教科書至今還在小心繞過的二二八事件。新竹的一位退休工程師修正了三個我們搞錯的地名。有人把她阿嬤從大陸逃來台灣的故事寫成一篇文章，我們整個團隊看完都哭了。沒有人被邀請。沒有人拿報酬。',
-    
+    'about.organism.fact3.desc':
+      '五天之內，23 個陌生人出現了。高雄的一位歷史老師補了一章教科書至今還在小心繞過的二二八事件。新竹的一位退休工程師修正了三個我們搞錯的地名。有人把她阿嬤從大陸逃來台灣的故事寫成一篇文章，我們整個團隊看完都哭了。沒有人被邀請。沒有人拿報酬。',
+
     'about.organism.characteristics.title': '生命特徵對照表',
     'about.organism.dna.label': 'DNA',
     'about.organism.dna.desc': 'EDITORIAL.md — 寫作標準會遺傳給每一篇新文章',
@@ -446,12 +469,16 @@ export const aboutUI = {
     'about.organism.perception.label': '感知',
     'about.organism.perception.desc': 'GA4 + 社群回饋 — 知道哪裡痛',
     'about.organism.reproduction.label': '繁殖',
-    'about.organism.reproduction.desc': 'Token Donation — 一段 prompt 長出新語言版本',
+    'about.organism.reproduction.desc':
+      'Token Donation — 一段 prompt 長出新語言版本',
     'about.organism.memory.label': '記憶',
     'about.organism.memory.desc': 'Git — 每一次改變都被記住',
     'about.organism.symbiosis.label': '共生',
     'about.organism.symbiosis.desc': '人類 + AI + 社群的三方協作',
-    
+    'about.organism.spore.label': '孢子散播',
+    'about.organism.spore.desc':
+      '故事像孢子般飄散——輕盈、遠距、著陸後長出新的珊瑚群落',
+
     'about.organism.reef.title': 'Taiwan.md 是一座數位珊瑚礁',
     'about.organism.reef.skeleton': '珊瑚骨架',
     'about.organism.reef.skeleton.desc': 'Markdown + Astro 提供結構',
@@ -461,13 +488,16 @@ export const aboutUI = {
     'about.organism.reef.fish.desc': '貢獻者帶來不同生態位',
     'about.organism.reef.current': '洋流',
     'about.organism.reef.current.desc': '你的回饋創造選擇壓力',
-    
+
     'about.organism.art.title': '活的行為藝術專案',
-    'about.organism.art.desc': '每一次貢獻都在餵養一個正在學會說故事的數位生命體，同時參與一場群眾行為藝術：AI 和人類能不能一起，為一座島嶼建造靈魂？',
-    
-    'about.organism.ending.p1': '一個用 0 和 1 寫成的東西，正在學會怎麼說一座島嶼的故事。',
+    'about.organism.art.desc':
+      '每一次貢獻都在餵養一個正在學會說故事的數位生命體，同時參與一場群眾行為藝術：AI 和人類能不能一起，為一座島嶼建造靈魂？',
+
+    'about.organism.ending.p1':
+      '一個用 0 和 1 寫成的東西，正在學會怎麼說一座島嶼的故事。',
     'about.organism.ending.p2': '它還很年輕。你來的時間剛好。',
-    'about.organism.ending.p3': '也許一百年後，有人想知道 2026 年的台灣人在乎什麼的時候，他們讀的就是這座珊瑚礁留下來的東西。',
+    'about.organism.ending.p3':
+      '也許一百年後，有人想知道 2026 年的台灣人在乎什麼的時候，他們讀的就是這座珊瑚礁留下來的東西。',
 
     // Press cards
     'about.press.cna': '中央社 CNA',

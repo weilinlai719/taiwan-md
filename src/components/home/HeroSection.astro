@@ -12,15 +12,15 @@ const t = useTranslations(lang);
     <svg class="taiwan-silhouette" viewBox="0 0 100 100" aria-hidden="true">
       <path
         d="M30 20 C 35 18 40 20 42 25 C 44 30 46 35 48 40 C 50 45 52 50 50 55 C 48 60 46 65 44 70 C 42 75 40 80 35 82 C 30 84 25 82 22 78 C 19 74 20 69 21 64 C 22 59 24 54 26 49 C 28 44 29 39 30 34 C 31 29 30 24 30 20 Z"
-        fill="rgba(34, 197, 94, 0.08)"
-        stroke="rgba(34, 197, 94, 0.15)"
+        fill="rgba(79, 209, 176, 0.08)"
+        stroke="rgba(79, 209, 176, 0.15)"
         stroke-width="0.5"></path>
     </svg>
     <div class="flowing-gradient"></div>
   </div>
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="title-text">Taiwan.md</span>
+      <span class="title-text">Taiwan<span class="title-dot">.md</span></span>
       <span class="title-glow"></span>
     </h1>
     <h2 class="hero-subtitle">{t('home.hero.subtitle')}</h2>
@@ -88,14 +88,8 @@ const t = useTranslations(lang);
   .hero {
     position: relative;
     text-align: center;
-    padding: 8rem 0 6rem;
-    background: linear-gradient(
-      180deg,
-      #2d5016 0%,
-      #4a7c28 30%,
-      #6b9b3a 60%,
-      #87ceeb 100%
-    );
+    padding: calc(8rem + 56px) 0 5rem;
+    background: linear-gradient(to bottom, #0e2018 0%, #1a3c34 100%);
     color: white;
     margin: -2rem 0 0;
     overflow: hidden;
@@ -105,24 +99,7 @@ const t = useTranslations(lang);
     max-width: 100vw;
   }
   .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-      radial-gradient(
-        circle at 30% 20%,
-        rgba(255, 255, 255, 0.05) 0%,
-        transparent 50%
-      ),
-      radial-gradient(
-        circle at 70% 80%,
-        rgba(107, 155, 58, 0.1) 0%,
-        transparent 50%
-      );
-    z-index: 1;
+    display: none;
   }
   .hero-bg {
     position: absolute;
@@ -141,32 +118,32 @@ const t = useTranslations(lang);
     background:
       radial-gradient(
         ellipse 1000px 100px at 5% 100%,
-        rgba(61, 79, 47, 0.1) 0%,
+        rgba(0, 77, 64, 0.15) 0%,
         transparent 80%
       ),
       radial-gradient(
         ellipse 800px 120px at 15% 100%,
-        rgba(61, 79, 47, 0.15) 0%,
+        rgba(0, 77, 64, 0.2) 0%,
         transparent 75%
       ),
       radial-gradient(
         ellipse 700px 160px at 35% 100%,
-        rgba(90, 114, 71, 0.2) 0%,
+        rgba(0, 99, 82, 0.25) 0%,
         transparent 70%
       ),
       radial-gradient(
         ellipse 600px 180px at 55% 100%,
-        rgba(90, 114, 71, 0.25) 0%,
+        rgba(0, 99, 82, 0.3) 0%,
         transparent 65%
       ),
       radial-gradient(
         ellipse 500px 200px at 70% 100%,
-        rgba(143, 188, 107, 0.3) 0%,
+        rgba(79, 209, 176, 0.2) 0%,
         transparent 60%
       ),
       radial-gradient(
         ellipse 400px 220px at 85% 100%,
-        rgba(143, 188, 107, 0.35) 0%,
+        rgba(79, 209, 176, 0.25) 0%,
         transparent 55%
       );
   }
@@ -177,7 +154,7 @@ const t = useTranslations(lang);
     width: 180px;
     height: 180px;
     opacity: 0.15;
-    filter: drop-shadow(0 0 10px rgba(143, 188, 107, 0.2));
+    filter: drop-shadow(0 0 10px rgba(79, 209, 176, 0.2));
   }
   .flowing-gradient {
     display: none;
@@ -195,7 +172,8 @@ const t = useTranslations(lang);
     font-size: 6rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    font-family: 'jf-kamabit', 'Noto Sans TC', 'Source Han Sans TC', sans-serif !important;
+    font-family:
+      'jf-kamabit', 'Noto Sans TC', 'Source Han Sans TC', sans-serif !important;
     letter-spacing: 0;
     line-height: 1;
     color: white;
@@ -206,6 +184,9 @@ const t = useTranslations(lang);
     z-index: 2;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     font-family: inherit !important;
+  }
+  .title-dot {
+    color: #4fd1b0;
   }
   .title-glow {
     display: none;
@@ -250,7 +231,7 @@ const t = useTranslations(lang);
     margin: 0;
   }
   .hero-transparency a {
-    color: rgba(171, 196, 104, 0.8);
+    color: rgba(79, 209, 176, 0.8);
     text-decoration: underline;
   }
   .hero-cta {
@@ -275,7 +256,7 @@ const t = useTranslations(lang);
   }
   .btn-cta.primary {
     background: rgba(255, 255, 255, 0.95);
-    color: #2d5016;
+    color: #004d40;
     border: none;
   }
   .btn-cta.primary:hover {
@@ -317,7 +298,7 @@ const t = useTranslations(lang);
   }
   @media (max-width: 768px) {
     .hero {
-      padding: 5rem 1rem;
+      padding: calc(7rem + 56px) 1rem 4rem;
       min-height: auto;
     }
     .hero-content {
@@ -330,27 +311,27 @@ const t = useTranslations(lang);
     }
     .hero-subtitle {
       font-size: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       line-height: 1.3;
     }
     .hero-description {
       font-size: 1.1rem;
       padding: 0;
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
       max-width: 100%;
     }
     .hero-cta {
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 3.5rem;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
     }
     .btn-cta {
       width: 100%;
       max-width: 300px;
       justify-content: center;
-      padding: 1.3rem 2.5rem;
-      font-size: 1.1rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.95rem;
     }
     .taiwan-silhouette {
       width: 120px;
@@ -365,7 +346,7 @@ const t = useTranslations(lang);
   }
   @media (max-width: 480px) {
     .hero {
-      padding: 3rem 0.5rem;
+      padding: calc(6rem + 56px) 0.5rem 3rem;
       min-height: auto;
     }
     .hero-title {

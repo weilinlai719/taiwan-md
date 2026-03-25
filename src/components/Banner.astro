@@ -12,7 +12,7 @@ const { enLink } = await getLangSwitchPath(currentPath);
   >
   <button
     class="lang-banner-close"
-    onclick="document.getElementById('lang-banner').style.display='none';localStorage.setItem('lang-banner-dismissed','1');"
+    onclick="document.getElementById('lang-banner').style.display='none';localStorage.setItem('lang-banner-dismissed','1');var h=document.getElementById('main-header');if(h)h.style.top='0px';"
     aria-label="Close">✕</button
   >
 </div>
@@ -33,18 +33,21 @@ const { enLink } = await getLangSwitchPath(currentPath);
     justify-content: center;
     gap: 1rem;
     padding: 0.6rem 1rem;
-    background: linear-gradient(90deg, #1e3a5f, #2563eb);
-    color: white;
+    background: #007864;
+    color: white !important;
     font-size: 0.85rem;
     text-align: center;
+    line-height: 1.4;
+    position: relative;
+    z-index: 50;
   }
   .lang-banner a {
-    color: #fbbf24;
+    color: #4fd1b0;
     font-weight: 600;
     text-decoration: underline;
   }
   .lang-banner a:hover {
-    color: #fde68a;
+    color: #7ee8ca;
   }
   .lang-banner-close {
     background: none;

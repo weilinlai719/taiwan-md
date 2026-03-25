@@ -306,13 +306,62 @@ const t = useTranslations(lang);
         <div class="organism-traits">
           <h3>{t('about.organism.characteristics.title')}</h3>
           <div class="traits-grid">
-            <div class="trait-card"><span class="trait-icon">🧬</span><div><strong>{t('about.organism.dna.label')}</strong><p>{t('about.organism.dna.desc')}</p></div></div>
-            <div class="trait-card"><span class="trait-icon">🛡️</span><div><strong>{t('about.organism.immune.label')}</strong><p>{t('about.organism.immune.desc')}</p></div></div>
-            <div class="trait-card"><span class="trait-icon">🔄</span><div><strong>{t('about.organism.metabolism.label')}</strong><p>{t('about.organism.metabolism.desc')}</p></div></div>
-            <div class="trait-card"><span class="trait-icon">👁️</span><div><strong>{t('about.organism.perception.label')}</strong><p>{t('about.organism.perception.desc')}</p></div></div>
-            <div class="trait-card"><span class="trait-icon">🌱</span><div><strong>{t('about.organism.reproduction.label')}</strong><p>{t('about.organism.reproduction.desc')}</p></div></div>
-            <div class="trait-card"><span class="trait-icon">🧠</span><div><strong>{t('about.organism.memory.label')}</strong><p>{t('about.organism.memory.desc')}</p></div></div>
-            <div class="trait-card"><span class="trait-icon">🤝</span><div><strong>{t('about.organism.symbiosis.label')}</strong><p>{t('about.organism.symbiosis.desc')}</p></div></div>
+            <div class="trait-card">
+              <span class="trait-icon">🧬</span><div>
+                <strong>{t('about.organism.dna.label')}</strong><p>
+                  {t('about.organism.dna.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">🛡️</span><div>
+                <strong>{t('about.organism.immune.label')}</strong><p>
+                  {t('about.organism.immune.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">🔄</span><div>
+                <strong>{t('about.organism.metabolism.label')}</strong><p>
+                  {t('about.organism.metabolism.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">👁️</span><div>
+                <strong>{t('about.organism.perception.label')}</strong><p>
+                  {t('about.organism.perception.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">🌱</span><div>
+                <strong>{t('about.organism.reproduction.label')}</strong><p>
+                  {t('about.organism.reproduction.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">🧠</span><div>
+                <strong>{t('about.organism.memory.label')}</strong><p>
+                  {t('about.organism.memory.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">🤝</span><div>
+                <strong>{t('about.organism.symbiosis.label')}</strong><p>
+                  {t('about.organism.symbiosis.desc')}
+                </p>
+              </div>
+            </div>
+            <div class="trait-card">
+              <span class="trait-icon">🌬️</span><div>
+                <strong>{t('about.organism.spore.label')}</strong><p>
+                  {t('about.organism.spore.desc')}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -320,10 +369,26 @@ const t = useTranslations(lang);
         <div class="organism-reef">
           <h3>{t('about.organism.reef.title')}</h3>
           <div class="reef-grid">
-            <div class="reef-item">🏗️ <strong>{t('about.organism.reef.skeleton')}</strong> — {t('about.organism.reef.skeleton.desc')}</div>
-            <div class="reef-item">🌿 <strong>{t('about.organism.reef.algae')}</strong> — {t('about.organism.reef.algae.desc')}</div>
-            <div class="reef-item">🐠 <strong>{t('about.organism.reef.fish')}</strong> — {t('about.organism.reef.fish.desc')}</div>
-            <div class="reef-item">🌊 <strong>{t('about.organism.reef.current')}</strong> — {t('about.organism.reef.current.desc')}</div>
+            <div class="reef-item">
+              🏗️ <strong>{t('about.organism.reef.skeleton')}</strong> — {
+                t('about.organism.reef.skeleton.desc')
+              }
+            </div>
+            <div class="reef-item">
+              🌿 <strong>{t('about.organism.reef.algae')}</strong> — {
+                t('about.organism.reef.algae.desc')
+              }
+            </div>
+            <div class="reef-item">
+              🐠 <strong>{t('about.organism.reef.fish')}</strong> — {
+                t('about.organism.reef.fish.desc')
+              }
+            </div>
+            <div class="reef-item">
+              🌊 <strong>{t('about.organism.reef.current')}</strong> — {
+                t('about.organism.reef.current.desc')
+              }
+            </div>
           </div>
         </div>
 
@@ -855,12 +920,10 @@ const t = useTranslations(lang);
               />
               <span class="contributor-name">Johnwang860424</span>
             </a>
-
           </div>
         </div>
       </div>
     </section>
-
   </div>
 
   <!-- Protico Community Chat Bubble — sponsored by Howie Young -->
@@ -1196,8 +1259,15 @@ const t = useTranslations(lang);
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .organism-section .section-title { color: #5fd4d4; }
-  .organism-section .section-subtitle { color: #a0c8c8; text-align: center; max-width: 640px; margin: 0 auto 2rem; }
+  .organism-section .section-title {
+    color: #5fd4d4;
+  }
+  .organism-section .section-subtitle {
+    color: #a0c8c8;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+  }
   .organism-intro {
     text-align: center;
     max-width: 680px;
@@ -1258,7 +1328,9 @@ const t = useTranslations(lang);
     gap: 1rem;
   }
   @media (max-width: 640px) {
-    .traits-grid { grid-template-columns: 1fr; }
+    .traits-grid {
+      grid-template-columns: 1fr;
+    }
   }
   .trait-card {
     display: flex;
@@ -1269,10 +1341,24 @@ const t = useTranslations(lang);
     border-radius: 10px;
     border: 1px solid rgba(95, 212, 212, 0.1);
   }
-  .trait-card:hover { border-color: rgba(95, 212, 212, 0.3); }
-  .trait-icon { font-size: 1.5rem; flex-shrink: 0; }
-  .trait-card strong { color: #5fd4d4; display: block; margin-bottom: 0.3rem; }
-  .trait-card p { font-size: 0.9rem; line-height: 1.6; color: #a0c8c8; margin: 0; }
+  .trait-card:hover {
+    border-color: rgba(95, 212, 212, 0.3);
+  }
+  .trait-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  .trait-card strong {
+    color: #5fd4d4;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .trait-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #a0c8c8;
+    margin: 0;
+  }
   .organism-reef {
     max-width: 720px;
     margin: 0 auto 2.5rem;
@@ -1289,7 +1375,9 @@ const t = useTranslations(lang);
     gap: 1rem;
   }
   @media (max-width: 640px) {
-    .reef-grid { grid-template-columns: 1fr; }
+    .reef-grid {
+      grid-template-columns: 1fr;
+    }
   }
   .reef-item {
     padding: 1rem;
@@ -1299,7 +1387,9 @@ const t = useTranslations(lang);
     line-height: 1.7;
     color: #a0c8c8;
   }
-  .reef-item strong { color: #5fd4d4; }
+  .reef-item strong {
+    color: #5fd4d4;
+  }
   .organism-art {
     max-width: 680px;
     margin: 0 auto 2.5rem;
@@ -1333,8 +1423,12 @@ const t = useTranslations(lang);
     margin-top: 0.8rem !important;
   }
   @media (max-width: 768px) {
-    .trait-row { flex-wrap: wrap; }
-    .trait-label { min-width: auto; }
+    .trait-row {
+      flex-wrap: wrap;
+    }
+    .trait-label {
+      min-width: auto;
+    }
   }
 
   /* ===== Section 3: 創辦人 ===== */
@@ -1730,7 +1824,7 @@ const t = useTranslations(lang);
     text-align: center;
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    color: #2D5016;
+    color: #2d5016;
     font-weight: 700;
   }
   .press-grid {
@@ -1740,7 +1834,7 @@ const t = useTranslations(lang);
   .press-card {
     display: block;
     background: rgba(255, 255, 255, 0.95);
-    border: 2px solid #A7C4A0;
+    border: 2px solid #a7c4a0;
     border-radius: 16px;
     padding: 1.5rem 2rem;
     text-decoration: none;
@@ -1750,12 +1844,12 @@ const t = useTranslations(lang);
   .press-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 24px rgba(45, 80, 22, 0.12);
-    border-color: #4A7C59;
+    border-color: #4a7c59;
   }
   .press-source {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #4A7C59;
+    color: #4a7c59;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
@@ -1763,13 +1857,13 @@ const t = useTranslations(lang);
   .press-title {
     font-size: 1.15rem;
     font-weight: 700;
-    color: #2D5016;
+    color: #2d5016;
     line-height: 1.5;
     margin-bottom: 0.5rem;
   }
   .press-date {
     font-size: 0.85rem;
-    color: #6B8E23;
+    color: #6b8e23;
   }
 
   /* ===== Section 5: 聯繫我們 ===== */
@@ -2035,9 +2129,9 @@ const t = useTranslations(lang);
     font-size: 0.95rem;
     transition: color 0.2s;
   }
-  .supporter-link:hover { 
-    color: #166534; 
-    text-decoration: underline; 
+  .supporter-link:hover {
+    color: #166534;
+    text-decoration: underline;
   }
 
   .eth-donate {

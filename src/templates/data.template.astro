@@ -1623,13 +1623,15 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
 
     .hero-title {
-      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-family: var(--font-title, 'Noto Serif TC', serif);
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
       font-weight: 900;
       background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 1rem;
+      letter-spacing: -0.02em;
     }
 
     .hero-emoji {
@@ -1640,10 +1642,14 @@ background-image: url('https://taiwan.md/assets/svg/taiwan-icon-wiki.svg');
     }
 
     .hero-subtitle {
-      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      font-size: 1.3rem;
       color: #94a3b8;
       margin-bottom: 1.5rem;
-      font-weight: 600;
+      font-weight: 500;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
     }
 
     .hero-desc {
